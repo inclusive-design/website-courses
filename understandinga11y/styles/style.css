@@ -1,0 +1,51 @@
+/* stylesheet */
+
+a:link, a:visited {
+    color: darkblue;
+}
+main a {
+    text-decoration: underline;
+}
+
+main p {
+    line-height: 150%;
+}
+main {
+    margin-top: 5.5em;
+}
+
+header {
+    height: 5em;
+    width: 99%;
+    z-index: 1;
+    background-color: #fff;    
+    border-bottom: 1px solid #333;
+}
+h1 {
+    margin: 0;
+}
+
+#main-nav {
+    width: 18em;
+    padding-top: 6em;    
+    height: 26em;
+}
+
+
+p.emph {
+    background-color:#CFE8EF; 
+    border: thin dashed black; 
+    padding:1em;
+}
+
+code {
+    font-family: monospace;
+    color: black;
+}
+
+.anchor {
+    display: block;
+    height: 5em;
+    margin-top: -5em;
+    visibility: hidden;
+}

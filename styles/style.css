@@ -1,0 +1,118 @@
+/* stylesheet */
+a:link, a:visited {
+    color: darkblue;
+}
+main a {
+    text-decoration: underline;
+}
+
+main p {
+    line-height: 150%;
+}
+
+header, footer {
+    text-align: center;
+    padding: 2em 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.resources p {
+    margin-top: 1em;
+}
+
+a.resource {
+    display: inline-block;
+    width: 12em;
+    height: 11.5em;    
+    padding: 1.5em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 1em;
+    background-color: #F9F9F9;
+    text-decoration: none;
+    float: left;  
+    text-align: center; 
+}
+a.resource:hover, a.resource:focus {
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+a.resource h3 {
+    font-size: 100%;
+    font-weight: normal;
+    text-align: center;
+    margin-top:0.5em;
+    line-height: 130%;
+}
+a.resource img {
+    margin-bottom: 0.5em;
+    height: 4.5em;
+}
+
+a.resource:hover, a.resource:focus {
+    text-decoration: underline;
+}
+a.resource:focus img {
+    outline: none;
+}
+
+ul.resources {
+    margin: 1em 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+ul.resources li {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+ul.resources li a {
+    display: inline-block;
+    width: 13em;
+    height: 12em;    
+    padding: 2em;
+    border: 1px solid #ddd;
+    border-radius: 1em;
+    background-color: #F9F9F9;
+    text-transform: lowercase;
+}
+ul.resources li a:hover, ul.resources li a:focus {
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+ul.resources h3 {
+    font-size: 100%;
+    text-align: center;
+    margin-top:0.5em;
+}
+ul.resources img {
+    margin-bottom: 0.25em;
+    height: 4.5em;
+}
+ul.resources a {
+    text-decoration: none;
+    padding-bottom: 0.25em;
+}
+ul.resources a:hover, ul.resources a:focus {
+    text-decoration: underline;
+}
+ul.resources a:focus img {
+    outline: none;
+}
+
+
+
+@media (max-width: 780px){
+    ul.resources li {
+        float: none;
+    }   
+}

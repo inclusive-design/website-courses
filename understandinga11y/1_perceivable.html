@@ -1,0 +1,1447 @@
+<html>
+<head>
+    <title>Principle 1: Perceivable | Understanding Web Accessibility Course</title>
+    <meta name="generator" content="DocPad v6.78.4" />
+    <link  rel="stylesheet" href="styles/style.css" /><link  rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" />
+    <script defer="defer"  src="../vendor/jquery-2.1.1.min.js"></script><script defer="defer"  src="../vendor/bootstrap/js/bootstrap.min.js"></script><script defer="defer"  src="scripts/myscript.js"></script>
+</head>
+<body>
+    <div class="container-fluid" id="course">    
+    <header class="affix">
+        <div class="container-fluid">
+        <a href="#content" class="sr-only sr-only-focusable pull-left">Skip to main content</a>
+        <a class="pull-right" href="http://courses.idrc.ocadu.ca">IDRC Resources</a>
+        <h1>Understanding Web Accessibility</h1>
+        </div>
+    </header>        
+    
+    <div class="row">    
+        <div id="side" class="col-xs-3 col-md-3"> 
+            <nav id="main-nav">
+                <ul class="nav nav-pills nav-stacked affix">
+                    <li><a href="index.html">Introduction</a></li>
+                    <li><a href="1_perceivable.html">Principle 1: Perceivable</a>
+                        <ul>
+                            <li><a href="1_perceivable.html#reasons">Principle 1: Reasons</a></li>
+                            <li><a href="1_perceivable.html#guidelines">Principle 1: Guidelines</a></li>
+                            <li><a href="1_perceivable.html#barriers">Principle 1: Barriers</a></li>
+                            <li><a href="1_perceivable.html#criteria">Principle 1: Success Criteria</a></li>
+                            <li><a href="1_perceivable.html#techniques">Principle 1: Sufficient Techniques</a></li>                                                                                                
+                            <li><a href="1_perceivable.html#considerations">Principle 1: Other Considerations</a></li>
+                            <li><a href="1_perceivable.html#exercise">Principle 1: Exercise</a></li>
+                        </ul>                                        
+                    </li>
+                    <li><a href="2_operable.html">Principle 2: Operable</a>
+                        <ul>
+                            <li><a href="2_operable.html#reasons">Principle 2: Reasons</a></li>
+                            <li><a href="2_operable.html#guidelines">Principle 2: Guidelines</a></li>
+                            <li><a href="2_operable.html#barriers">Principle 2: Barriers</a></li>
+                            <li><a href="2_operable.html#criteria">Principle 2: Success Criteria</a></li>
+                            <li><a href="2_operable.html#techniques">Principle 2: Sufficient Techniques</a></li>                                                                                                
+                            <li><a href="2_operable.html#considerations">Principle 2: Other Considerations</a></li>
+                            <li><a href="2_operable.html#exercise">Principle 2: Exercise</a></li>
+                        </ul>                                        
+                    </li>                    
+                    <li><a href="3_understandable.html">Principle 3: Understandable</a>
+                        <ul>
+                            <li><a href="3_understandable.html#reasons">Principle 3: Reasons</a></li>
+                            <li><a href="3_understandable.html#guidelines">Principle 3: Guidelines</a></li>
+                            <li><a href="3_understandable.html#barriers">Principle 3: Barriers</a></li>
+                            <li><a href="3_understandable.html#criteria">Principle 3: Success Criteria</a></li>
+                            <li><a href="3_understandable.html#techniques">Principle 3: Sufficient Techniques</a></li>                                                                                                
+                            <li><a href="3_understandable.html#considerations">Principle 3: Other Considerations</a></li>
+                            <li><a href="3_understandable.html#exercise">Principle 3: Exercise</a></li>
+                        </ul>                                        
+                    </li>
+                    <li><a href="4_robust.html">Principle 4: Robust</a>
+                        <ul>
+                            <li><a href="4_robust.html#reasons">Principle 4: Reasons</a></li>
+                            <li><a href="4_robust.html#guidelines">Principle 4: Guidelines</a></li>
+                            <li><a href="4_robust.html#barriers">Principle 4: Barriers</a></li>
+                            <li><a href="4_robust.html#criteria">Principle 4: Success Criteria</a></li>
+                            <li><a href="4_robust.html#techniques">Principle 4: Sufficient Techniques</a></li>                                                                                                
+                            <li><a href="4_robust.html#considerations">Principle 4: Other Considerations</a></li>
+                            <li><a href="4_robust.html#exercise">Principle 4: Exercise</a></li>
+                        </ul>                                        
+                    </li>            
+                </ul>
+            </nav>
+                      
+        </div>
+        <main id="content" class="col-xs-9 col-md-9">            
+            <h2>Principle 1: Perceivable</h2>
+            <section>
+<p class="emph"><strong>Principle 1: Perceivable</strong> - Information and user interface components must be presentable to users in ways they can perceive.</p>
+
+<h3>The Principle Explained</h3>
+<p>People must be able to perceive the content on a Web page. When a person cannot perceive the content, the page is not accessible.</p>
+
+<p>Content may not be perceivable if the Web authors...</p>
+
+<ul>
+<li>Choose small or hard-to-read fonts.</li>
+<li>Specify colours for fonts that are similar to the colour of the background.</li>
+<li>Leave out a description of a photograph. Without a text alternative, people who surf the Internet with a screen reader will not be able to tell what is in the photograph.</li>
+</ul>
+
+<p>"User interface components" are objects that people interact with to perform tasks. Familiar examples on Web pages include:</p>
+
+<ul>
+<li>Hypertext links (or "links")</li>
+<li>Checkboxes, and  </li>
+<li>Buttons.</li>
+</ul>
+
+<p>On many on-line forms, there is a "Submit" button and a "Cancel" button. Some buttons may be graphical, and require alternative text. If a Web content author forgets to write alternative text for these buttons, screen reader users will not be able to tell which button is which. Unless an author specifies the alternative text for each button on a Web page, the buttons may not be perceived by screen reader users.</p>
+
+<p>Most people perceive Web content through sight and sound. When content is communicated exclusively through one sense, some people will not be able to perceive it.</p>
+
+<p>For example, a person who has a slow internet connection may set their browser to hide images. Web pages load faster when images are not displayed. Images contain more data than text, so take longer to download. If Web content authors give each photograph a text alternative, photographs can be perceived by people who choose to not display images. Similarly, a photograph with a text alternative is accessible to  people who are blind.</p>
+
+<p>Perceptual barriers occur when information is communicated entirely through one of:</p>
+
+<ul>
+<li>Sight</li>
+<li>Sound</li>
+<li>Colour</li>
+<li>Size</li>
+</ul>
+
+<p>Perceptual barriers also occur when information is updated too quickly for people to read.</p>
+</section>
+
+<section>
+<span id="reasons" class="anchor"></span>
+<h3>Reasons for Principle 1</h3>
+
+<h4>Guideline 1.1 Text Alternatives</h4>
+
+<p><strong>Why do I always need alternatives to images in my Web site?</strong></p>
+
+<p>If a Web site has photographs, artwork, drawings, and other graphic elements, adding text alternatives is an easy way to make the site accessible to people with certain disabilities. In addition, text alternatives benefit people who use text-based browsers and who have slow internet connections. Finally, text alternatives make it possible to search the Web for images.</p> 
+
+<ol>
+<li>Many people who are blind use a screen reader to access computers. But screen reading programs only understand text; they cannot interpret images. By writing a description for each image on a web page, screen reader users gain access to the images. In most cases, the description need not be elaborate. The text alternative for a photograph of a sunset can be as simple as "sunset on Georgian Bay." The text alternative for a reproduction of a Picasso painting might be, "painting of an old man with a guitar, by Pablo Picasso."</li>
+
+<li>Text-based browsers do not display images. By providing text alternatives, people who use text-based browsers will see the descriptions displayed in place of the images.</li>
+
+<li>Similarly, people with slow Internet connections sometimes set their browser to not display images. (Web pages load faster when images are not displayed.) By providing text alternatives, users will see the descriptions displayed in place of the images.</li>
+
+<li>When search engines "crawl" Web sites to catalogue their content, they cannot determine what is contained in images. Search engines only "understand" text. By including text alternatives, search engines are able to catalogue images, which makes the images searchable.</li>
+</ol>
+
+<h4>Guideline 1.2 Time-based Media</h4>
+
+<p><strong>Why do I need to include alternatives for "time-based media" (multimedia)?</strong></p>
+
+<p>If a Web site includes a multimedia presentation like a movie or video, some people will be unable to perceive &mdash; or have difficulty perceiving &mdash; the visuals, the audio, or both. By providing alternatives, web content authors improve accessibility for a wide range of individuals with and without disabilities:</p>
+
+<ol>
+<li>Individuals who have trouble understanding the visual track include people with visual impairments, certain cognitive disabilities, language disabilities, and learning disabilities. Text alternatives make the multimedia presentation accessible to these people.</li>
+
+<li>Individuals who have trouble understanding the audio track include people who are hard of hearing and deaf; or have certain cognitive, language, and learning disabilities. Text alternatives and captioning are the two most common ways to enhance accessibility for people who have trouble processing the audio portion of a multimedia presentation.</li>
+
+<li>People who are deaf and blind may have trouble (or be unable to) understand the visual track, the audio track, or both. A special type of text alternative, the alternative for time-based media can make multimedia accessible to people who are deaf and blind.</li>
+
+<li>Second language learners benefit from text alternatives, especially those who understand a second language better when they read it rather than listen to it.</li>
+
+<li>Some people are "visual learners" &mdash; they are "wired" to understand best by looking rather than by hearing or doing. Others are "auditory learners" &mdash; they learn best by listening rather than seeing or doing. Text alternatives help them all get the most from a multimedia presentation.</li>
+
+<li>Text alternatives and captions are convenient. For example, a captioned video can be understood in a noisy environment (like a bar), or in a quiet environment (like a bedroom where one person is sleeping while the other is watching a movie.)</li>
+
+<li>Text alternatives make multimedia searchable. When search engines "crawl" Web sites to catalogue their content, they cannot "read" movies and videos. Search engines only deal with text. By including text alternatives, search engines are able to catalogue multimedia presentations, which means they can be found by searching.</li>
+
+</ol>
+
+<h4>Guideline 1.3 Adaptable</h4>
+
+<p><strong>Why should I make it possible to present content in different ways?</strong></p>
+
+
+<p>People need choices in how they use computers. One of the advantages of electronic over paper documents is flexibility. It is &mdash; or should be &mdash; easy to substitute one font for another, or change colours, line-spacing, margins, and dozens of other formatting characteristics. By following a handful of guidelines, Web content authors make it easy for users to adjust the appearance and organization of Web pages to suit their individual need. For example:</p>
+
+<ol>
+<li>An individual with low-vision can read many Web pages when the font is yellow, 400% larger than normal, and displayed on a black background. If Web content authors follow the guidelines, the person can substitute a custom style sheet to display pages in the desired format.</li>
+
+<li>A screen reader user accesses an on-line article about Canadian weather. The content includes a data table that shows the number of hours of sunshine per year for every provincial capital. The user can navigate from cell to cell in the table; be certain which cells contain header information and which cells contain data; and determine, for example, that Winnipeg receives an average of 2,372 hours of sunshine per year.</li>
+
+<li>A lawyer accesses the Internet from a web-enabled cellphone. Despite the small screen, she can easily read the content on a law library site that conforms to WCAG 2.0 guidelines. </li>
+
+</ol>
+
+<h4>Guideline 1.4 Distinguishable</h4>
+
+<p><strong>Why is it important to help users to distinguish foreground from background information?</strong></p>
+
+<p>The ability to distinguish foreground from background information is a cornerstone of accessibility, and applies equally for visual and auditory presentations. Following Guideline 1.4 makes it easier for people with visual and/or hearing disabilities to perceive Web content, but pays dividends in improved usability for everybody.</p>
+
+<ol>
+
+<li>As many as 8% of males have red-green colour blindness (difficulty or inability to distinguish red from green). If a Web site uses these two colours as the only way to differentiate information, people with this common form of colour blindness will not be able to tell them apart.</li>
+
+<li>Choosing contrasting colours improves usability for everybody. Light grey text on a dark grey background is never a good idea.</li>
+
+<li>Background sounds may hinder access for people who use screen readers and people who are easily distracted. Web content authors are free to include background sounds, but it is preferable to give users the option to turn them on rather than starting them automatically. People who repeatedly visit a site appreciate not having to hear the same music each time they visit.</li>
+
+</ol>
+</section>
+<section>
+<span id="guidelines" class="anchor"></span>
+<h3>Guidelines</h3>
+<h4>Guideline 1.1 Text Alternatives</h4>
+<p>Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language. </p>
+<h4>1.1 Level A</h4>
+<ul>
+<li><strong>1.1.1 Non-Text Content</strong> All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.
+<ul>
+<li>Controls, Input: If non-text content is a control or accepts user input, then it has a name that describes its purpose. (Refer to Guideline 4.1 for additional requirements for controls and content that accepts user input.)</li>
+<li>Time-Based Media: If non-text content is time-based media, then text alternatives at least provide descriptive identification of the non-text content. (Refer to Guideline 1.2 for additional requirements for media.)</li>
+<li>Test: If non-text content is a test or exercise that would be invalid if presented in text, then text alternatives at least provide descriptive identification of the non-text content.</li>
+<li>Sensory: If non-text content is primarily intended to create a specific sensory experience, then text alternatives at least provide descriptive identification of the non-text content.</li>
+<li>CAPTCHA: If the purpose of non-text content is to confirm that content is being accessed by a person rather than a computer, then text alternatives that identify and describe the purpose of the non-text content are provided, and alternative forms of CAPTCHA using output modes for different types of sensory perception are provided to accommodate different disabilities.</li>
+<li>Decoration, Formatting, Invisible: If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it is implemented in a way that it can be ignored by assistive technology.</li>
+</ul>
+<p>The best way to make photographs, images, and other non-text content accessible is to provide text alternatives.</p>
+<p>Text alternatives are easily "translated" into forms that individuals, whatever their needs, can understand. For example, a person who is blind can listen to text alternatives for photographs. A person who is deaf can read the text alternative, or a transcript, for a podcast.</p>
+<p>In the future, there will be technologies that translate text alternatives into other languages, sign language, or a simpler form of the same language.</p>
+<p>The only times text alternatives are not required is when the non-text content is:</p>
+<ol>
+<li>Purely decorative</li>
+<li>Used only for visual formatting</li>
+<li>Not presented to users</li>
+<li>A test or exercise. It is acceptable to leave out text alternatives that "give away" answers. For example, in an on-line examination to identify artists based on reproductions of their paintings, "Pablo Picasso" should <em>not</em> be used as the text alternative for his painting. (But it would be appropriate to describe the painting: "An old man with a white beard holding a guitar. Painted mostly in shades of blue.")</li>
+</ol>
+
+</li>
+</ul>
+
+<h4>Additional Resources</h4>
+<p>For additional information see:</p>
+<ul>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv.html">Understanding Guideline 1.1: Text Alternatives</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html">Understanding Guideline 1.1.1: Non-text Content</a></li>
+</ul>
+
+<h4>Guideline 1.2 Time-based Media</h4>
+<p>Provide alternatives for time-based media.</p>
+<h4>1.2 Level A</h4>
+<ul>
+<li><strong>1.2.1  Audio-only and Video-only (Prerecorded)</strong>: For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such:
+<p>This requirement increases the accessibility of information conveyed through recordings, movies, and animations.</p>
+<p>What is meant by "prerecorded audio-only content" and "prerecorded video-only content?" </p>
+<p>Examples of "prerecorded audio-only content:"</p>
+<ul>
+<li>An audio recording of a speech</li>
+<li>An audio recording of a press conference</li>
+</ul>
+<p>Examples of "prerecorded video-only content:"</p>
+<ul>
+<li>A silent film</li>
+<li>An animation that is part of a tutorial illustrating the structure of an atom</li>
+</ul>
+<p>This requirement is met by adding text alternatives to the content. Text alternatives make information more accessible because text can be "translated" into other forms. For example, a transcript of a speech can be read by someone who is deaf. An audio track for a silent film that describes the action can be accessed by someone who is blind.</p>
+<p>Sometimes, providing text alternatives for prerecorded audio and video is easy. For a tutorial that features an animation of the structure of the atom, the tutorial text already provides detailed explanations. The text alternative for the animation only need include a brief description of the animation, and refer to the tutorial text for more information.</p>
+
+</li>
+<li><strong>1.2.2 Captions (Prerecorded)</strong>: Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.
+
+<p>People who are deaf or hard of hearing can watch synchronized media presentations by reading captions. Captions are an alternative to the audio track. </p>
+<p>Captions identify who is speaking and what they are saying, plus other information conveyed through sound effects, music, and other sounds.</p>
+<p>Captions for synchronized media are not needed when the same content is conveyed through text and the media functions exclusively as an alternative to the text. In other words, if a Web page contains a synchronized media presentation, and the text on the page conveys the same information, then the synchronized media presentation does not need to be captioned </p>
+
+</li>
+<li><strong>1.2.3 Audio Description or Media Alternative (Prerecorded)</strong>: An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.
+
+<p>Ensure that visual information in a multimedia presentation is accessible to people who are blind or visually impaired.</p>
+<p>There are two ways to do this:</p>
+<p><strong>1. Create an audio description.</strong> The audio description supplements the existing soundtrack. During pauses in the dialog, a voice describes characters, actions, scene changes, and on-screen texts that are important but absent from the soundtrack.</p>
+<p><strong>Example of a training video with audio descriptions</strong></p>
+<p><strong>Narrator:</strong> A title appears: "The Art and Romance of the Cheese Quiche." In the middle of a table set  for two is a steaming quiche and two crystal glasses half-filled with white wine.<br />
+<strong>Bruce:</strong> "Today's recipe: Cheese quiche &mdash; a savory cooked egg pie."<br />
+<strong>Narrator:</strong> Bruce Bordeaux, the Executive Chef at Chez Paris, stands in his kitchen at home.<br />
+<strong>Bruce:</strong> "We start by gathering the equipment and ingredients we will need."<br />
+<strong>Narrator:</strong> Bruce steps into the pantry, and takes a mixing bowl and measuring cup from the shelf.</p>
+<p><strong>2. Prepare a text version of all information &mdash; visual and auditory &mdash; in the synchronized media.</strong> This text alternative provides a running description of all that is happening in the synchronized media content, and reads something like a screenplay or book. The text alternative can contain photographs and other images, provided that they also have text alternatives.</p>
+<p><strong>Example of a text alternative for a training video that has no pauses in the dialog</strong></p>
+<p>A kitchen appliance manufacturer produces an instructional video on how to use its new food processor, and posts it on the company Web site. The video shows a fast-talking chef demonstrating product features. There are no gaps in the dialog, so no places for audio descriptions. To make this video accessible, the company creates a text alternative that describes all of the features that the chef demonstrates, and posts it next to the video on the company Web site.</p>
+
+</li>
+</ul>
+<h4>1.2 Level AA</h4>
+<ul>
+<li><strong>1.2.4 Captions (Live)</strong>: Captions are provided for all live audio content in synchronized media.
+
+<p>People who are deaf or hard of hearing can watch real-time presentations by reading captions.</p>
+<p>Captions identify who is speaking and what they are saying, plus other information conveyed through sound effects, music, and other sounds.</p>
+<p>At present, human transcribers type the captions for real-time presentations. In the future, speech recognition technology may make it possible to automatically generate captions in real-time.</p>
+
+</li>
+<li><strong>1.2.5 Audio Description (Prerecorded)</strong>: Audio description is provided for all prerecorded video content in synchronized media.
+
+<p>This is a slightly more stringent version of <strong>1.2.3</strong>, which gives authors the option to provide an audio description or a full text alternative in a synchronized media presentation. If authors do one or the other, they are conforming at Level A.</p>
+<p><strong>1.2.5</strong> tells authors how to conform at Level AA: they must provide an audio description, a requirement already met if they chose that alternative for <strong>1.2.3</strong>.</p>
+<p>To conform to Level AAA, authors must include an extended audio description. This is covered in <strong>1.2.7</strong>.</p>
+<p>No audio description is necessary if all video track information is already provided in the audio track.</p>
+
+</li>
+</ul>
+<h4>1.2 Level AAA</h4>
+<ul>
+<li><strong>1.2.6 Sign Language (Prerecorded)</strong>: Sign language interpretation is provided for all prerecorded audio content in synchronized media.
+
+<p>Sign language allows people who are deaf or hard of hearing to understand the audio track of a synchronized media presentation.</p>
+<p>Sign languages are very rich, and convey shades of meanings that are not captured in captions. For this reason, sign language interpretation of synchronized media is considered more equivalent than access via captions.</p>
+<p><strong>Example:</strong> A university makes a video of a visiting professor talking to students and faculty, and decides to post it on-line. There was no sign language interpreter during the original lecture. Afterwards, the university produces a second video of a sign language interpreter interpreting the professor's talk, and "splices" the second video into the corner of the original video.</p>
+<p>Some people who are deaf or hard of hearing are not as fluent in written language as they are in sign language. Conversely, not everybody who is deaf or hard of hearing understands sign language. For this reason, access to synchronized media content is improved by providing sign language as well as captions.</p>
+
+</li>
+<li><strong>1.2.7 Extended Audio Description (Prerecorded)</strong>: Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded video content in synchronized media.
+
+<p>This is similar to <strong>1.2.5</strong>, which states that authors include audio descriptions in synchronized media presentations. Sometimes there are no (or insufficient) pauses to allow audio descriptions. In these cases,  provide extended audio descriptions to convey the sense of the video.</p>
+<p>Extended audio descriptions are done by freezing the presentation at key moments, and playing additional audio material. The synchronized media presentation is then resumed.</p>
+<p>Because extended audio descriptions may disrupt viewing for those who do not need them, make it possible to turn the feature on and off. Alternately, two versions of a presentation, one with extended descriptions and the other without, can be provided.</p>
+<p><strong>Example:</strong> An art school owns a film of an influential artist describing her approach, and digitizes the film for posting on-line. She speaks rapidly, with few pauses. As she talks, she rapidly draws shapes on a flipchart. After completing each sketch, she flips the flipchart and starts a new drawing, talking all the while.</p>
+<p>To make extended audio descriptions, the video is paused after she completes each drawing, and a narrator describes it and her gestures. The video then resumes.</p>
+
+</li>
+<li><strong>1.2.8 Media Alternative (Prerecorded)</strong>: An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media.
+
+<p>An "alternative for time-based media" is a method for making audio-visual materials accessible to people who do not see well enough to read captions, and who do not hear well enough to listen to dialog and audio descriptions. </p>
+<p>To create an alternative for time-based media, describe (in writing) all information in the synchronized media (both visual and auditory). This text is the "alternative for text-based media." It  reads something like a book: a running description of everything that happens.</p>
+<p>The alternative for text-based media contains a transcript of all dialog; descriptions of all visual information (e.g., scene changes, actions, and facial expressions); and descriptions of all non-speech sounds (e.g., laughter, off-screen voices, and background music). </p>
+<p>If the presentation requires user interaction (e.g., buttons labeled "Go to next lesson" at the end of every section), include hypertext links to provide the same functionality.</p>
+<p>These techniques make it possible for people who are deaf-blind to access time-based media using a refreshable braille display.</p>
+
+</li>
+<li><strong>1.2.9 Audio-only (Live)</strong>: An alternative for time-based media that presents equivalent information for live audio-only content is provided.
+
+<p>To make live events (such as video conferencing, speeches, and radio Webcasts) accessible to people who are deaf or hard of hearing, use text alternatives.</p>
+<p>The best text alternative is live text captioning. A trained human operator listens to what is being said and types a verbatim transcript in real-time. The operator also adds non-spoken details, such as laughter and applause, that are essential to understanding what is happening.</p>
+<p>If an event follows a script, a transcript prepared in advance is a possibility. However, live captioning is preferred because the operator's transcript plays out in real-time, and the operator can adapt when deviations from the script occur.</p>
+
+</li>
+</ul>
+<h4>Additional Resources</h4>
+<p>For additional information see:</p>
+<ul>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv.html">Understanding Guideline 1.2: Time-Based Media</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-av-only-alt">Understanding Guideline 1.2.1: Audio-only and Video-only (Prerecorded)</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html">Understanding Guideline 1.2.2: Captions (Prerecorded)</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html">Understanding Guideline 1.2.3: Audio Description or Media Alternative (Prerecorded)</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html">Understanding Guideline 1.2.4: Captions (Live)</a></li>
+
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html">Understanding Guideline 1.2.5: Audio Description (Prerecorded)</a></li>
+
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-sign.html">Understanding Guideline 1.2.6: Sign Language (Prerecorded)</a></li>
+
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html">Understanding Guideline 1.2.7: Extended Audio Description (Prerecorded)</a></li>
+
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-text-doc.html">Understanding Guideline 1.2.8: Media Alternative (Prerecorded)</a></li>
+
+
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-live-audio-only.html">Understanding Guideline 1.2.9: Audio-only (Live)</a></li>
+</ul>
+
+
+<h4>Guideline 1.3 Adaptable</h4>
+<p>Create content that can be presented in different ways (for example simpler layout ) without losing information or structure.</p>
+<h4>1.3 Level A </h4>
+<ul>
+<li><strong>1.3.1 Info and Relationships</strong>: Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.
+
+<p>If you look "under the hood" of a Web page, you will find a document that consists of all the words that appear on the page -  the "content" -  thickly interspersed with words, non-words, numbers, and symbols -  the "code." The code describes how the content should be formatted, and what purpose it serves. For example, you might find something like this on a recipe Web site:</p>
+<p><strong>&lt;h1&gt;Recipes for Whole Wheat Bread&lt;/h1&gt;</strong></p>
+<p>The pair <strong>&lt;h1&gt;</strong> and <strong>&lt;/h1&gt;</strong> that surrounds "Recipes for Whole Wheat Bread" means that the phrase appears larger and bolder than the text that surrounds it; and the phrase is the most important heading on the page.</p>
+<p><strong>1.3.1</strong> requires Web content authors to use the right code. When they do, browsers and assistive technologies automatically "understand" how content relates to other content on the page. (This is what is meant by "programmatically determined.") For example:</p>
+<ul>
+<li>On a form with two fields, "Name" and "Email address," using the correct code ensures that browsers and assistive technologies "know" that the first field contains the name, and the second field contains the email address.</li>
+<li>In a table that displays the population of Canadian provinces, using the correct code ensures that browsers and assistive technologies associate the cell that says "11.4 million" with "Ontario;" and the cell that says "3.3 million" with "Alberta."</li>
+</ul>
+
+</li>
+<li><strong>1.3.2 Meaningful Sequence</strong>: When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.
+
+<p>There must be a meaningful order to the content of a Web page. For example, when looking up the address for a company, we would expect to find information in this order:</p>
+<p><strong>ABC Company<br />
+123 Main Street<br />
+Suite 456<br />
+Toronto<br />
+Ontario<br />
+M7N 8X9</strong></p>
+<p>We might become confused if the information appeared in this order:</p>
+<p><strong>ABC Company<br />
+Toronto<br />
+123 Main Street<br />
+Ontario<br />
+Suite 456<br />
+M7N 8X9</strong></p>
+<p>Yet this is the presentation order to a screen reader user if the Web content author used this layout table to format the address in two columns:</p>
+
+<table border="1">
+<tbody>
+<tr>
+<td>ABC Company</td>
+<td>Toronto</td>
+</tr>
+<tr>
+<td>123 Main Street</td>
+<td>Ontario</td>
+</tr>
+<tr>
+<td>Suite 456</td>
+<td>M7N 8X9</td>
+</tr>
+</tbody>
+</table>
+
+<p>Sometimes content can be presented in any order without compromising comprehensibility. For example:</p>
+<ul>
+<li>If an on-line magazine article contains a sidebar, it usually does not matter whether a person reads the article first or the sidebar first.</li>
+<li>If CSS is used to position a main navigation bar, the content, and a secondary navigation bar, understanding the page does not depend on the order of the sections.</li>
+</ul>
+
+</li>
+<li><strong>1.3.3 Sensory Characteristics</strong>: Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, size, visual location, orientation, or sound. 
+Note: For requirements related to colour, refer to Guideline 1.4.
+<p>Some users with disabilities cannot perceive shape, position, colour, or location due to the nature of the assistive technologies they use. </p>
+<p>For example: There are three buttons at the bottom of a survey form. The instructions read, "Click the brown button to exit the survey without saving. Click the square button to save in-progress survey results. Click the large button to submit your results." A screen reader user cannot determine which button is brown, square, or large.</p>
+<p>When including instructions that describe how to act on the content of a Web page, do not state the instructions exclusively in terms of a single sensory characteristic. Instead, provide additional or alternate descriptions.</p>
+<p>The form in the example can be made accessible by labeling the brown button "Exit without saving;" the square button "Save partial results;" and the large button "Submit your results."</p>
+
+</li>
+</ul>
+<h4>Additional Resources</h4>
+<p>For additional information see:</p>
+<ul>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation.html">Understanding Guideline 1.3: Adaptable</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html">Understanding Guideline 1.3.1: Info and Relationships</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html">Understanding Guideline 1.3.2: Meaningful Sequence</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html">Understanding Guideline 1.3.3: Sensory Characteristics</a></li>
+</ul>
+
+<h4>Guideline 1.4 Distinguishable</h4>
+<p>Make it easier for users to see and hear content including separating foreground from background.</p>
+<h4>1.4 Level A</h4>
+<ul>
+<li><strong>1.4.1 Use of Color</strong>: Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.
+<p>Colour is an important aspect of Web content design. But information communicated exclusively through colour may not be accessible to users who are blind, have low-vision or colourblindness, or use black and white instead of colour displays. Furthermore, some older users may  not be able to distinguish certain colours. (As people age, they tend to see colours less well.)</p>
+<p>Examples of information conveyed by colour only: </p>
+<ul>
+<li>Using yellow highlighting on a form field to indicate that it is a mandatory field</li>
+<li>Displaying error messages in red</li>
+<li>Using a chart that shows this year's results in blue, and last year's results in green.</li>
+</ul>
+<p>Examples of indications of an action conveyed by colour only:</p>
+<ul>
+<li>Using orange links to indicate that they will open a new browser window</li>
+<li>Changing the font colour from black to grey to indicate that a database was updated.</li>
+</ul>
+<p>An example of prompting a response:</p>
+<ul>
+<li>Using highlighting on form fields to indicate that a mandatory field was left blank.</li>
+</ul>
+<p>The key to removing these kinds of barriers is to provide redundant information. In other words, information conveyed via colour should be communicated in another way, as well. For example, on a form, use yellow highlighting <em>and</em> text to indicate mandatory fields. Instructions at the top of the form explain that required fields are yellow; and an icon adjacent to the field has a text alternative that says, "Mandatory."</p>
+
+</li>
+<li><strong>1.4.2 Audio Control</strong>: If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level.
+<p>Provide a mechanism to turn off background sounds when the sounds play for longer than three seconds. An example of a background sound is a musical track that plays when a Web page loads.</p>
+<p>This requirement improves accessibility for three groups:</p>
+<ol>
+<li>People who are not interested in the background sounds.</li>
+<li>People who are easily distracted by non-essential, background sounds.</li>
+<li>People who use screen readers, who may find it hard to hear speech output when other sounds are playing.</li>
+</ol>
+<p>Automatically starting a soundtrack when a page loads may affect a screen reader user's ability to find the mechanism to stop it. It is preferable that the sound be started by an action initiated by the user after they reach the page, rather than requiring that the sound be stopped by an action after the user lands on the page.</p>
+
+</li>
+</ul>
+<h4>1.4 Level AA</h4>
+<ul>
+<li><strong>1.4.3 Contrast (Minimum)</strong>: The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following: 
+
+<ul>
+<li><strong>Large Text</strong>: Large-scale text and images of large-scale text have a contrast ratio of at least 3:1;</li>
+<li>Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.</li>
+<li>Logotypes: Text that is part of a logo or brand name has no minimum contrast requirement.</li>
+</ul>
+<p>People with low-vision may have difficulty reading when the colour of the text does not contrast sufficiently with the colour of the background. Having colourblindness lowers the contrast even further.</p>
+<p>Ensuring minimum contrast ratios between text and background increases the legibility of text for individuals who do not see the full range of colours. The contrast ratios also work for individuals who see no colour, and for the many older people who have reduced visual acuity.</p>
+<p>The specified contrast ratios are: </p>
+<ul>
+<li>Fonts that are 18 points or larger:	 3:1</li>
+<li>Fonts that are 14 point bold  or larger: 3:1</li>
+<li>All other text and images of text: 4.5:1</li>
+</ul>
+<p>Many easy-to-use software tools that measure colour contrasts are freely available.</p>
+<p>By meeting this requirement, authors achieve Conformance Level AA. To achieve Level AAA, the minimum contrast ratios are higher. See <strong>1.4.6</strong>.</p>
+
+</li>
+<li><strong>1.4.4 Resize text</strong>: Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.
+<p>Ensure that text-size can be doubled without losing the ability to read and interact with a Web-page. Many people with mild visual disabilities can read double-sized characters without screen magnifier software. Although these users may benefit from the ability to increase the size of images, the ability to increase text size is most critical. </p>
+<p>Most browsers have a zoom  feature for "scaling" (i.e., increasing and decreasing) the text size. The author's responsibility is to create Web content that does not prevent the browser from doing this.</p>
+<p>A simple way to test this requirement is to view a page in a browser with its zoom level set to the default; zoom to 200%; and check whether all content and functionality is available.</p>
+<p>Authors can support scaling beyond 200%, but pages may be difficult to read and interact with. Common problems include text that overlaps other content; words that are truncated because they are too wide to fit the space available to them; and pages that must be scrolled horizontally to read.</p>
+</li>
+<li><strong>1.4.5 Images of Text</strong>: If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following: 
+  
+<ul>
+<li>Customizable: The image of text can be visually customized to the user's requirements;</li>
+<li>Essential: A particular presentation of text is essential to the information being conveyed. Note: Logotypes (text that is part of a                                               logo or brand name) are considered essential.</li>
+</ul>
+
+<p>As much as possible, use text rather than images to convey information. It is OK to use images of text if text cannot be formatted to achieve a desired effect, or an effect cannot be rendered in most browsers.</p>
+<p>This should <strong>not</strong> be understood as a requirement for text-only pages. Rather, it is a requirement to give preference to text unless there is good reason not to. For example, instead of using images of words as document headings, use styled &lt;h1&gt;, &lt;h2&gt;, etc. to achieve the same formatting effect. On the other hand, it is acceptable to use images of text for corporate logos, reproductions of historic letters, and samples of non-standard fonts &mdash; provided the images have text alternatives.</p>
+<p>By meeting this requirement, authors achieve Conformance Level AA. It applies to visual presentations that can be achieved with the technologies that the author uses. To achieve Level AAA, the requirement applies to visual presentations that the user controls. See <strong>1.4.9</strong>.</p>
+
+</li>
+</ul>
+<h4>1.4 Level AAA</h4>
+<ul>
+<li><strong>1.4.6 Contrast (Enhanced)</strong>: The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following:
+ 
+<ul>
+<li>Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 4.5:1;</li>
+<li>Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.</li>
+<li>Logotypes: Text that is part of a logo or brand name has no minimum contrast requirement. </li>
+</ul>
+
+<p>This requirement is similar to <strong>1.4.3</strong>, which sets minimum contrast levels to achieve Conformance Level AA. Here, authors can achieve Level AAA by using higher minimum contrast ratios.</p>
+<p>People with low-vision may have difficulty reading when the colour of the text does not contrast sufficiently with the colour of the background. Having colourblindness lowers the contrast even further.</p>
+<p>Ensuring minimum contrast ratios between text and background increases the legibility of text for individuals who do not see the full range of colours. The contrast ratios also work for individuals who see no colour, and for the many older people who have reduced visual acuity.</p>
+<p>The specified contrast ratios are: </p>
+<ul>
+<li>Fonts that are 18 points or larger:	 4.5:1</li>
+<li>Fonts that are 14 point bold  or larger: 4.5:1</li>
+<li>All other text and images of text: 7:1</li>
+</ul>
+<p>Many easy-to-use software tools that measure colour contrasts are freely available.</p>
+<p>Exemptions to this requirement include corporate logos, and incidental text (e.g., photographs of street signs).</p>
+
+</li>
+<li><strong>1.4.7 Low or No Background Audio</strong>: For prerecorded audio-only content that (1) contains primarily speech in the foreground, (2) is not an audio CAPTCHA or audio logo, and (3) is not vocalization intended to be primarily musical expression such as singing or rapping, at least one of the following is true:
+ 
+<ul>
+<li>No Background: The audio does not contain background sounds.</li>
+<li>Turn Off: The background sounds can be turned off. </li>
+<li>20 dB: The background sounds are at least 20 decibels lower than the foreground speech content, with the exception of occasional sounds that last for only one or two seconds.<strong>Note</strong>: Per the definition of "decibel," background sound that meets this requirement will be approximately four times quieter than the foreground speech content. </li>
+</ul>
+<p>People who are hard of hearing often have difficulty distinguishing speech from background sound. When prerecorded audio content is primarily speech, background sounds must be quiet enough that a user who is hard of hearing can differentiate speech from background sounds.</p>
+<p>When the audio track contains background sounds, they must be at least 20 decibels lower than the foreground speech content. It is acceptable if occasional sounds are louder, provided they last less than two seconds.</p>
+
+</li>
+<li><strong>1.4.8 Visual Presentation</strong>: For the visual presentation of blocks of text, a mechanism is available to achieve the following:
+<ol>
+<li>Foreground and background colors can be selected by the user.</li>
+<li>Width is no more than 80 characters or glyphs (40 if CJK).</li>
+<li>Text is not justified (aligned to both the left and the right margins).</li>
+<li>Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing.</li>
+<li>Text can be resized without assistive technology up to 200 percent in a way that does not require the user to scroll horizontally to read a line of text on a full-screen window.</li>
+</ol>
+<p>Format blocks of text in ways that make it easy for people with low-vision, cognitive, language, and learning disabilities to read text and control the appearance of a page:</p>
+<ul>
+<li>Limit the line length to 80 characters</li>
+<li>Left-justify or right-justify paragraphs, but do not use full-justification (i.e., text that is aligned to both the left and right margins)</li>
+<li>For paragraphs, set line-spacing to 1.5 or more </li>
+<li>For documents consisting of several paragraphs, set the spacing between paragraphs to at least 1.5 times larger than the line-spacing</li>
+<li>When using a desktop or laptop computer with the browser window maximized, ensure that text size can be increased by 200 percent without the need to scroll horizontally to read lines of text.</li>
+</ul>
+</li>
+<li><strong>1.4.9 Images of Text (No Exception)</strong>: Images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed. <strong> Note </strong>: Logotypes (text that is part of a logo or brand name) are considered essential.
+
+<p>This is a more stringent version of <strong>1.4.5</strong>, which applies to visual presentations that can be achieved with the technologies that the author uses. Here, the requirement applies to visual presentations that the user controls.</p>
+<p>As much as possible, use text rather than images to convey information. If text cannot be formatted to achieve a desired effect, or an effect cannot be rendered in most browsers, use images of text.</p>
+<p>This should <strong>not</strong> be understood as a requirement for text-only pages. Rather, it is a requirement to give preference to text unless there is good reason not to. For example, instead of using images of words as document headings, use styled &lt;h1&gt;, &lt;h2&gt;, etc. to achieve the same formatting effect. On the other hand, it is acceptable to use images of text for corporate logos, reproductions of historic letters, and samples of non-standard fonts &mdash; provided the images have text alternatives.</p>
+<p>By using text instead of images, people with visual impairments are better able to control the presentation of text to meet their needs. An individual with low-vision may, for example, change the font, font size, foreground and background colours, line spacing, paragraph alignment, and so on.</p>
+</li>
+</ul>
+
+<h4>Additional Resources</h4>
+<p>For additional information see:
+<ul>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast.html">Understanding Guideline 1.4: Distinguishable</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html">Understanding Guideline 1.4.1: Use of Color</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-dis-audio.html">Understanding Guideline 1.4.2: Audio Control</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">Understanding Guideline 1.4.3:  Contrast (Minimum)</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html">Understanding Guideline 1.4.4: Resize text</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html">Understanding Guideline 1.4.5: Images of Text</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html">Understanding Guideline 1.4.6: Contrast (Enhanced)</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-noaudio.html">Understanding Guideline 1.4.7: Low or No Background Audio</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html">Understanding Guideline 1.4.8: Visual Presentation</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html">Understanding Guideline 1.4.9: Images of Text (No Exception)</a></li>
+</ul></p>
+</section>
+
+<section>
+<span id="barriers" class="anchor"></span>
+<h3>Experiencing Barriers</h3>
+<script language="JavaScript">
+<!--
+  function changeFocus() {
+    var txt = document.getElementById('LINK1');
+    txt.focus();
+    //txt.select();
+  }
+
+  var isInternetExplorer = navigator.appName.indexOf("Microsoft") != -1;
+  // Handle all the FSCommand messages in a Flash movie.
+  function test_DoFSCommand(command, args) {
+	var testObj = isInternetExplorer ? document.all.test : document.test;
+	//
+	DoFSCommand(command, args);
+	//
+  }
+  // Hook for Internet Explorer.
+  if (navigator.appName && navigator.appName.indexOf("Microsoft") != -1 && navigator.userAgent.indexOf("Windows") != -1 && navigator.userAgent.indexOf("Windows 3.1") == -1) {
+	document.write('<script language=\"VBScript\"\>\n');
+	document.write('On Error Resume Next\n');
+	document.write('Sub test_FSCommand(ByVal command, ByVal args)\n');
+	document.write('	Call test_DoFSCommand(command, args)\n');
+	document.write('End Sub\n');
+	document.write('</script\>\n');
+  }
+
+  function DoFSCommand(command, args) {
+        if(command == 'alert'){
+          alert(args);
+        }else if(command == 'changeFocus'){
+          changeFocus();
+	}
+  }
+//-->
+</script>
+
+<p>The Flash simulation below is intended to demonstrate accessibility problems for people who do not normally experience barriers. For those using assistive technologies, you may find the simulation somewhat inaccessible. This is unavoidable for purposes of demonstrating barriers. </p>
+
+<p>This simulation demonstrates the following barriers: </p>
+
+<ul>
+<li>Missing Alt text for images</li>
+<li>Insufficient foreground and background contrast.</li>
+<li>Using colour alone to represent meaning.</li>
+<li>Removing the underline from links embedded in surrounding text</li>
+</ul>
+
+<!--[media|860|640]sims/Sim_1_v3.swf[/media]-->
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+        codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"
+        id="test" width="860" height="640" align="middle">
+<param name="allowScriptAccess" value="always" />
+<param name="movie" value="sims/Sim_1_v3.swf" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#ffffff" />
+<param name="SeamlessTabbing" value="false" />
+<embed src="sims/Sim_1_v3.swf" quality="high"
+       bgcolor="#ffffff" width="860"
+       height="640" swLiveConnect=true
+       id="test" name="test" align="middle"
+       allowScriptAccess="always"
+       SeamlessTabbing="false"
+       type="application/x-shockwave-flash"
+       pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+
+<script type="text/javascript"><!--
+ var toc = document.getElementById('side-menu');
+ var showlink=document.getElementById('side-menushowlink');
+ var hidelink=document.getElementById('side-menuhidelink');
+ 
+ if (hidelink.style.display == '')
+ {
+  document.getElementById('contentcolumn_shiftright').id="contentcolumn";
+  toc.style.display = 'none';
+  hidelink.style.display='none';
+  showlink.style.display='';
+ }
+// --></script>
+
+<h4>Understanding Perceptual Barriers</h4>
+<p>Web content is perceived by most people through two primary senses: seeing and hearing. In any case where Web content requires the use of one of these senses exclusively, the content must be made available in an alternate form.  The most common example is of Web content that requires a single sense is an image, which must be perceived with sight. So the image must have an alternative, either audio or textual, so it can be perceived through hearing or touch for those who do not have sight.</p>
+<p>Another example is a recorded speech, which can only be perceive by listening, so a transcript is required to make the audio accessible to users who are deaf or hard-of-hearing.</p>
+<p>Another example is a video that must be perceived through sight for the visual track and through hearing for the audio track. In this case a transcript or captioning of the audio track is required so people who are deaf or hard-of-hearing can perceive the audio track by reading. Audio description is also required to describe the actions in the video track that can not be perceived through the audio track or the transcript of the audio track. Audio description describes what's going on in the video, and gets inserted in gaps in the audio track, or in some cases stops the video to present extended audio descriptions of the actions in the video. An example of descriptive audio might be "Susan moves across the room and opens the door."   Speech in the audio description track should also be added to the captions and to the transcript.</p>
+<p>In most cases the alternate form will be text. Text can be transformed into speech using a screen reader or a text-to-speech application, so people who can not see the text can hear it. Text can also be transformed into Braille, so a person who can not see, or perhaps not see or hear the content, can feel it through a piece of hardware called a Refreshable Braille Display.</p>
+
+<p>Below is a list of common situations where content may not be perceivable for  some people, and thus would fail an accessibility test.  Review the Common Failures below to understand where barriers are created. Then move on to the Success Criteria which describe strategies for removing these barriers, and then go on to the HTML markup strategies in the Sufficient Techniques pages, that put these success criteria into practice. </p>
+
+<h4>Common Failures for Guideline 1.1 (Provide Text Alternatives)</h4>
+<ol>
+<li>due to omitting the alt-attribute for non-text content used for decorative purposes only in HTML</li>
+<li>due to using text look-alikes to represent text without providing a text alternative</li>
+<li>due to omitting the alt attribute on img elements, area elements, and input elements of type "image"</li>
+<li>due to providing a text alternative that is not null. (e.g. alt="spacer" or alt="image") for images that should be ignored by assistive technology.</li>
+</ol>
+<h4>Common Failures for Guideline 1.2 (Provide Alternatives for Multimedia) </h4>
+<ol>
+<li>due to captions omitting some dialogue or important sound effects</li>
+<li>by providing synchronized media without captions when the synchronized media presents more information than is presented on the page</li>
+<li>due to not labeling a synchronized media alternative to text as an alternative</li>
+</ol>
+<h4>Common Failures for Guideline 1.3 (Present Content in Different Ways)</h4>
+<ol>
+<li>due to using changes in text presentation to convey information without using the appropriate markup or text</li>
+<li>due to using structural markup in a way that does not represent relationships in the content</li>
+<li>due to the association of label and user interface controls not being programmatically determinable</li>
+<li>due to using an HTML layout table that does not make sense when linearized</li>
+<li>due to identifying content only by its shape or location</li>
+</ol>
+<h4>Common Failures for Guideline 1.4 (Make Foreground and Background Distinguishable)</h4>
+<ol>
+<li>due to having a text alternative that does not include information that is conveyed by color differences in the image</li>
+<li>due to creating links that are not visually evident without color vision</li>
+<li>due to identifying required or error fields using color differences only</li>
+<li>due to playing a sound longer than 3 seconds where there is no mechanism to turn it off</li>
+<li>due to specifying foreground colors without specifying background colors or vice versa</li>
+<li>due to using background images that do not provide sufficient contrast with foreground text (or images of text)</li>
+<li>when resizing visually rendered text up to 200 percent causes the text, image or controls to be clipped, truncated or obscured</li>
+<li>when text-based form controls do not resize when visually rendered text is resized up to 200%</li>
+<li>due to using text that is justified (aligned to both the left and the right margins)</li>
+</ol>
+<p>A more detailed list, including less common failures, can be found in <a href="http://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0</a></p>
+</section>
+
+<section>
+<span id="criteria" class="anchor"></span>
+<h3>Success Criteria</h3>
+<p><strong>Success Criteria</strong> are ways of conforming with WCAG guidelines. For each of the common failures described previously, ways of avoiding each barrier are described below. Study the strategies to understand how Web content is made more perceivable, then move on to the <strong>Sufficient Techniques</strong> that follow to learn about strategies used to author Accessible Web content. </p>
+
+<p><strong>Guideline 1.1</strong>Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.</p>
+
+<h4>Success Criteria for Guideline 1.1 (Text Alternatives)</h4>
+<ol>
+<li>due to omitting the alt attribute for non-text content used for decorative purposes only in HTML
+
+<p>If an image in Web content is decorative, and serves no purpose other than modifying the visual appearance or aesthetics, it must include an empty alt attribute (alt="") so assistive technologies will ignore the image.</p>
+
+<p>If Alt is not included with decorative images, assistive technology will normally read the image's file name, which may cause the person listening to wonder if they are missing something. If Alt contains irrelevant text (e.g. alt="spacer"), this text is read aloud by screen readers, potentially interfere with comprehension of relevant surrounding information.</p>
+
+
+</li>
+<li>due to using text look-alikes to represent text without providing a text alternative
+
+<p>If an image contains meaningful text, that text must be reproduced in an  Alt attribute for the image, so a person who can not see the image receives the same information as a person who can see it. Ideally however, actual text should be used instead of images of text wherever possible. Actual text will be more accessible and adaptable to a broader range of users and technologies than an image will.</p>
+
+<p>Using images of text should be reserved for presenting word marks, logos, or other instances where the formatting of the text can not be reproduced exactly using style sheet attributes.</p>
+
+
+</li>
+<li>due to omitting the alt attribute on img elements, area elements, and input elements of type "image"
+
+<p>Every image must have an Alt attribute that describes the content of the image, or describe it's purpose. The Alt attribute associated with image map areas must describe what will be found if a person follows the link associated with the map area, and the Alt attribute  for an image button must describe the function of the button.</p>
+
+</li>
+<li>due to providing a text alternative that is not null. (e.g. alt="spacer" or alt="image") for images that should be ignored by assistive technology.
+<p>If Alt is included with a decorative image, but has a text value such as alt="right corner" to describe an image used to create a round corner, assistive technologies will read that text,  which may interfere with comprehension of the meaningful information surrounding the image.  The value assigned to the Alt attribute for such images should always be empty.</p>
+</li>
+</ol>
+
+<h4>Success Criteria for Guideline 1.2 (Time-based Media)</h4>
+<p><strong>Guideline 1.2</strong>Time-based Media: Provide alternatives for time-based media.</p> 
+<ol>
+<li>due to captions omitting some dialogue or important sound effects
+
+<p>All dialogue contained in pre-recorded video,  or other pre-recorded multimedia content,  must be made available as synchronized captions so those who cannot hear the dialogue can read along.  Captions must include all meaningful information contained in the dialogue, all significant sounds contained in the audio track, and describe all significant actions that can not be determined by listening to the audio track alone.</p>
+
+<p>For example,  car horns honking in the background of an interview taking place on a busy street corner might be inserted into a caption as [car horns honk in the background] to give a person who can not hear the horns, information to suggest the dialogue is taking place on a city street.</p>
+
+<p>Meaningful actions in the video also need to be inserted into the captions, so those who can not see what is happening, or who can not determine what is happening based on what they hear in the dialogue, are made aware of meaningful actions that are occuring. For example, if in addition to the horns honking above, the video shows a person in the background of the video stepping out  into oncoming traffic,  including [a person behind the interviewer steps into oncoming traffic]  would  explain why the car horn was honking, and perhaps why the interviewer was distracted momentarily and the dialogue interrupted.</p>
+
+<p>Descriptions of significant actions in the video must  also be included as "Audio Descriptions." Audio descriptions are added to the audio track where gaps in the dialogue occur, to describe what is happening in the video. Using the example above, a narrator might announce "[a person behind the interviewer steps into oncoming traffic] and [car horns honk in the background] ."
+</p>
+<p>In some cases it may not be possible to describe actions in the video within the gaps of the dialogue. In such cases "Extended Audio Descriptions" should be used, in which case the video pauses momentarily while the narrator describes the actions.</p>
+
+<p>Static text transcripts of the audio track and actions in the video can also be provided, but they should not replace captions and audio descriptions, but rather provide an alternative to them for those who may not be able to access captions because their media player does not support them, for instance.</p>
+
+<p>Tools such as Capscribe, Amara, or Magpie, linked below can be used to synchronize captions and audio descriptions with videos, and can be used to learn more about making multimedia content accessible.</p>
+
+<ul>
+<li><a href="http://www.amara.org/en/">Amara</a></li>
+<li><a href="http://ncam.wgbh.org/webaccess/magpie/">Magpie</a></li>
+<li><a href="http://capscribe.snow.utoronto.ca/">Capscribe</a></li>
+</ul>
+</p>
+
+</li>
+<li>by providing synchronized media without captions when the synchronized media presents more information than is presented on the page
+When multimedia content is provided as an alternative for original text content, captions are required if the multimedia content contains more information than that found in the original text.  For example, if the text describes 6 steps required to complete a task, and the video demonstrates those 6 steps, but also includes a brief description of additional considerations when completing each step, then the video should be captioned as described in the previous Success Criteria above. If the video provides no additional information beyond that in the text version of the 6 steps, then captioning is not required. In the latter case, the video is an alternative to or an adaptation of text content, while in the former the video is an enhancement containing additional information.
+</li>
+<li>due to not labeling a synchronized media alternative to text as an alternative
+
+<p>When multimedia content is provided as an alternative, or adaptation for original text content, it must be described as an alternative in the surrounding text. In the example in the previous Success Criteria above, the multimedia alternative demonstrating the 6 steps might be labelled as "A multimedia demonstration of the 6 steps described above." </p>
+
+<p>If the alternative is not labelled as an alternative,  a person who can not see or hear all the content, and is unable to access captioning or descriptive audio, may believe they are missing content in the video. While in fact they may not be missing anything,  they many be left wondering if they have. The affect here is similar to the affect when a person encounters a decorative image that does not include an empty Alt attribute, as described in the Success Criteria for Guideline 1.1</p>
+</li>
+</ol>
+
+<h4>Success Criteria for Guideline 1.3 (Adaptable)</h4>
+<p><strong>Guideline 1.3</strong> Adaptable: Create content that can be presented in different ways (for example simpler layout) without losing information or structure.</p>
+<ol>
+<li>due to using changes in text presentation to convey information without using the appropriate markup or text
+<p>Use appropriate structural HTML to markup headings (i.e. h1, h2, h4,  ...), and do not use other stylized elements to produce the appearance of headings. For example, do not put  page or section headings in  HTML paragraph or span tags and use stylesheet attributes to make the text look like a heading. </p>
+
+<p>Proper HTML headings can be extracted from a Web page by assistive technologies to produce a summary of the content on a page, and  creates a way to quickly navigating through sections of a page. Assistive technology users can select a particular heading and jump directly to that section. When non-structural markup is used,  the content may still appear structured to sighted users, but to a screen reader user it will appear as one large block of text, and the only means of navigating the text would be from beginning to end, with no opportunity to move around through sections of the page.</p>
+</li>
+<li>due to using structural markup in a way that does not represent relationships in the content
+<p>Do not use structural markup to format the visual appearance of text. For example,  if large fonts are required to make text easier to read for people with poor vision, do not use HTML heading markup to make the text larger. Instead, use stylesheet formatting to increase the size of paragraph text, or to increase the size of text contained in an HTML span element,  or in other HTML block elements.</p>
+</li>
+
+<li>due to the association of label and user interface controls not being programmatically determinable
+<p>Where in the HTML of a Web page labels are not immediately adjacent to their respective form input elements, include an explicit label using the HTML Label element for each form field of type text, checkbox, radio, file, password, textarea or select. </p>
+
+<p>Where it is not possible to display a label,  for example when space is limited, use CSS to hide it, or put the label in the title attribute for the input element.</p>
+
+</li>
+<li>due to using an HTML layout table that does not make sense when linearized
+<p>Current screen readers read tables from top left to bottom right, reading the full content of each cell, reading each row in its entirety before reading the next row.  If tables are used to layout content, content must make sense when read in this sequence. </p>
+
+<p>For example, a two cell table that lays out labels in the left cell, and form  fields in the right cell would fail to linearize because all the labels on the left would be read first, then all the form field on the right would be read. Instead, use a 2 column, 5 row table to layout the first label in column 1, row 1, and its input field in column 2, row 1, and the second label in column 1, row 2, and its input field in column 2, row 2, and so on. This layout will linearize correctly, reading label, form field, label, form field, in the sequence they were intended to be presented.</p>
+</li>
+
+<li>due to identifying content only by its shape or location
+<p>When refering to features on a Web page,  do not use location alone, or shape alone, to refer to the feature. Screen reader users will have difficulty determining a location on a page,  and determining the shape of a feature.</p>
+
+<p>For example, instead of saying "click the button at the bottom right," say click the button at the bottom right labelled Submit."  Instead of saying "click the triangle button to logout of the system," say "click the triangle button labelled Exit to logout of the system."</p>
+</li>
+</ol>
+
+<h4>Success Criteria for Guideline 1.4 (Distinguishable)</h4>
+<p><strong>Guideline 1.4</strong> Distinguishable: Make it easier for users to see and hear content including separating foreground from background.</p>
+<ol>
+<li>due to having a text alternative that does not include information that is conveyed by color differences in the image
+<p>Where colour is presented in an image to represent particular meaning, provide an alternative to colour that describes the same meaning. People who are blind or colour blind may not be able perceive colour.</p>
+
+<p>For  example,  an image of a bar chart may be used to display the value of imports and exports for each year over the past decade.  Instead of saying "the red bar represents imports and the blue bar represents exports"  say "the red bar on the left for each years represents imports, and the blue bar to the right for each year represents exports."</p>
+
+<p>While the language used in the latter example may be accessible to colour blind users, for someone who can see neither red or blue nor  left and right, the bar chart will remain inaccessible. In this case a properly marked up table that lays out the numeric values displayed in the bar chart, would provide an accessible alternative for blind persons.</p>
+
+</li>
+<li>due to creating links that are not visually evident without color vision
+
+<p>Identify links by some means other than colour alone. When links are embedded in the surrounding text of a paragraph for instance, and the standard link underline has been removed with CSS, these links will often become invisible to users who can not distinguish between the colour of the text, and the colour of the link. Include the standard underline with links to make them distinguishable. Other strategies can also be used, such as making links bold, or italic, or changing the font face, but underlines are most common, and more likely to be recognized as links.</p>
+
+<p>Underlining links is less important in places where  it is relatively clear that links are present, such as in a content navigation menu, or a site navigation bar.</p>
+</li>
+<li>due to identifying required or error fields using color differences only
+<p>When displaying feedback after an error has occurred, use some feature other than colour alone to represent the error. For example, in addition to displaying error messages in red, include an X or the  word Error with the message, so those who can not see red will know the message is an error message.  When displaying success feedback, use some feature other than colour alone to represent success. In addition to displaying success feedback messages in green, include a checkmark, and/or the word Success so those who can not see green will know the message is success feedback.</p>
+</li>
+<li>due to playing a sound longer than 3 seconds where there is no mechanism to turn it off
+<p>Where a Web page plays a sound that lasts 3 seconds or more, provide a way to stop the sound. When sounds continues beyond 3 seconds, they can interfere with verbal output from screen readers, making it difficult for blind users to perceive the content of the page because two audio streams are playing at the same time.</p>
+</li>
+<li>due to specifying foreground colors without specifying background colors or vice versa
+<p>When font colours are set, also set a background colour to ensure sufficient contrast between foreground and background or the contrast ratio between the relative luminance of each. When one of either foreground or background are set by an author, and the other is not,  it is possible contrast will be lost if a user has set foreground and background preferences in their Web browser (or User Agent ). For example, if an author forces the background colour to white, but does not set the foreground to black, or some other contrasting colour, the text on the screen may not be visible to a person whose preference is white font on a black  background. In such a case the white background set by the author, and the white font set by the user, would cause the white text to disappear into the white background.</p>
+
+<p>A number of tools are available for measuring contrast between foreground and background colours. See:</p>
+
+<ul>
+<li><a href="http://www.accesskeys.org/tools/color-contrast.html">AccessColor</a></li>
+<li><a href="http://www.paciellogroup.com/resources/contrast-analyser.html">Contrast Analyser</a></li>
+<li><a href="http://gmazzocato.altervista.org/colorwheel/wheel.php">Accessibility Color Wheel</a></li>
+</ul>
+</li>
+<li>due to using background images that do not provide sufficient contrast with foreground text (or images of text)
+<p>Prevent text from appearing over top of a background image that result in loss of contrast. For example, if a photo is used as a background image, perhaps a vista with a blue sky,  any blue text that might appear over top of the blue sky in the background would loose its contrast an become unreadable.  Care should be taken when using background images in which the colour varies significantly from area to area. What may appear as good contrast on one screen, will fail when viewed on another perhaps smaller screen, which may force content to float or reposition over the background image and become partially or completely unreadable. </p>
+</li>
+<li>when resizing visually rendered text up to 200 percent causes the text, image or controls to be clipped, truncated or obscured
+
+<p>To prevent text, images, and controls from being clipped, truncated, or obscured use relative measure to define their sizes, and the sizes of their containers, rather than using absolute measures. Use relative measures including em, %, and size names (smaller, small, large, larger).  Avoid using absolute measures including px, pt, and cm. </p>
+
+<p>When relative measures are used throughout a Web page, when the page is resized all content on the page will resize at the same rate,  so for example when the text increases to 200%, so will the containers the text appears in, such as a div, a paragraph, or a table cell. If absolute measures are used for containers, the text size may increase and be forced to fit inside the same space as the originally sized text, thus making it more difficult to read as the text size increase. </p>
+</li>
+<li>when text-based form controls do not resize when visually rendered text is resized up to 200%
+
+To ensure form controls resize at the same rate as text, use relative measures to define the sizes of both the text, and the form controls. If text size is defined in % or em, then form button text size should also be defined in % or em.  Do not define text in % or em and  button text in pt or cm
+</li>
+<li>due to using text that is justified (aligned to both the left and the right margins)
+
+Justified text can be difficult to read for some readers with print disabilities as a result of the spacing between words being inconsistent.  Avoid using markup or styles to justify text. If justified text is required, perhaps for publishing purposes, provide a simple way to turn justification off, such as including a link to switch between stylesheets.
+</li>
+
+</ol>
+</section>
+
+<section>
+<span id="techniques" class="anchor"></span>
+<h3>Sufficient Techniques </h3>
+<h4>Sufficient Techniques for Guideline 1.1 (Provide Text Alternatives)</h4>
+
+<p>These techniques can be used when inserting decorative images into Web content, to conform with WCAG 2.0 Guideline 1.1.</p>
+
+<h4>1.Using the HTML [i]alt[/i] attribute with all images</h4>
+<p>The HTML <i>alt</i> attribute must be used with all images in Web content, in the <i>img</i> and <i>area</i> elements, and with the <i>input</i> element when it uses the <i>src</i> attribute to render an image as a button.</p>
+
+<h4>Example 1: Using Alt Text</h4>
+<code>
+// Using alt with meaningful images
+// Here alt is used to provide a meaningful
+// description of the content in a photograph
+
+<img src="images/black_cat.jpg" alt="A big black cat" height="244" width="325" />
+
+// Using alt with meaningless images
+// Here a decorative image includes an empty alt attribute
+// to force assistive technologies to ignore it 
+
+<img src="images/corner_decoration.jpg" alt="" />
+
+// Using alt with map areas
+// Here each area in the image map has a corresponding alt attribute
+
+<map id ="planetmap" name="planetmap">
+  <area shape ="rect" coords ="0,0,82,126" href ="sun.htm" alt="Sun" />
+  <area shape ="circle" coords ="90,58,3" href ="mercur.htm" alt="Mercury" />
+  <area shape ="circle" coords ="124,58,8" href ="venus.htm" alt="Venus" />
+</map>
+
+// Using alt with images used as buttons
+// Here type="image" is used to create a login button
+//  so the image requires an alt attribute
+
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+<input type="text" size="25" value="Enter your name here!" /></br />
+<input type="image" src="rainbow.gif" name="image" width="60" height="60" alt="Login Now!" /><br/>
+</form>
+
+</code>
+
+
+<h4>2. Using CSS to include decorative images</h4>
+<p>The objective of this technique is to provide a mechanism to add purely decorative images and images used for visual formatting to Web content without requiring additional markup within the content. This makes it possible for assistive technologies to ignore the non-text content. Some user agents can ignore or turn off CSS at the user's request, so that background images included with CSS simply "disappear" and do not interfere with display settings such as enlarged fonts or high contrast settings.</p>
+
+<p>Background images can be included with the following CSS properties: </p>
+<ul>
+<li>background</li>
+<li>background-image,</li>
+<li>content, combined with the :before and :after pseudo-elements,</li>
+<li>list-style-image.</li>
+</ul>
+
+<p>Note: This technique is not appropriate for any image that conveys information or provides functionality, or for any image primarily intended to create a specific sensory experience.</p>
+
+<h4>Example 2: Background Image for an HTML Page</h4>
+<p>Instead of including an image element (img) to insert decoration in the head area of a Web page, use the CSS background attribute, and associate that attribute with the body element, or a div element.</p>
+EDIT
+<!-- code>
+<head>
+<style type="text/css">
+
+body { 
+   background: #ffe url('/images/home-bg.jpg') repeat; 
+}
+</style>
+</head>
+<body>
+
+</code -->
+
+<h4>Example 3: Background images with CSS to create rounded corners on tabs or other elements</h4>
+
+<p>The stylesheet for a Web page uses the CSS background property to create rounded corners on elements.</p>
+
+<code>
+<style type="text/css">
+ div#theComments {
+     width:600px; 
+ }
+ div.aComment { 
+    background: url('images/middle.gif') repeat-y left top; 
+    margin:0 0 30px 0; 
+ }
+ div.aComment blockquote {
+    background: url('images/top.gif') no-repeat left top; 
+    margin:0; padding:8px 16px; 
+ }
+ div.aComment div.submitter { 
+    background:#fff url('images/bottom.gif') no-repeat left top; 
+    margin:0; padding-top:30px; 
+ }
+</style>
+</head>
+<body>
+<div id="theComments">
+ <div class="aComment">
+  <blockquote>
+   <p>Hi John, I really like this technique and I'm gonna use it on my own Website!</p>
+  </blockquote>
+  <div class="submitter">
+   <p class="cite"><a href="http://example.com/">anonymous coward</a> from Elbonia</p>
+  </div>
+ </div>
+ <div class="aComment">
+ ...
+ </div>
+</code>
+
+<h4>Advisory Techniques for Guideline 1.1</h4>
+
+<p>These techniques can be used in addition to the Sufficient Techniques above, to add further to the accessibility and usability of Web content, as it applies to providing alternatives for visual content.</p>
+
+<h4>1. If object is used, provide a text alternative in the content of the element:</h4>
+
+<h4>Example 4</h4>
+<p>This example shows a text alternative for a Java applet using the object element.</p>
+
+<code>
+<object classid="java:Press.class" width="500" height="500">
+  As temperature increases, the molecules in the balloon...
+</object>
+</code>
+
+<h4>Additional Resources</h4>
+<p>For additional techniques see:</p>
+<ul>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-text-equiv-all">How to Meet 1.1.1: Non-text Content</a></li>
+
+</ul>
+
+<h4>Sufficient Techniques for Guideline 1.2 (Provide Alternatives for Multimedia)</h4>
+<p>These techniques can be used to make multimedia accessible, and to conform with WCAG 2.0 Guideline 1.2</p>
+<p>NOTE that some videos in this section use <a href="http://www.apple.com/quicktime/download/">Quicktime</a> captioning and audio description features. <strong>You will need to have a Quicktime compatible player or plugin </strong>installed to view these videos. Links to some other captioned videos on YouTube can be found below, if you are unable to view the Quicktime videos. Also note that depending on the operating system, browser, and plugin, the qualityÂ  of these videos and the accessibility of the video players may vary.</p>
+
+<h4>1.Accessible Video.</h4>
+<p>Creating accessible video can be a little more involved than creating accessible HTML/CSS based Web pages, which generally requires specialized software for adding captions and synchronizing audio descriptions, such as <a href="http://opencaps.idrc.ocad.ca/">OpenCaps</a> or <a href="http://ncam.wgbh.org/webaccess/magpie/">Magpie</a>. Most video requires two adaptations: one to make them accessible to people who can not see, and the other to make them accessible to people who can not hear. Captions provide a text alternative for the dialogue in the video, so those who can not hear can read the captions to get the same meaning out of the video as someone who can hear. Audio Descriptions are needed to describe the actions in a video that can not be determined from the dialogue, so those who can not see important actions or activity in the video can hear that it is occurring. In the following example these adaptations are demonstrated.</p>
+
+<h5>Example 1: Video Captioning.</h5>
+<p>In the following examples simple captions have been added that provide a text alternative to the audio track for those who can not hear. Not only does this accommodate people who are deaf, it also makes the video accessible to those who might be watching it in a noisy environment, or where the sound in turned down. </p>
+
+<p>Click the following links to open the caption demos. <strong>Note that videos can take some time to download</strong>, taking longer if you are on a slow Internet connection.</p>
+<p><strong>These videos are viewed on the OpenCaps Web site. There are many other example videos there, so explore the site to see the different types of video captioning, subtitles,  and audio description capabilities. <a href="http://opencaps.idrc.ocad.ca/site/index.php?page=download-oc">Download OpenCaps</a> and install your own copy while you are there, and start captioning your own videos.  </strong></p>
+
+<ul>
+<li><a href="http://video.snow.idrc.ocad.ca/Gregclips/banff2.mov">Banff Centre, Culturall Project Clip</a></li>
+<li><a href="http://video.snow.idrc.ocad.ca/Gregclips/CHUMCity.mov">David Onley News Clip</a></li>
+<li><a href="http://video.snow.idrc.ocad.ca/Gregclips/wireless2.mov">Wireless Accessibility</a></li>
+<li><a href="http://video.snow.idrc.ocad.ca/Gregclips/theresaway.mov">There's a way, where there's a will</a></li>
+<li><a href="http://video.snow.idrc.ocad.ca/Gregclips/LCA_Duncan.mov">Duncan on his Tourette's </a> (also with Sign Language)</li>
+<li><a href="http://video.snow.idrc.ocad.ca/first_mac/index.html">The First Mac</a></li>
+<li><a href="http://video.snow.idrc.ocad.ca/andys-wife/">The Andy Griffith Show</a>
+</li>
+</ul>
+
+<h5>Example 2: Video with Audio Description.</h5>
+<p>Click the following video to start a clip that includes audio description of the important parts of the video that can only be understood otherwise through sight.</p>
+<p>[media|640|480]http://www.youtube.com/watch?v=OOTSCBHcWd8[/media]</p>
+<ul>
+</ul>
+
+<h5>Example 3: Video with Extended Audio Description.</h5>
+<p>Click on the following video to view an example of extended audio descriptions. Notice that the video pauses for a moment while the narrator describes what the characters are doing.</p>
+[media|640|480]http://www.youtube.com/watch?v=nayR58PQvO8[/media]
+
+<h5>More Example Videos Captioned with OpenCaps</h5>
+<ul>
+<li><a href="http://www.youtube.com/user/AccessForEveryone">More Accessible Video Demos</a></li>
+</ul>
+
+<h4>2. YouTube Captioning.</h4>
+<p> These days people will post their videos to YouTube, and thanks to Google, it is possible to caption YouTube videos. In the first video below, experience the usefulness of captions, not only for people who are deaf, but for everyone. In the second video, learn how to caption your YouTube videos. </p>
+<p><strong>Note:</strong> YouTube videos may not be accessible to some screen reader users.</p>
+
+<h5>Example 4: Experience YouTube Caption.</h5>
+
+[media]http://www.youtube.com/watch?v=QRS8MkLhQmM[/media]
+
+<h5>Example 5: How to Add Captions to your YouTube Videos</h5>
+
+[media]http://www.youtube.com/watch?v=HSinxoFppCI[/media]
+
+<h5>Other YouTube Captioned Videos</h5>
+<ul>
+<li><a href="http://www.youtube.com/watch?v=meCIER_s7Ng">Closed Captions</a></li>
+<li><a href="http://www.youtube.com/results?search_type=&amp;search_query=Type%3A+Closed+Captions&amp;aq=f">And many many others...</a></li>
+</ul>
+
+<h4>Additional Resources</h4>
+<p>For additional techniques see:</p>
+<ul>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-av-only-alt">How to Meet 1.2.1:Audio-only and Video-only (Prerecorded)</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-captions">How to Meet 1.2.2:Captions (Prerecorded)</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc">How to Meet 1.2.3:Audio Description or Media Alternative (Prerecorded)</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-real-time-captions">How to Meet 1.2.4:Captions (Live)</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc-only">How to Meet 1.2.5:Audio Description (Prerecorded)</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-sign">How to Meet 1.2.6:Sign Language (Prerecorded)</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-extended-ad">How to Meet 1.2.7:Extended Audio Description (Prerecorded)</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-text-doc">How to Meet 1.2.8:Media Alternative (Prerecorded)</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-live-audio-only">How to Meet 1.2.9:Audio-only (Live)</a></li>
+</ul>
+
+<h4>Sufficient Techniques for Guideline 1.3 (Present Content in Different Ways)</h4>
+<p>These techniques can be used to add structure to Web content, and to conform with WCAG 2.0 Guideline 1.3</p>
+
+<h4>1.Creating document structure.</h4>
+<p>In HTML the h1, h2.h4... elements are used to create page structure, making it possible to discover the relationships between topics and sub-topics. When non-structural HTML is used to create the appearance of structure, what might appear as a well designed document to a sighted person, will sound like one block of text without any structure to a blind person using a screen reader. Always use HTML heading markup to structure Web documents, and do not use other stylized block elements.</p>
+  
+
+<h4>Example 1: Use of Heading Markup.</h4>
+<p>In this example two blocks of HTML visually produce identical content, but only in the second case is the content considered  accessible. </p>
+
+<code>
+// Incorrect use of styles to create the appearance of structure
+// In this case a paragraph element has been styled to make
+// the text appear to be a heading
+
+<p style="font-size: 24pt; font-weight:700;">Lorem ipsum</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In justo elit, 
+ultricies ut, pharetra quis, pulvinar nec, orci. In tincidunt vehicula purus.
+ Nunc massa. Suspendisse .....</p>
+
+</code>
+<p> The above markup produces for following appearance, but provides no structure.</p>
+
+<p style="font-size: 16pt; font-weight:700;margin-bottom:-.4em;">Lorem ipsum</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In justo elit, ultricies ut, pharetra quis, pulvinar nec, orci. In tincidunt vehicula purus. Nunc massa. Suspendisse .....</p>
+
+<code>
+// Correct use of heading markup to create structure
+// In this case an h1 element has been used to
+// create the heading
+
+<h1>Lorem ipsum</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In justo elit, 
+ultricies ut, pharetra quis, pulvinar nec, orci. In tincidunt vehicula purus.
+ Nunc massa. Suspendisse .....</p>
+
+</code>
+
+<p>The above markup produces the same appearance as the example above, and does provide structure.</p>
+
+<h1 style="color:black;" >Lorem ipsum</h1 >
+  
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In justo elit, 
+ultricies ut, pharetra quis, pulvinar nec, orci. In tincidunt vehicula purus.
+ Nunc massa. Suspendisse .....</p>
+<ul>
+<li><a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic">Additional Techniques for Guideline 1.3.1</a></li>
+</ul>
+
+<h4>2.Creating accessible forms.</h4>
+
+<p>There are times when labeling a form field can be done by simply putting the text of the label immediately next to the form input field. However, this leaves the risk that a form field may go unlabeled if the screen size changes, and the labels become dislodged. </p>
+
+<p>In other cases labels may appear immediately adjacent to their respective form fields, but in the HTML markup they are actually not next to each other. The following two examples may appear the same visually, but only the second is considered accessible.
+
+</p>
+
+<h4>Example 2: Form Labels and Linearized Table Layout</h4>
+<code>
+// Incorrect use of labels, and incorrect use of a layout
+// table to position form labels in a way that do not
+// linearize.
+<form>
+<table>
+ <tr>
+  <td valign="top">
+   First Name<br />
+   Last Name<br />
+   Occupation</br>
+  </td>
+  <td>
+   <input type="text" name="firstname"/><br />
+   <input type="text" name="lastname"/><br />
+   <input type="text" name="occupation"/><br />
+   <input type="submit" name="submit" value="submit"/>
+  </td>
+ </tr>
+</table>
+</form>
+</code>
+
+<p>The above markup produces the following form. The labels in this form have not been associated 
+with their respective form fields, and since they all reside in a single table cell, the three
+labels will be read first, then the three input fields will be announced, making it difficult to use the form
+for a person who can not see the layout.</p>
+
+<form>
+<table>
+ <tr>
+  <td valign="top">
+   First Name<br />
+   Last Name<br />
+   Occupation</br>
+  </td>
+  <td>
+   <input type="text" name="firstname"/><br />
+   <input type="text" name="lastname"/><br />
+   <input type="text" name="occupation"/><br />
+   <input type="submit" name="submit" value="submit"/>
+  </td>
+ </tr>
+</table>
+</form>
+
+
+<code>
+// Correct use of labels, and table layout to associate
+// labels properly with their respective form fields  
+<form>
+<table>
+ <tr>
+  <td>
+   <label for="fname">First Name</label>
+  </td>
+  <td>
+   <input type="text" name="firstname" id="fname"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <label for="lname">Last Name</label>
+  </td>
+  <td>
+   <input type="text" name="lastname" id="lname"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <label for="occupation">Occupation</label>
+  </td>
+  <td>
+   <input type="text" name="occupation" id="occupation" />
+  </td>
+  <tr>
+   <td>
+   </td>
+   <td>
+    <input type="submit" name="submit" value="submit"/>
+   </td>
+  </tr>
+</table>
+</form>
+</code>
+<p>The above markup produces the following form. Though it appears to be the same as the form above, this form is made accessible by both linearizing the presentation of labels and form fields, and by explicitly labeling each form field using the HTML Label element, and setting its <i>for</i> attribute to match the <i>id</i> attribute in the associated input field.</p>
+
+<p>Also note that the label can be clicked in this case to place the cursor in its associated field. This can be particularly important for small input fields like radio buttons and checkboxes, which may be difficult to target for some people with motor disabilities. The label provides a larger area to click. </p>
+
+<p>Unlike the previous inaccessible example, in this example a screen reader will read the first label then the first input field, then the second label then the second input field, and so on.
+
+<form>
+<table>
+ <tr>
+  <td>
+   <label for="fname">First Name</label>
+  </td>
+  <td>
+   <input type="text" name="firstname" id="fname"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <label for="lname">Last Name</label>
+  </td>
+  <td>
+   <input type="text" name="lastname" id="lname"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <label for="occupation">Occupation</label>
+  </td>
+  <td>
+   <input type="text" name="occupation" id="occupation" />
+  </td>
+  <tr>
+   <td>
+   </td>
+   <td>
+    <input type="submit" name="submit" value="submit"/>
+   </td>
+  </tr>
+</table>
+</form>
+
+<h4>Additional Resources</h4>
+<p>For additional techniques see:</p>
+<ul>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic">How to Meet 1.3.1:Info and Relationships</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-sequence">How to Meet 1.3.2:Meaningful Sequence</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-understanding">How to Meet 1.3.3:Sensory Characteristics</a></li>
+</ul>
+
+
+<h4>Sufficient Techniques for Guideline 1.4 (Make Foreground and Background Distinguishable)</h4>
+<p>These techniques can be used to ensure foreground and background content, whether that is text over a background, or speech over a background audio track, is accessible to those who may have difficulty seeing or hearing content. These techniques will help content conform with Guideline 1.4 </p>
+
+<h4>1.Creating distiguishable links.</h4>
+<p>Standard link text is generally rendered by browsers as blue underlined text. It is very common however, to change the appearance of links so they better match the look-and-feel of a Web site. It is not uncommon for content authors to want to remove the standard underline, however this will make the links inaccessible to some users who can not distinguish colours. </p>
+  
+
+<h4>Example 1: To underline or not to underline.</h4>
+<p>In this example two identical paragraphs with embedded links are presented.</p>
+<code>
+// Incorrect use of styles to format link text that
+// results in links becoming invisible to some people
+
+<h2>Lorem ipsum</h2>
+
+<p>Lorem ipsum dolor sit amet, <a href="" style="text-decoration:none; color:black;">consectetur adipiscing</a> 
+elit. In justo elit, ultricies ut, <a href="" style="text-decoration:none; color:black;">pharetra quis</a>, 
+pulvinar nec, orci. In tincidunt vehicula purus.  Nunc massa. Suspendisse .....</p>
+
+</code>
+<p> The above markup produces the following paragraph, containing two links. Notice the links are not visible until a mouse pointer moves over top of the paragraph.</p>
+
+<h2>Lorem ipsum</h2 >
+
+<p>Lorem ipsum dolor sit amet, <a href="" style="text-decoration:none; color:black;">consectetur adipiscing</a> elit. In 
+justo elit, ultricies ut, <a href="" style="text-decoration:none; color:black;">pharetra quis</a>, pulvinar nec, orci. In tincidunt vehicula purus.  Nunc massa. Suspendisse .....</p>
+
+<code>
+// Correct use of styles to format link text that
+// is distinguishable in the absence of colour
+
+<h2>Lorem ipsum</h2>
+
+<p>Lorem ipsum dolor sit amet, <a href="" style="text-decoration:underline; color:black;">consectetur adipiscing</a> 
+elit. In justo elit, ultricies ut, <a href="" style="text-decoration:overline; color:black;">pharetra quis</a>, 
+pulvinar nec, orci. In tincidunt vehicula purus.  Nunc massa. Suspendisse .....</p>
+
+</code>
+<p> The above markup produces the following paragraph, containing the same two links as above. One link is underlined and one is overlined to demonstrate that an underline is not the only way to make links distinguishable. A variety of strategies can be used, such as making links italic, or bold, or in a different font. Underlining however, is most common and most likely to be recognized as link text. Whatever strategy is used, use it consistently for all links that are not easily identified as links by colour alone. Note that it is less important to underline links in a list of links, such as a menu or navigation bar, which people will assume to be links. It is more important when links are embedded in surrounding text. </p>
+
+<h2>Lorem ipsum</h2 >
+
+<p>Lorem ipsum dolor sit amet, <a href="" style="text-decoration:underline dashed; color:black;">consectetur adipiscing</a> elit. In 
+justo elit, ultricies ut, <a href="" style="text-decoration:none; text-decoration:overline; color:black;">pharetra quis</a>, pulvinar nec, orci. In tincidunt vehicula purus.  Nunc massa. Suspendisse .....</p>
+
+<h4>2.Maintaining foreground/background contrast.</h4>
+<p>It is important that text colour and background colour provide enough contrast to ensure the text is readable. It should be fairly obvious one would not place black text over a black background, or perhaps orange text over a red background. But if the colour of a background varies, for example when a background is a photo, or a gradient, what might appear as sufficient contrast to one person, will provide little contrast for another person who may be viewing the text on a smaller screen. When the screen size shrinks, the black text that was once over a white background, may end up over a dark part of the background and become difficult to read, or become unreadable. When choosing foreground colours and background colours or images, be sure there is always sufficient contrast between the two, no matter where the text might appear over the background..    </p>
+
+
+<h4>Example 2: Text over a background.</h4>
+<p>This example demonstrates what happens when text appears over a background in which the colours, or shades of colour, change significantly. Using your mouse pointer, click and hold the bottom right corner, or left side of the browser, and drag it to the left to narrow the screen. While the screen is narrowing watch the text as it moves over the backgrounds. Notice when the text becomes difficult to read.</p>
+
+<table style="background-image: url(black_back.jpg); color:black;" width="90%">
+<tr>
+<td>
+<p style="float:right;">This is some plain text</p >
+</td>
+</tr>
+</table>
+
+<table style="background-image: url(gradient_back.jpg); color:black" width="90%">
+<tr>
+<td>
+<p style="float:right;">This is some plain text</p >
+</td>
+</tr>
+</table>
+
+<h4>Additional Resources</h4>
+<p>For additional techniques see:</p>
+<ul>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-without-color">How to Meet 1.4.1:Use of Color</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-dis-audio">How to Meet 1.4.2:Audio Control</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-contrast">How to Meet 1.4.3:Contrast (Minimum)</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-scale">How to Meet 1.4.4:Resize text</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-text-presentation">How to Meet 1.4.5:Images of Text</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast7">How to Meet 1.4.6:Contrast (Enhanced)</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-noaudio">How to Meet 1.4.7:Low or No Background Audio</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-visual-presentation">How to Meet 1.4.8:Visual Presentation</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-text-images">How to Meet 1.4.9:Images of Text (No Exception)</a></li>
+
+</ul>
+
+</section>
+
+<section>
+<span id="considerations" class="anchor"></span>
+<h2>Other Considerations</h2>
+<h3> Making space.</h3>
+<p>It has been common practice for Web content developers to use spacer images to create margins or create space between objects in a Web page. These are often transparent images, resized using height and width attributes to stretch the invisible image and fill in a particular area. With the advent of style sheets, it is no longer necessary to create space this way. Cascading Style Sheet (CSS) should be used instead. Not only is it easier to use CSS once one knows how, it is more efficient, requiring less bandwidth to send text based CSS than spacer images over the Internet, and makes pages a little quicker to load.</p>
+
+<p>In the following example, both pieces of markup create a 32 pixel indent for the heading. In the second markup example, one em, when viewing a page at 100%, is equal to 16 pixels. Not only will the second piece of markup be more efficient from a bandwidth perspective, it will also resize with the surrounding text if a person uses the browser's text resize function to increase font size to make it more readable, the margin increasing in size at the same rate as the text increases in size.</p>
+
+<code>
+*Do not use:*
+<img src="spacer.gif" alt="" height="10" width="32" /><h2>Introduction to Web Accessibility</h2>
+
+*Instead use:*
+
+<h2 style="margin-left:2em;">Introduction to Web Accessibility</h2>
+
+</code>
+
+<p>In the above example, a better way still of creating an indent for the heading, is to define the margin element in a stylesheet either in the head area of the HTML, which can be referenced using either class or id within the H2 element, or in a separate CSS file that gets called into the page using the HTML link element. In the following example code, the style is defined in an embedded stylesheet, and references in the H2 element below. This is just one of many potential means of creating space using CSS styles. See the <a href="http://www.w3schools.com/CSS/CSS_reference.asp">CSS Reference</a> for more about stylesheets</p>
+
+<code>
+<html lang="en">
+<head>
+<title>Example of creating space using CSS margin</title>
+<style type="text/css">
+    h2.indent{
+         margin-left: 2em;
+    }
+</style>
+</head>
+<body>
+<h2 class="indent">Introduction to Web Accessibility</h2>
+</body>
+</html>
+</code>
+
+<ul>
+<li><a href="http://www.w3schools.com/CSS/CSS_reference.asp">CSS Reference</a></li>
+
+</ul>
+
+<h3>Are you human? Hiding from Spammers.</h3>
+<p>SPAM robots are constantly roaming through sites to find ways of accessing unprotected  mail systems so they can be used to send unsolicited mail, or to hide the origins of SPAM emails. </p>
+<ol>
+<li>
+<p>To prevent "SPAMbots" from finding their way into Web sites, a common strategy is to use a CAPTCHA task. This strategy requires a task be completed that can only be accomplished by a human being. Figure 1 below shows a typical CAPTCHA task, in which a user identifies randomly generated letters in an image, and enters those letters into a form field, typically done while registering on a system, or using a Web form that sends email.</p>
+
+<p align="center">
+<img src="captcha.jpg" border="0" alt="A Typical Captcha task." /><br />
+<span style="font-weight:heavy;">Figure 1: A typical CAPTCHA task</span>
+</p>
+
+<p>CAPTCHAs can be effective for warding off SPAMbots, but they pose access barriers for some users. A person who is blind for instance would not be able to see the characters in the CAPTCHA image, and thus would be prevented from registering on the system without the help of a sighted person. It's not possible to include a text alternative of the characters in the CAPTCHA image because SPAMbots can easily be programmed to find  them. CAPTCHAs are available with audio output to get around this problem, so the blind person can hear the characters in a CAPTCHA image. But this still leaves out deaf blind users, who can not see or hear the CAPTCHA characters.  For such cases the site maintainer should provide a means for registrants to contact the site administrator, who can register the person manually. </p>
+
+<p>A variety of  CAPTCHA utilities are available on the Web, that can be copied into a site's  forms, and free services are available to generate audio CAPTCHAs:</p>
+
+<ul>
+<li><a href="http://www.captchas.net">Free CAPTCHA Service</a></li>
+</ul>
+
+</li>
+<li><p>Another method of confirming a human, and not a SPAMbot,  is registering on a Web site is to have registrants confirm their registration by replying to a message sent to their email address  This method avoids accessibility issues associated with CAPTCHA, and can be accessible to deaf blind users. Many Web applications today have email confirmation utilities built into them. </p> </li>
+
+</ol>
+</section>
+
+<section>
+<span id="exercise" class="anchor"></span>
+<h2>Unit Exercise</h2>
+<p>After you have studied the content for Principle 1, complete Exercise 1.</p>
+
+<p>Write down one example of what you might judge as a well designed, accessible Web site. A site that is visually appealing to sighted users, but also accessible to those who can't see, have low-vision, and cannot use a mouse. Include a sentence or two describing what the developer has done to enhance the accessibility of the site.</p>
+
+<p>Then, <strong>give one example of an inaccessible Web site</strong>, with a sentence or two describing why the site is not accessible, or perhaps describing parts of the site that are accessible alongside parts that are not.</p>
+
+<p>You can use AChecker to help identify accessible and inaccessible sites.</p>
+<p><a href="http://www.achecker.ca" target="achecker" title="AChecker opens in a new window.">AChecker</a><p/>
+
+</section>
+        </main>
+    
+        </div>
+    </div>
+</body>
+</html>

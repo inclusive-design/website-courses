@@ -1,0 +1,1518 @@
+<html>
+<head>
+    <title>Principle 2: Operable | Understanding Web Accessibility Course</title>
+    <meta name="generator" content="DocPad v6.78.4" />
+    <link  rel="stylesheet" href="styles/style.css" /><link  rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <script defer="defer"  src="vendor/jquery-2.1.1.min.js"></script><script defer="defer"  src="vendor/bootstrap/js/bootstrap.min.js"></script><script defer="defer"  src="scripts/myscript.js"></script>
+</head>
+<body>
+    <div class="container-fluid" id="course">    
+
+    <header>
+        <a href="#content" class="sr-only sr-only-focusable pull-left">Skip to main content</a>
+        <h1>Understanding Web Accessibility</h1>
+    </header>
+    
+    <div id="side"> 
+        <nav id="main-nav">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="index.html">Introduction</a></li>
+                <li><a href="1_perceivable.html">Principle 1: Perceivable</a>
+                    <ul>
+                        <li><a href="#reasons">Reasons</a></li>
+                        <li><a href="#guidelines">Guidelines</a></li>
+                        <li><a href="#barriers">Barriers</a></li>
+                        <li><a href="#criteria">Success Criteria</a></li>
+                        <li><a href="#techniques">Sufficient Techniques</a></li>                                                                                                
+                        <li><a href="#considerations">Other Considerations</a></li>
+                        <li><a href="#exercise">Exercise</a></li>
+                    </ul>
+                </li>
+                <li><a href="2_operable.html">Principle 2: Operable</a></li>
+                <li><a href="3_understandable.html">Principle 3: Understandable</a></li>
+                <li><a href="4_robust.html">Principle 4: Robust</a></li>            
+            </ul>
+        </nav>     
+        <!-- div class="ref">
+        </div -->        
+                  
+    </div>
+    <main id="content">            
+        <h2>Principle 2: Operable</h2>
+        <p class="emph"><strong>Principle 2: Operable</strong> - User interface components and navigation must be operable.</p>
+
+<p>If you follow Principle 1 guidelines, visitors will be able to perceive the content of your Web site. Principle 2 takes things to the next level: Once visitors can perceive the content, they must be able to act on it: in other words, the content must be <em>operable</em>. </p> 
+
+<p>There are four "operable" guidelines:<br />
+<ol>
+<li>Make it possible to perform all tasks with a keyboard instead of a mouse. </li>
+<li>Give users enough time to perform tasks.</li>
+<li>Avoid information that flashes or flickers, as it may trigger seizures.</li>
+<li>Make it possible for users to navigate, find content, and figure out where they are.</li>
+</ol>
+<p>
+
+<h2>Reasons understand why it is important to prevent operability barriers</h2>
+
+<h3>Guideline 2.1 Keyboard Accessible</h3>
+
+<strong>Why must Web pages be accessible without a mouse?</strong>
+
+<p>Some people cannot use, or have difficulties using a mouse. For example:</p>
+
+<ol>
+<li>The mouse is designed to be guided by eye. Users who are totally blind cannot see the mouse pointer.</li>
+<li>Mouse pointers tend to be small. Individuals with low-vision may have trouble spotting the mouse pointer on the screen.</li>
+<li>Someone with a learning disability may find the movements of the mouse pointer distracting, or may lack the hand-eye coordination needed to reliably use a mouse.</li>
+<li>Some people have trouble remembering when to left click, double click, and right click.</li>
+<li>A person who has hand tremors may be unable to hold the mouse steadily enough to click small screen objects. Some seniors who do not have hand tremors report difficulties holding the mouse steady enough to double click.</li>
+</ol>
+
+<p>Furthermore, the mouse is not usually the most efficient way to perform tasks. Pressing a few keys on the keyboard is often faster, easier, and more accurate than pointing and clicking. Many "average" computer users know a few keyboard shortcuts, and some "power users" rarely touch the mouse at all. (More and more browsers have features that make it quick and easy to surf the Web using only the keyboard.)</p>
+
+<h3>Guideline 2.2 Enough Time</h3>
+
+<strong>Why do some people need extra time on the Web?</strong>
+
+<p>People who have disabilities may need longer to complete tasks than people who do not have disabilities. They need extra time to react physically, think, remember, read, or zero in on pertinent information.</p>
+
+<p>Individuals who rely on assistive technologies often need time to find what they are looking for on a Web page. For example, sighted users can understand a page at a glance, but screen reader users often need to explore a page before they understand how the page is organized.</p>
+
+<p>As people age, they need more time to process information. In addition to helping seniors, flexible time limits benefit individuals who are not technically-savvy, are new to electronic information systems, or are not native speakers of the language on the site.</p>
+
+
+<h3>Guideline 2.3 Seizures</h3>
+
+<p><strong>What do I need to know so that content does not cause seizures?</strong></p>
+
+<p>People who have epilepsy can have seizures when exposed to flashing or flickering lights. There are three causes of flickering lights on computer screens:</p>
+
+<ol>
+<li>Flashes can be caused by the display.</li>
+<li>Flashes can be caused by the computer and how it renders images and other content.</li>
+<li>Flashes can be caused by the content itself.</li>
+</ol>
+
+<p>Although Web authors have no control over the first two, they can ensure that flicker is not caused by the content, such as a movie of strobe flashes, or an animation of rapid-fire explosions. </p>
+
+<p>To conform at Level AA, WCAG 2.0 describes how to determine safe values for flashing content. To conform at Level AAA, a page must avoid all flashing content.</p>
+
+<h3>Guideline 2.4 Navigable</h3>
+
+<p><strong>Why is it important to help visitors navigate?</strong></p>
+
+<p>Navigation on Web pages serves two purposes:</p>
+
+<ol>
+<li>To tell users where they are.</li>
+<li>To let users know how to go somewhere else.</li>
+</ol>
+
+<p>These tasks are often more difficult for people with disabilities. This section describes how to help visitors find content and keep track of their location. The same rules that simplify navigation for people with disabilities also improves navigation for users who do not have disabilities.</p>
+
+<h2>Guidelines</h2>
+<h3>Guideline 2.1 Keyboard Access</h3>
+
+<p>Make all functionality available from a keyboard.</p>
+
+<h4>2.1 Level A</h4>
+<ul>
+<li><strong>2.1.1 Keyboard</strong>: All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints.
+
+
+<p>The computer mouse is ubiquitous today, but before 1984, most computer users did not use one. The mouse only began to become pervasive during the mid-1990s. In recent years, other mouse-like devices have been introduced, including trackballs, touchpads, and trackpoints. Now, a mouse (or a similar pointing device) comes with every computer, and most people would be lost without one.</p>
+
+<p>Yet some people cannot use &mdash; or have difficulties using &mdash; a mouse.  For example:</p>
+
+<ul>
+<li>An individual with low-vision may have trouble locating the mouse pointer on a screen.</li>
+<li>A person who is totally blind cannot see the mouse pointer at all. </li>
+<li>Someone with a learning disability may find the movements of the mouse pointer distracting.</li>
+<li>A person who has hand tremors may be unable to hold the mouse steadily enough to click on small screen objects.</li>
+</ul>
+
+<p>In addition, there are individuals who find that pressing a few keys on the keyboard is faster, easier, and more accurate than pointing and clicking. Many "average" computer users know a few keyboard shortcuts, and some "power users" rarely touch the mouse at all.</p>
+
+<p>Many tasks that are typically done with a mouse can be (or should be) easily keyboard accessible, including "clicking" hypertext links, drawing straight lines and regular geometric shapes, and re-sizing windows. There are even keyboard equivalents for dragging and dropping. But when a task cannot be performed without a mouse, some people will be prevented from taking full advantage of a site.</p> 
+
+<p>WCAG 2.0 acknowledges that some tasks cannot reasonably be done with a keyboard, such as real-time flight simulations. Tasks that depend on continuous, time-sensitive movements that do not have start and end points are excluded. But the highest conformance level that such a Web site can attain for Guideline 2.1 is Level A. To achieve Level AAA, all content must be keyboard accessible. See <strong>2.1.3</strong>.</p>
+
+<p>Many of the assistive technologies that people with disabilities rely upon emulate the functionality of a keyboard. Content that is accessible by keyboard can also be accessed by devices that emulate keyboards. For this reason, the ability to interact with Web content using only a keyboard is core to Web accessibility.</p>
+
+
+</li>
+
+<li><strong>2.1.2 No Keyboard Trap</strong>: If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away.
+
+<p>A "keyboard trap" is an area of a Web page where a person gets stuck when navigating without a mouse. You can navigate to a spot by pressing a sequence of keystrokes, but you cannot leave &mdash; unless you use a mouse.</p>
+
+<p>Keyboard traps usually occur when applications are embedded in Web pages. The main culprits are text editors, spreadsheets, and media players. For example, on some on-line forums, it is possible to navigate to a built-in text editor by repeatedly pressing the <kbd>Tab</kbd> key, but impossible to exit it without a mouse.</p>
+
+<p>If there is a non-intuitive keystroke (or series of keystrokes) to escape a keyboard trap, let users know about it. One option would be to provide instructions within the embedded application: "To exit this spreadsheet, press <kbd>Ctrl + W</kbd> (Windows) or <kbd>Command + W</kbd> (Macintosh)."</p>
+
+</li>
+
+</ul>
+<h4>2.1 Level AAA</h4>
+
+<ul>
+<li><strong>2.1.3. Keyboard (No Exception)</strong>: All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes. 
+
+<p>This is a more stringent version of <strong>2.1.1</strong> that states that everything, without exception, must be keyboard accessible.</p>
+
+<p>A Web page that has, for example, an embedded helicopter simulator that cannot be piloted without a mouse may conform at Level A. However, if the developers of the simulation devise a way to pilot the helicopter using the arrow keys, the spacebar, the Enter key, and the Shift key, then the site may conform at Level AAA.</p>
+</li>
+</ul>
+
+<h3>Additional Resources</h3>
+<p>For additional information see:
+<ul>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation.html">Understanding Guideline 2.1: Keyboard Accessible</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html">Understanding Guideline 2.1.1: Keyboard </a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html">Understanding Guideline 2.1.2: No Keyboard Trap</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-all-funcs.html">Understanding Guideline 2.1.1: Keyboard (No Exception)</a></li>
+
+</ul>
+
+
+<h3>Guideline 2.2 Enough Time</h3>
+
+<p>Provide users enough time to read and use content.</p>
+
+<h4>2.2 Level A</h4>
+<ul>
+<li><strong>2.2.1 Timing Adjustable</strong>:For each time limit that is set by the content, at least one of the following is true: 
+<ul>
+    <li><strong>Turn off</strong>: The user is allowed to turn off the time limit before encountering it; or</li>
+
+    <li><strong>Adjust</strong>: The user is allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or </li>
+    <li><strong>Extend</strong>: The user is warned before time expires and given at least 20 seconds to extend the time limit with a simple action (for example, "press the space bar"), and the user is allowed to extend the time limit at least ten times; or </li>
+    <li><strong>Real-time Exception</strong>: The time limit is a required part of a real-time event (for example, an auction), and no alternative to the time limit is possible; or </li>
+    <li><strong>Essential Exception</strong>: The time limit is essential and extending it would invalidate the activity; or </li>
+    <li><strong>20 Hour Exception</strong>: The time limit is longer than 20 hours. </li>
+
+</ul>
+
+<p>People who have disabilities sometimes need more time to complete tasks than people who do not have disabilities. They may need longer to think, remember, read, react physically, or zero in on pertinent information. Or they may rely on assistive technologies that increase the time they need to write or read.</p>
+
+<p>Many people, as they age, tend to need more time to process information. In addition to helping seniors, flexible time limits benefit individuals who are not technically-savvy and/or who are new to electronic information systems.</p>
+
+<p><strong>2.2.1</strong> lists three ways to ensure that people are not prevented from completing tasks due to lack of time:</p>
+
+<ul>
+
+<li>Allow users to turn off time limits.</li>
+
+<li>Allow users to increase the default time limit.</li>
+
+<li>Give users ample warning when their time is about to expire.</li>
+
+</ul>
+
+<p>Exceptions are allowed. For example, it may not be possible to change time limits for time-sensitive events such as on-line auctions or tests that measure the speed of reaction.</p>
+
+<p>In situations that are not time sensitive, 20 hours is given as an upper time limit.</p>
+
+
+</li>
+<li><strong>2.2.2 Pause, Stop, Hide</strong>: For moving, blinking, scrolling, or auto-updating information, all of the following are true: 
+
+<ul>
+<li><strong>Moving, blinking, scrolling</strong>: For any moving, blinking or scrolling information that (1) starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential; and</li>
+<li><strong>Auto-updating</strong>: For any auto-updating information that (1) starts automatically and (2) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential.</li>
+</ul>
+
+<p>This section applies when content conveys a sense of motion, or updates itself automatically. Content that moves or changes may distract some users.</p>
+
+<p>Examples of content that conveys a sense of motion:</p>
+
+<ul>
+<li>Animations</li>
+<li>Movies</li>
+<li>Games</li>
+<li>Scrolling stock tickers</li>
+</ul>
+
+<p>Automatically updating content is often confined to one area of a Web page. Familiar examples include:</p>
+
+<ul>
+<li>Stock market updates</li>
+<li>Weather updates</li>
+<li>News updates</li>
+<li>Slide shows that automatically advance from one slide to the next</li>
+</ul>
+
+<p><strong>Requirement when content conveys a sense of motion:</strong></p>
+
+<p>If the moving content starts automatically, lasts longer than five seconds, and is presented in parallel with other content, include a mechanism that allows users to pause, stop, or hide the content.</p>
+
+<p><strong>Requirement when content automatically updates itself:</strong></p>
+
+<p>If it automatically updated content begins the update cycle automatically, and is presented in parallel with other content, include a mechanism that allows users to pause, stop, hide the content, or control the update frequency.</p> 
+
+<p><strong>Examples of how to meet this requirement</strong></p>
+
+<ol>
+<li>A Web site has an animation that demonstrates how to use a fire extinguisher. The animation has "pause" and "restart" buttons.</li>
+
+<li>A Web site has an advertisement. To draw attention, the advertisement starts to blink when a page loads. But the blinking stops after five seconds.</li>
+
+<li>A blog features a slide show of the author's bicycle trip through the Alps. Next to the slide show is a control that lets visitors adjust the update speed, from zero second to 30 seconds per slide.</li>
+</ol>
+
+</li>
+</ul>
+
+<h4>2.2 Level AAA</h4>
+<ul>
+<li><strong>2.2.3 No Timing</strong>: Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events.
+<div style="background-color:#FFFFCE; border: thin dashed black; padding:1em;">
+
+<p>Many people need extra time to perform tasks. Some individuals take longer to think, remember, process information, react physically, or deal with the quirks of assistive technologies. If completing a task within a time limit is not essential, then give people all the time they need. </p>
+
+<p>This requirement does not apply to events that occur in real-time, such as fast-paced auctions, multi-player gambling sites, and similar competitive events.</p>
+
+<p><strong>Examples of how this requirement can be met</strong></p>
+
+<ol>
+<li><strong>An on-line test:</strong> Students can take as much time as they need to complete the questions.</li>
+
+<li><strong>A game:</strong> A game is designed to allow players to compete against the clock, or to take turns. When they take turns, there are no time limits.</li>
+
+<li><strong>An online auction:</strong> Each bidder is allowed to submit one bid. Bids are accepted over 24 hours. Once the bidding is closed, the highest bid wins.</li>
+</ol>
+
+</li>
+<li><strong>2.2.4 Interruptions</strong>: Interruptions can be postponed or suppressed by the user, except interruptions involving an emergency.
+
+<p>Some Web sites feature late-breaking news, weather reports, stock quotes, and so on. There are people, however, who are distracted by frequent updates, or do not want them.</p>
+
+<p>Let users postpone automatic updates by giving them the option to disable automatic content updates, and/or to specify the frequency of automatic content updates.</p>
+
+<p>For example, the home page of a news service displays headline updates every 15 minutes. To meet this requirement, the Web authors added a drop-down list so that visitors can choose how often to refresh headlines. It has four options: Every 15, 30, or 60 minutes; or never.</p>
+
+<p>It is OK to update the content in the event of an emergency, including threats to life, health, safety, or property.</p>
+
+</li>
+<li><strong>2.2.5 Re-authenticating</strong>: When an authenticated session expires, the user can continue the activity without loss of data after re-authenticating.
+
+<p>Completing forms, entering credit card information, and using Web-based email programs are everyday activities on the Internet. For security reasons, Web sites usually limit the period of inactivity before a session expires. These time limits cause problems for people who need extra time to input information, especially when they are forced to begin "from scratch" every time.</p>
+
+<p>Make it possible for visitors to continue a transaction after a session expires without losing the information they already entered. Doing this will allow more people to complete authenticated transactions.</p>
+
+<p>Samantha Smith, who has limited use of her hands, logs into a shopping site. She chooses groceries and proceeds to the check-out. It takes her so long to type her credit card number that the session expires. After logging in again, her grocery order is intact, and the check-out screen contains all of the information that she had entered up to the point that the session expired. No data was lost because the server stored her submission even though the session had timed out.</p>
+
+</li>
+</ul>
+
+<h3>Additional Resources</h3>
+<p>For additional information see:
+<ul>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits.html">Understanding Guideline 2.2: Enough Time</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html">Understanding Guideline 2.2.1: Timing Adjustable </a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html">Understanding Guideline 2.2.2: Pause, Stop, Hide</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html">Understanding Guideline 2.2.3: No Timing</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-postponed.html">Understanding Guideline 2.2.4: Interruptions</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html">Understanding Guideline 2.2.5: Re-authenticating</a></li>
+
+</ul>
+
+<h3>Guideline 2.3 Flashing and Seizures</h3>
+<p>Do not design content in a way that is known to cause seizures.</p>
+<h4>2.3 Level A</h4>
+<ul>
+<li><strong>2.3.1 Three Flashes or Below Threshold</strong>: Web pages do not contain anything that flashes more than three times in any one second period, or the flash is below the general flash and red flash thresholds.
+
+<p>People with a form of epilepsy called "photosensitive seizure disorder" have seizures when exposed to flashing or flickering lights. Many colours can cause these seizures, but flashing red lights are known to trigger seizures more readily than other colours.</p>
+
+<p>There are three causes of flickering lights on computer screens:</p>
+
+<ol>
+<li>Flashes can be caused by the display. </li>
+
+<li>Flashes can be caused by the computer and how it renders images and other content. </li>
+
+<li>Flashes can be caused by the content itself. </li>
+</ol>
+
+<p>Web authors have no control over the first two (which can be addressed by choosing appropriate display and computer hardware.) To meet this requirement, Web authors must ensure that flicker is not caused by the content itself, such as a movie of strobe flashes, or an animation of rapid-fire explosions.</p>
+
+<p><strong>2.3.1</strong> allows content to flash if it is dim enough and confined to a small area. W3C publishes formulas for determining safe values for "general flash and red flash thresholds." But even these "safe" values can trigger seizures. The next section, <strong>2.3.2</strong> is more stringent.</p>
+</li>
+</ul>
+
+<h4>2.3 Level AAA</h4>
+<ul>
+<li><strong>2.3.2 Three Flashes</strong>: Web pages do not contain anything that flashes more than three times in any one second period.
+
+<p>Some people are so sensitive that it is not possible to completely prevent them from having seizures. However, by eliminating all three-per-second flashing everywhere on the screen, the chances of a person having a seizure are reduced.</p>
+
+<p><strong>2.3.1</strong> allows flashing if it is dim enough or is confined to a small enough area. <strong>2.3.2</strong> does not allow flashing greater than three per second, regardless of brightness or size.</p>
+
+<p>Even a single flashing pixel violates this criterion. The intent is to guard against flashing areas that are larger than a single pixel; but since an individual may require magnification or high contrast settings, the prohibition is against any flashing.</p>
+
+</li>
+</ul>
+
+<h3>Additional Resources</h3>
+<p>For additional information see:</p>
+<ul>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure.html">Understanding Guideline 2.3: Seizures</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html">Understanding Guideline 2.3.1:  Three Flashes or Below Threshold </a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-three-times.html">Understanding Guideline 2.3.2: Three Flashes</a></li>
+</ul>
+
+<h3>Guideline 2.4 Different Ways to Navigate</h3>
+<p>Provide ways to help users navigate, find content, and determine where they are. </p>
+
+<h4>2.4 Level A</h4>
+<ul>
+<li><strong>2.4.1 Bypass Blocks</strong>: A mechanism is available to bypass blocks of content that are repeated on multiple Web pages. 
+
+<p>People who cannot use a mouse often use the <kbd>Tab</kbd> key to navigate around Web pages: they press <kbd>Tab</kbd> to move "forward" through the content; <kbd>Shift + Tab</kbd> to move "backwards"; and <kbd>Enter</kbd> to activate links and buttons. At best, <kbd>Tab</kbd> key navigation is a tedious way to get around, but for some non-mouse users, it is the best option.</p>
+
+<p>Many Web pages have content that is repeated on every page. For example, a site may have the same navigation links on the top of all pages. If there are 20 navigation links, a non-mouse user could be forced to press the <kbd>Tab</kbd> key 20 times just to reach the main content &mdash; and do this on every page.</p>
+
+<p>By meeting this requirement, keyboard users can go directly to the main content without the need to press a lot of keys. A simple way to achieve this is to place a "Skip to Content" link as the first  link on every page.</p>
+
+<p>"Skip to Content" links also benefit people who use portable Web-enabled devices, such as cell phones. Because the screens of these devices are so small, it may be more convenient to click a "Skip to Content" link than to scroll through many screens to reach the content.</p>
+
+</li>
+<li><strong>2.4.2 Page Titled </strong>: Web pages have titles that describe topic or purpose.
+
+<p>If you check the narrow "stripe" that runs along the top edge of your browser window, you will find the name of the browser ("Internet Explorer," "Mozilla Firefox," "Safari," and so on); "Maximize," "Minimize," and "Close" icons; and a description of the Web page.</ p>
+
+<p>These descriptions are called "titles," and every Web page has one. Well-written titles help users orient to a Web site. A good title summarizes a page in a few words, so users do not have to read an entire page to know what it is about. Many screen reader users take advantage of titles to keep track of where they are. Pressing a hotkey causes the screen reader to "read" the title out loud.</p>
+
+<p>Descriptive titles help people interpret search engine results. Many search engines, including Google, display "hits" as a list of page titles.</p>
+
+<p>When writing Web page titles, it is recommended that each title:</p>
+
+<ol>
+<li>Identify the site</li>
+<li>Identify the subject of the page</li>
+<li>Make sense</li>
+<li>Be short</li>
+<li>Be unique for the site</li>
+</ol>
+
+<p><strong>Examples of descriptive titles:</strong></p>
+
+<p>For a page containing a chocolate brownie recipe on www.yummydesserts.com: <br /> 
+
+<strong>[blue]Yummy Desserts - Chocolate Brownie Recipe[/blue]</strong></p>
+
+<p>For a chapter in a textbook called "Gender and Stereotype": <br />
+<strong>[blue]Gender and Stereotype, Chapter 3: The Origins of Patriarchy[/blue]</strong></p>
+
+<p>For a Web-based banking application that lets customers retrieve monthly statements: <br />
+
+<strong>[blue]Bank of Hudson Bay, Account 10001, Statement for October 2010 [/blue]</strong></p>
+</li>
+
+<li><strong>2.4.3 Focus Order</strong>: If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.
+
+<p>Content should make sense when navigating by keyboard.  Many people who cannot handle (or have difficulty handling) a mouse rely on "tab-key navigation" to interact with Web pages: they press <kbd>Tab</kbd> to move "forward" through the content; <kbd>Shift + Tab</kbd> to move "backwards"; and <kbd>Enter</kbd> to activate links and buttons. Knowing a handful of other hotkeys makes it possible for non-mouse users to interact with any Web page.</p>
+
+<p>When navigating through a Web page via keyboard, people should encounter information in a logical order. This is especially important for screen reader users, who cannot observe how pages are visually organized. When designing for the Web, strive to make the visual organization and the tabbing order correspond.</p>
+
+<p>This example illustrates two versions of the same form. The only difference is the tabbing order (shown as red numbers). The tabbing order on the first form is unambiguous: you provide your name, age, and citizenship, followed by your child's name, age, and citizenship.</p>
+
+<img src="AlanCantor/Reading order 1.jpg" border="0" alt="A form with logical tabbing order. The six fields are in this order: Your name, age, and citizenship. Your child's name, age and citizenship." />
+
+<p>The tabbing order on the second form is confusing. When completing the form, you alternate between providing information about yourself and your child. If you cannot see the screen, it is hard to tell which "Name" field corresponds with which "Age" field and which "Citizenship" field. After completing the second field, "Child's name," the next field encountered is "Age." There is no way to infer from the tabbing order whether this means your or your child's age.</p> 
+
+<img src="AlanCantor/Reading order 2.jpg" border="0" alt="A form with illogical tabbing order. The six fields are in this order: Your name, your child's name; your age, your child's age; your citizenship, your child's citizenship."/>
+</li>
+
+<li><strong>2.4.4 Link Purpose (In Context)</strong>: The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.
+
+<p>Links that make sense by themselves enhance usability for everybody. The preferred way to meet the requirement is write link text that clearly indicates what to expect if the link is followed. For example:</p>
+
+<p><strong>On a recipe Website:</strong></p>
+
+[blue]
+<p>[u]Appetizers[/u]</p>
+<p>[u]Soups[/u]</p>
+<p>[u]Main Courses[/u]</p>
+<p>[u]Desserts[/u]</p>
+[/blue]
+
+<p><strong>On an on-line weight training forum:</strong></p>
+
+[blue]
+<p>[u]Strength Training Principles[/u]</p>
+<p>[u]Getting Started[/u]</p>
+<p>[u]Developing a Routine[/u]</p>
+<p>[u]Injured Yourself? What to do[/u]</p>
+[/blue]
+
+<p>It is OK to use link text as part of a sentence, paragraph, list item, table cell, and so on, provided that the link text plus the surrounding text provides enough context to make it understandable. In general, it is best to place the context before the link. For example:</p>
+
+[blue]
+<p>Learn about the regal [u]excesses in pre-revolutionary France[/u].</p>
+<p>Need instant cash? [u]Borrow now[/u]!</p>
+<p>Next Chapter: [u]Preparing for the Next Stock Market Crash[/u]: What we learned last time.</p>
+[/blue]
+
+<p>By meeting this requirement, a site conforms at Level A. To conform at Level AAA, see <strong>2.4.9</strong>.</p>
+</li>
+</ul>
+<h4>2.4 Level AA</h4>
+<ul>
+<li><strong>2.4.5 Multiple Ways</strong>: More than one way is available to locate a Web page  within a set of Web pages  except where the Web Page is the result of, or a step in, a process.
+
+<p>Different people use different ways to zero-in on content on a Web site. Some prefer site maps; others like navigation links or breadcrumbs; still others rely on site searches.</p>
+
+<p>Make it possible for visitors to your site to find content in at least two ways. Choose from among these techniques:</p>
+
+<ul>
+<li>A site map</li>
+<li>A site search</li>
+<li>A table of contents</li>
+<li>Links on the home page to all pages on the site </li>
+<li>Links to all other pages on the site</li>
+<li>Links to navigate to related Web pages</li>
+</ul>
+
+<p>An exemption applies when content is not "findable." A banking Web site, for example, lets customers transfer funds between accounts. The page that confirms the transfer is exempt because the page does not exist until the customer completes the transfer. WCAG 2.0 acknowledges that pages that are "the result of, or a step in, a process" do not need to conform to <strong>2.4.5</strong>.</p>
+
+</li>
+<li><strong>2.4.6 Headings and Labels</strong>: Headings and labels describe topic or purpose.
+
+<p>When headings and labels are clear and descriptive, they helps users understand what information is contained in Web pages, and how that information is organized. </p>
+
+<p><strong>Examples of clear and descriptive headings</strong></p>
+
+<p>A Web site for a newspaper lists today's headlines. Each headline is a heading. After each headline is the article. Each headline gives a clear idea of the article's subject:</p>
+
+[blue]
+<strong>
+<p>Housing Prices Plunge 5% Since August</p>
+<p>Rebel Planes Attack Capital</p>
+<p>UFO Sightings Soar</p>
+</strong>
+[/blue]
+
+<p><strong>Examples of clear and descriptive labels</strong></p>
+
+<p>A form consists of three input fields. The label for the first field is <strong>[blue]First name[/blue]</strong>. The label for the the second field is <strong>[blue]Last name[/blue]</strong>. The label for the third field is <strong>[blue]E-mail address[/blue]</strong></p>
+</li>
+<li><strong>2.4.7 Focus Visible</strong>: Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.
+
+<p>"Keyboard focus" is the one point within a window that receives information from the keyboard. Only one component can have focus at a time. When keyboard-only users press keystrokes to navigate around a Web page, they are moving focus from one component to another.</p>
+
+<p>Here are three views of the same Web page. The page has three components: </p>
+
+<ul>
+<li>"Services" - a link</li>
+<li>"Name" - a text-entry field</li>
+<li>"Submit" - a pushbutton</li>
+</ul>
+
+<img src="AlanCantor/focus.jpg" border="0" alt="Three views of a Web page with three components: each time the Tab key is pressed, the next component gets focus." />
+
+<p>In this illustration, a dotted rectangle indicates the component that has keyboard focus. In View 1, the "Services" link has focus. A keyboard user presses <kbd>Tab</kbd> to move focus to the "Name" field (View 2). Only when the "Name" field has focus will it accept the text that a user types. This is analogous to clicking inside the field before typing. Pressing <kbd>Tab</kbd> a second time moves focus to the "Submit" button (View 3). Now that the button has focus, a keyboard user can press <kbd>Enter</kbd> or <kbd>spacebar</kbd> to activate it. This is equivalent to clicking the "Submit" button.</p>
+
+<p>People who rely on a keyboard to interact with Web pages must know which component has focus. By complying with <strong>2.4.7</strong> keyboard users can tell, at a glance, exactly what they are interacting with on a Web page.</p>
+
+<p>By default, browsers display focus indicators when navigating by keyboard. For the most part, these indicators appear as faint rectangles that surround the focused component. In text fields, the focus indicator is usually a flashing cursor. Web authors who use CSS and Javascript can enhance the appearance of focused components, or make them invisible or hard to see. WCAG 2.0 requires Web authors to ensure that all focused components are easy to spot when navigating by keyboard.</p>
+</li>
+
+</ul>
+<h4>2.4 Level AAA</h4>
+<ul>
+<li><strong>2.4.8 Location</strong>: Information about the user's location within a set of Web pages is available. 
+
+<p>When a Web site or a Web application consists of dozens, hundreds, or thousands of pages, it can be easy to become disoriented, and tricky to find related information. To help visitors orient themselves, include information about the current location in relation to the whole. This can be done, for example, by:</p>
+
+<ol>
+<li>Indicating the current page within a set of navigation links</li>
+<li>Providing a breadcrumb trail</li>
+<li>Describing the relationship of a page to a larger collection of pages</li>
+</ol>
+
+<p>This requirement may also be met by including a site map. Although this involves navigating away from the current page, a site map is a good way to show how information on one page (or in one part of the site) relates to the whole.</p>
+
+</li>
+<li><strong>2.4.9 Link Purpose (Link Only): </strong> A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general. 
+
+
+<p>Help visitors understand the purpose of each link. This is a more stringent version of <strong>2.4.4</strong>, which requires that links either make sense when read out of context, or make sense in the context of the surrounding text. To meet <strong>2.4.9</strong>, all link text must make sense when read out of context. This benefits screen reader users who use a feature to extract all links from a page and display them as a list. When each link is unambiguous, individuals who rely on this techique can confidently decide whether they want to follow a link.</p>
+
+<p>Some visitors may find pages that consist entirely of unambiguous links easier to access, while others may find them harder to access. The word "mechanism" gives Web authors the option to make all links understandable out of context, or to provide a way to make them this way. Providing this option gives all visitors the ability to customize the "wordiness" of links to match their needs.</p>
+
+<p>There is an exception to <strong>2.4.9</strong> when the purpose of a link cannot be determined from information that appears anywhere on the Web page. In this case, a person with the disability is not disadvantaged, as the context is not available to anyone.</p>
+
+
+</li>
+<li><strong>2.4.10 Section Headings</strong>: Section headings are used to organize the content. 
+
+<p>Whenever possible, divide pages into sections, and begin each section with the heading that reflects the place of the section within the whole.</p>
+
+<p>For example, a long document may be divided into chapters, the chapters into topics, the topics into subtopics, and the subtopics into paragraphs. Headings are designed to organize content hierarchically; they are the scaffolding that give shape to documents.</p>
+
+<p>For HTML documents, use these elements to organize content hierarchically:</p>
+
+<ul>
+<li><strong>&lt;h1&gt;</strong> for the highest level of page organization</li>
+<li><strong>&lt;h2&gt;</strong> for the second level</li>
+<li><strong>&lt;h3&gt;</strong> for the third level</li>
+<li>and so on.</li>
+</ul>
+
+<p>For Word documents, use these styles to organize content hierarchically:</p>
+
+<ul>
+<li><strong>Heading 1</strong> for the highest level of page organization</li>
+<li><strong>Heading 2</strong> for the second level</li>
+<li><strong>Heading 3</strong> for the third level</li>
+<li>and so on.</li>
+</ul>
+
+<p>Section headings clarify the organization of the content, facilitate navigation, and aid comprehension. Other page elements, such as horizontal rules and boxes enhance the visual presentation, but are not sufficient in themselves to identify document sections.</p>
+
+<p>This provision is included at Level AAA because headings may be impractical or unsuitable. For example:</p>
+
+<ul>
+<li>Headings are inappropriate for historical documents that do not have headings. However, if the original document has a title, mark it up as <strong>&lt;h1&gt;</strong>.</li> 
+<li>Headings are not normally used in letters, even when letters cover a range of topics.</li>
+<li>Some electronic file formats have no built-in support for hierarchically structured documents. For example, bitmap images contain no structural markup.</li>
+</ul>
+
+
+</li>
+</ul>
+<h3>Additional Resources</h3>
+<p>For additional information see:
+<ul>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms.html">Understanding Guideline 2.4: Navigable</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html">Understanding Guideline 2.4.1: Bypass Blocks</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html">Understanding Guideline 2.4.2:  Page Titled </a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html">Understanding Guideline 2.4.3: Focus Order</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html">Understanding Guideline 2.4.4: Link Purpose (In Context)</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html">Understanding Guideline 2.4.5:  Multiple Ways </a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html">Understanding Guideline 2.4.6: Headings and Labels</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html">Understanding Guideline 2.4.7: Focus Visible</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-location.html">Understanding Guideline 2.4.8:  Location</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html">Understanding Guideline 2.4.9: Link Purpose (Link Only)</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html">Understanding Guideline 2.4.10: Section Headings</a></li>
+</ul>
+</p>
+
+
+<!-- p><strong>Next: "<a href="[nid]">Experiencing Barriers</a>" a simulation of barriers for those who do not normally experience barriers while navigating the Internet.</strong></p>
+
+ <div style="background-color:#FFFFCE; border: thin dashed black; padding:1em;width:80%;">The Flash simulation below is intended to demonstrate accessibility problems for people who do not normally experience barriers. For those using assistive technologies, you may find the simulation somewhat inaccessible. This is unavoidable for purposes of demonstrating barriers. 
+<p><br />
+
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+        codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"
+        id="test" width="860" height="640" align="middle">
+<param name="allowScriptAccess" value="always" />
+<param name="movie" value="sims/Sim_2_v2.swf" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#ffffff" />
+<param name="SeamlessTabbing" value="false" />
+<embed src="sims/Sim_2_v2.swf" quality="high"
+       bgcolor="#ffffff" width="860"
+       height="640" swLiveConnect=true
+       id="test" name="test" align="middle"
+       allowScriptAccess="always"
+       SeamlessTabbing="false"
+       type="application/x-shockwave-flash"
+       pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+
+<script type="text/javascript"><!--
+ var toc = document.getElementById('side-menu');
+ var showlink=document.getElementById('side-menushowlink');
+ var hidelink=document.getElementById('side-menuhidelink');
+ 
+ if (hidelink.style.display == '')
+ {
+  document.getElementById('contentcolumn_shiftright').id="contentcolumn";
+  toc.style.display = 'none';
+  hidelink.style.display='none';
+  showlink.style.display='';
+ }
+// --></script>
+</p -->
+
+<h2>Ways to Avoid Creating Barriers</h2>
+
+<p><strong>This section is intended primarily for a technical audience, or the people who will be implementing accessibility strategies. Less technical readers might choose to skim this section, or skip over it. </strong></p>
+
+<h3>Understanding Operability Barriers</h3>
+
+<p>Operability barriers can occur when particular features in Web content are reliant on a particular input device to function. Perhaps the most common operability barriers are created when Web content developers use mouse dependent event handlers in their content (e.g. onmouseover, on mouseout). When these device dependent functions are used, there must either be a device independent version used in addition to the device dependent one, a separate alternate to the device dependent feature or content must be provided, or the device dependent event handler must have no affect on accessibility, such as creating visual decoration. When you are developing Web content, always be sure it is fully functional without having to use a mouse.</p>
+
+<p>Operability also encompasses Usability. Web content may be "technically" accessible but unusable. A common occurrence of this type of barrier is found when Web sites present a large number of navigation links across the top and left side of the screen. Because screen readers read from top left to bottom right, it can mean a blind person must pass through all those links to reach the important content that most often appears to the bottom right, and they must do so every time a page loads. You can imagine how much time could be wasted using the Tab key to move through hundreds of links  commonly found in Web site navigation elements. For a Web site to be usable in such a case, there must be a way to skip over those repetitive navigation elements, and jump directly to the important information on the page.</p>
+
+<p>Operability issues often arise when multimedia content is embedded in Web content. Not only does the content itself need to be operable (like clicking a Flash button), the plugins used to display them needs to be operable (like clicking a play button on a movie player). While accessibility of multimedia content, and their players, has improved greatly in recent years, there are still lots of movies, flash presentations, java applets, and other embedded content that remains inaccessible to many assistive technology users. When developing multimedia content it is important to remember to make content operable, and to provide accessible plugins with which to view or play the content. Also common to multimedia plugins are keyboard traps, in which the content and plugins may very well be operable, but once inside operating the plugin, it is not possible to get out and return to the surrounding HTML based content. In addition to testing your content without the use of a mouse, be sure it is possible to exit embedded content and get back to the content surrounding it.</p>
+
+<p>Below is a list of common situations where content may not be operable for  some people, and thus would fail an accessibility test.  Review the Common Failures below to understand where barriers are created. Then move on to the Success Criteria which describe strategies for removing these barriers, and then go on to the HTML markup strategies in the Sufficient Techniques pages, that put these success criteria into practice. </p>
+
+<h3>Common Failures for Guideline 2.1 (Keyboard access)</h3>
+<ol>
+<li>due to using only pointing-device-specific event handlers (including gesture) for a function</li>
+<li>due to combining multiple content formats in a way that traps users inside one format type</li>
+</ol>
+
+<h3>Common Failures for Guideline 2.2 (Enough time)</h3>
+
+<ol>
+<li>due to using meta redirect with a time limit </li>
+<li>due to using meta refresh with a time-out
+<li> due to including scrolling content where movement is not essential to the activity without also including a mechanism to pause and restart the content</li>
+<li>due to using the blink element</li>
+<li>due to having a session time limit without a mechanism for saving user's input and re-establishing that information upon re-authentication</li>
+</ol>
+
+<h3>Common Failures for Guideline 2.3 (Flashing and seizures)</h3>
+
+<ol>
+<li>due to content that flashes more than three times in any 1-second period</li>
+</ol>
+
+<h3>Common Failures for Guideline 2.4 (Different ways to navigate)</h3>
+<ol>
+<li>due to not providing means to skip over repetitive content. </li>
+<li>due to the title of a Web page not identifying the contents</li>
+<li>due to using tabindex to create a tab order that does not preserve meaning and operability</li>
+<li>due to providing link context only in content that is not related to the link</li>
+<li>due to using null alt on an image where the image is the only content in a link</li>
+<li>due to lack of headings used to signify document sections </li>
+<li>due to lack of descriptive labels for form elements </li>
+<li>due to styling element outlines and borders in a way that removes or renders non-visible the visual focus indicator</li>
+<li>due to a lack of indicators identifying one's location in a set of Web pages</li>
+</ol>
+
+<p>A more detailed list, including less common failures, can be found in <a href="http://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0</a></p>
+
+<h2>Success Criteria</h2>
+
+<h3>Success Criteria for Guideline 2.1 (Keyboard Accessible)</h3>
+<p><strong>Guideline 2.1</strong> Keyboard Accessible: Make all functionality available from a keyboard.</p>
+<ol>
+<li>due to using only pointing-device-specific event handlers (including gesture) for a function
+<img src="http://www.dreamstime.com/active-wheelchair-woman-thumb4819556.jpg" border="0" style="float:right;margin:.5em;" />
+<p>Many people with disabilities may not use a mouse when using a computer, so it is important to ensure that features on a Web page can be operated without using a mouse. People who are blind for example, can't see a mouse pointer, so very few will use one. </p>
+
+<p>Most operable HTML is keyboard accessible by default, but these elements are often marked up with Javascript event handlers that produce some functionality outside the capability of HTML. Event handlers such as <em>onmouseover</em> or <em>onmouseout</em>, will not be operable for a blind user for instance, because they can only be operated on using a mouse. To make features operable, use a combination of mouse and keyboard event handlers (e.g <em>onmouseover</em> and <em>onkeypress</em>). Or, better, use device independent event handlers like "<em>onblur</em>" and "<em>onfocus</em>".). </p>
+<p>The one exception to the rule is the "<em>onclick</em>" event handler. Despite its suggestion of being mouse dependent, over time it has become device independent, with developers programming in both keyboard and mouse operability. Nevertheless,  other device independent event handlers should be used instead of "<em>onclick</em>".</p>
+<p><strong>Device Dependent Event Handlers</strong> (avoid using these)</p>
+<ul>
+<li>onmouseover</li>
+<li>onmouseout</li>
+<li>onclick</li>
+<li>ondblclick</li>
+</ul>
+<p><strong>Device Independent Event Handlers </strong> (use these instead)</p>
+<ul>
+<li>onfocus</li>
+<li>onblur</li>
+<li>onchange</li>
+<li>onselect</li>
+</ul>
+
+<p>Be careful using <em>onchange</em> with select menus. Despite being device independent, it can make select menus inaccessible by keyboard for items beyond the first item in the menu. If a person is using a keyboard to access the menu, pressing the down arrow to move to the first item in the menu, <em>onchange</em> will be activated, and can prevent the person from reaching the second item in the menu, and beyond. Do not use <em>onchange</em> to auto-redirect  people. Instead have them press a button, or provide an alternative menu for those using a keyboard.</p>
+<p>Do not use <em>ondbleclick</em>. There is no accessible alternative to it.</p>
+
+</li>
+<li>due to combining multiple content formats in a way that traps users inside one format type
+
+<p>This problem often occurs when non-HTML is embedded in HTML content, such as embedding Flash, Java Applets, or other multimedia objects that open an embedded player. People with disabilities, will often use the Tab key to move through an HTML page to find their way into one of these embedded objects, only to find the mouse pointer has become trapped in the object, and any content that appears after the object becomes inaccessible. Often the only way to escape is to reload the page.</p>
+<p>There are a variety of ways to prevent keyboard traps. First the plugin itself should include a feature that allows keyboard users to escape from the plugin and return to the parent page. If such a feature is not available, you might suggest to people that they use a different plugin if accessibility is an issue for them. </p>
+<p>If a different plugin is not available, contacting the plugin developer and asking (nicely)  for an escape feature might help resolve the problem. With the raised public awareness of accessibility issues in recent years, developers are now more likely to oblige such requests.</p>
+<p>Another option is to create your own keyboard escape. This can often be done by creating an HTML <em>accesskey</em> that directs a person to some other location on the page, such as an anchor that follows the embedded object. Of course this needs to be documented, and be easy to discover.   One way of make this functionality discoverable is to add a link prior to an object that allows a user to skip over the object to an anchor below it.  The link could be an invisible one, using an invisible image with Alt text, that is only visible (i.e. readable) by screen reader (discussed more below in Success Criteria for guideline 2.4). The Alt text with the skip over object link might state alt="skip over Flash below, or use Alt + 1 to exit the Flash object," or something to that effect. You assign an anchor below the Flash object the accesskey "1" (i.e. accesskey="1"). Choose another accesskey if this one is already being used elsewhere on the page.</p>
+
+</li>
+</ol>
+<p>A more detailed list, including less common failures, can be found in <a href="http://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0</a></p>
+
+<h3>Success Criteria for Guideline 2.2 (Enough Time) </h3>
+<p><strong>Guideline 2.2</strong> Enough Time: Provide users enough time to read and use content. </p>
+<ol>
+<li>due to using meta redirect with a time limit
+<p>The meta redirect  (i.e <em> &lt;meta http-equiv="refresh" content="5; url=http://www.example.com/newpage" /&gt;</em> ) is often used in the head area of an HTML page to automatically send a person to another location on the Web after a specified period of time. For example, after viewing a splash screen for a Web site, a person might then be sent to the site's home page. The trouble with using this strategy is it often prevents people with disabilities from accessing the content of the screen  because they are redirected before being able to read its content. People who are blind, have poor vision, or perhaps have a reading disability, will need more time than the average person to read the page. Don't assume that everyone takes the same amount of time to read the page as you might take, or even twice as long. </p>
+<p>If the page on which the redirect appear contains no content, or the redirect is set to "0", in which case the person is redirected immediately, it is acceptable to use a redirect. In this case the person would not be missing anything. This strategy is often used to send a person to a new site, being redirect immediately from an old one.</p>
+<p>Ideally though, visitors to a Web site should be able to choose when to leave a page. Rather than using the redirect, provide a link instead, that leads to wherever the redirect would have sent the visitor. </p>
+
+</li>
+<li>due to using meta refresh with a time-out
+<p>Very much like the problem described in the previous Success Criteria, where visitors to a Web site are redirected to another location, using the <em> &lt;meta http-equiv&gt; </em> to refresh a page can  result in a similar problem. This strategy is often used to reload a Web page where the content is updated on a regular basis. For example,  news sites will often refresh after short period  to get changes in the headlines. Much like the problems associated with redirecting, people who are using a screen reader may not have time to finish reading the page before it reloads, after which they will be forced to start reading at the top of the page. </p>
+<p>Where pages are refreshed, be sure the refresh rate is sufficiently long so those who take longer to read have enough time to get through the content of the page. Or, provide a means to turn off refreshing.</p>
+
+</li>
+<li> due to including scrolling content where movement is not essential to the activity without also including a mechanism to pause and restart the content
+<p>Scrolling content will not be accessible to many assistive technology users because of its dynamic nature. When a blind person accesses a page, a screen reader will take a snapshot of the text on the page, and begin reading it aloud. If content is moving, a screen reader can not access that content, thus it becomes inaccessible to a blind person.  Avoid using scrolling text, or if it must be used, as in the case of a stock ticker for instance,  provide a scripted means to stop the scrolling,  thus assistive technologies to read the text.</p>
+
+</li>
+<li>due to using the blink element
+<p>Blinking content produces barriers very much like scrolling content does. Because it is dynamic, assistive technologies are often unable to read the content. Avoid using blinking content, or provide a scripted means to stop the blinking so assistive technologies can read the text. Also see Success Criteria for Guideline 2.3.</p>
+
+</li>
+<li>due to having a session time limit without a mechanism for saving user's input and re-establishing that information upon re-authentication
+<p>Many Web sites these days are built upon different types of Web applications, such as Content Management Systems (CMS), Learning Managements Systems (LMS), blogs, or wikis etc.  These Web applications generally require a person to login and start a user session. If that session times-out too quickly, a person filling out a form may not be able to save or submit data before the time-out occurs. A blind person for instance, will generally take much longer to complete a task than a sighted person.  They can be logged out and their data lost if the time-out period is too short. While it is necessary in some cases to time-out a user session after a particular period of inactivity for security reasons (e.g. on a banking site), there needs to be a way to maintain data in a form partially completed if a time-out occurs. Or, the time-out period needs to be long enough so there is no chance a person can't complete a task before being logged out. </p>
+<p>Simply put, one way of maintaining data is by recording the location of the form (i.e. its URL) and storing the values of the form in GET or POST variables after forcing the form to submit when a time-out occurs, then restoring those values into hidden fields on the login screen. When the person logs in again, he or she is redirected to the form, and the values previously entered repopulate the form so it is possible to continue completing the form from where one left off. There are many different ways to accomplish this functionality with various  programming languages common on the Web.</p>
+<p>Another strategy might be to have a Javascript open a <em>confirm dialogue box</em> that warns the person the session is about to expire, and provides the option to extend the session by pressing "yes". The confirm dialogue box itself should have a time-out, so the session is ended after a relatively short period of time, and security is maintained if there is no one there to make the confirmation. But, the time-out on the confirmation  should provide sufficient time for a screen reader to read the message presented in the dialogue box, and for the person to press the Yes button to reset the session. Thirty seconds or more may be required to make the confirmation using a screen reader.</p>
+
+</li>
+</ol>
+
+<h3>Success Criteria for Guideline 2.3 (Seizures)</h3>
+
+<p><strong>Guideline 2.3</strong> Seizures: Do not design content in a way that is known to cause seizures.</p>
+
+<ol>
+<li>due to content that flashes more than three times in any 1-second period
+People with photosensitive epilepsy can have seizures when viewing content that flashes at a rate between three and 30 times per second (i.e. 3 to 30 hertz). Do not produce content that flashes more than 3 time per second. 
+For more about photosensitive epilepsy, including triggers other than flashing content, visit  the <a href="http://www.epilepsynse.org.uk/AboutEpilepsy/Whatisepilepsy/Triggers/Photosensitiveepilepsy">National Society for Epilepsy</a> in the UK.
+
+</li>
+</ol>
+
+<h3>Success Criteria for Guideline 2.4 (Navigable)</h3>
+<p><strong>Guideline 2.4</strong> Navigable: Provide ways to help users navigate, find content, and determine where they are. </p>
+
+<ol>
+<li>due to not providing means to skip over repetitive content.
+<p>Most Web sites today have a series of navigation links across the top of the screen, and often a series down the left (or right) of the screen, that visitors can use to navigate through major sections of the site. In many cases there are 30, 40, 50, or more navigation links in a typical site navigation template. These links create a barrier for some assistive technology users. </p>
+<p>A blind person using a screen reader to listen to the text of a Web page, may have to listen to the navigation links every time a page loads, before being able to reach the important or relevant information that usually appears to the bottom right. Because screen readers read in sequence from the top left of the page to the bottom right, it can take a blind person a very long time to find their way to the information they are looking for if there are many navigation links to get past before reaching that information.</p>
+<p>Navigating a Web site with many navigation links can be improved greatly for assistive technology users by adding a few "bypass" links. The most common bypass link is located in the top left corner of a Web page, appearing to a screen reader as one of the first features on the page, that links to an anchor located at the top of the content area to the lower right of the screen. By following the link, a screen reader can skip over all the links at the top and left of a page, and immediately begin reading the relevant content.</p>
+<p>By pass links can also be used to jump to other key locations in a page, like jumping from the top left opening of the screen to a particular navigation menu, or jumping from the bottom of a content page back to the top, or  jump past a large data table that would otherwise take a long time to read using a screen reader.  Bypass links can also be used to jump over embedded objects like Flash, Java, or other multimedia players or plugins contained in Web content. </p>
+
+</li>
+<li>due to the title of a Web page not identifying the contents
+<p>The first thing a screen reader reads when it encounters a Web page  is its title. The title is contained within the HTML <em>title</em> element, which is located in the <em>head</em> area of an HTML page. Across the Web, more often than not, the content of the title element provides insufficient information about the content of the page it represents. Assistive technology users will often attempt to deduce from the page title, whether the information they are looking for can be found there. If the title does not provide enough information about the content of the page, people with disabilities may have to navigate through the page to determine if the information they need is there. If it isn't there, much time can be wasted searching.</p>
+<p>It is important to always include a title element with every HTML page, and that its value provide a summary of the page content. Avoid using the site's name exclusively for all title elements on a  Website. Instead use the site's name, and attach the main heading that appears at the top of the content area, so each page has a unique title. </p>
+<p>Descriptive titles also help people using a search engine to find information on your site.  If page titles are unique and descriptive, searching the site will be much more effective</p>
+
+</li>
+<li>due to using tabindex to create a tab order that does not preserve meaning and operability
+<p>For those navigating Web content with a screen reader, the sequence in which the cursor moves through the content can affect how meaning in the page is interpreted. For example, when filling out a registration form, it is fairly standard to have a first name field followed by a last name field. If for some reason the address field appears between the first name and last name fields, confusion will likely arise. The HTML <em>tabindex</em> attribute can be used to reorder the path the cursor takes through content to correct situations like that just described. Such situations are often caused when tabindexing has been added, after which the page is edited but the tabindex order remains the same as it was before editing.</p>
+<p>Tabindexes must be used with caution so as not to disrupt the normal sequence of features on a page. For example, a site may have a search field perhaps located on the left side in a navigation menu. If a tabindex is added to the search field,  a screen reader user may be forced to start navigating from the search field each time a page loads. As a result, this person may miss all the navigation elements that appear before the search field. Use of Tabindex should be limited to places where normal navigation through elements using the Tab key does not produce a meaningful sequence. </p>
+<p>Tabindex could be used on pages where the primary content of the page is a form, and where users know they are about to open a form. For instance, if a person clicks in a "register" link, it is reasonable to expect there will be a registration form on the page that opens. In this case a tabindex can be associated with the first field in the form, so when the person begins navigating the page, they are immediately taken to the form, rather than having to navigate through menus etc. to find their way to it.</p>
+
+</li>
+<li>due to providing link context only in content that is not related to the link
+<p>When navigating a Web site, a blind person using a screen reader will often extract the links on the page, using a function in the screen reader, to gather a list of places the page leads to. It is not uncommon to use repetitive link text such as "Read more..."  which might appear after a brief introduction to a news article for instance. In a screen reader's link list, a link like "Read more..." on its own, without the content of the news article introduction prior to the link, is not meaningful. The screen reader users is left asking â€œRead more about what?.â€</p>
+<p>Ideally link text should be meaningful on its own, without the need to search through the surrounding text to discover its meaning. Instead of using "Read more...," use "Read more about Accessibility Laws in Ontario," for example. In this latter case it is clear what a person will find if the link is followed. </p>
+<p>The alternative is to provide context for otherwise meaningless link text. For example, when viewing a list of news headlines, make the title of the article a link to the full article, followed by the introduction to the article, followed by the "Read more ..." link, which also leads to the full article. In this case the title of the article gives meaning to  â€œRead more...â€ .</p>
+<p>Probably the most common error in creating link text is to follow a statement about some content with a link that reads "click here." Accessibility reviewers cringe when they see this. Instead of using "To learn more about accessibility laws in Ontario, <a>click here</a>" use "Learn more about <a>accessibility laws in Ontario</a>", with the link markup in the latter case around a meaningful phrase. Not only does this make the page more accessible to people using a screen reader,  it makes it more accessible to everyone. A sighted person also benefits from meaningful links, being able to scan through the page quickly, and have the contrasting link text stand out, and provide a quick list of locations linked from the page. The same sighted person scanning through a page where "click here" is used throughout, then has to read through the rest of the text on the page to figure out what each of those "click heres" mean.</p>
+
+</li>
+
+<li>due to lack of headings used to signify document sections
+<p>Much like screen reader users can extract links from a Web page to produce a link list, they can extract headings from a page to produce a heading list. This list provides a summary of the content on the page, and provides information about the relationships between sections and sub-sections of the content.  Headings in a heading list can also be used to navigate through the page. So, if the section containing the information of interest happens to appear at the end of the page,  the person can jump directly to that section through its heading.</p>
+<p>Without proper headings, using the HTML h1, h2, h3 elements etc. the page will appear to a screen reader user as one large block of unstructured text, that can only be navigated through from beginning to end. A screen reader user would be forced to listen to the whole page, before discovering that last section of the page contains the information of interest. Worse, after listening to the early parts of a page without structural markup, a person might decide incorrectly that the information they seek is not going to be found on the page, and thus may never end up finding it.</p>
+
+</li>
+<li>due to lack of descriptive labels for form fields
+<p>Labels describe the function of a particular component of a Web page, which could serve to describe the purpose of a form field,  the purpose of a collection of form fields, a grouping of links, or an embedded object like a video or flash movie. Labels are not necessarily created using the HTML <em>Label</em> element, though it is one common form of label. Labels might also be headings, <em>captions</em>, a <em>fieldset</em>, or even <em>title</em> or  <em>Alt</em> text. In each case the text associated with a label describes the function of a element in a Web page.</p>
+
+<p>Wherever functional elements appear in a Web page,  be sure to label the element so it is clear what it represents. A common failure is often found with simple search fields that do not have a label to describe what content should be entered into the field. In some cases a person can navigate through the surrounding content and deduce the purpose, but this is inefficient, and can be time consuming. If a label for such a form disrupts the layout of the search tool, try using style elements to make the label invisible. Sighted people can usually determine the purpose of a search field with a quick scan, so they may not need to see the label. While the label may not be viewable to them, it can be readable by assistive technology. A variety of CSS related strategies can be used to hide labels.</p>
+
+
+</li>
+<li>due to styling element outlines and borders in a way that removes or renders non-visible the visual focus indicator
+For people with poor vision, following a cursor through components of a Web page using the keyboard can be difficult, particularly when styling has been applied to remove the focus indicator when  the cursur passes over an active object. Even with no styles applied, it can be difficult to follow the cursor, even for people with full sight. A variety of strategies can be used to help make the path of the cursor through content more easy to follow, perhaps making the text of active elements bold, or with a bright border, or perhaps by adding a contrasting background when an element is active.
+
+
+</li>
+<li>due to a lack of indicators identifying one's location in a set of Web pages
+<p>In addition to being able to track a cursor through locations on  individual Web pages,  people should be able to identify where they are within a Web site as a whole. There are many ways of accomplishing this. A common method is to <em>highlight a Tab</em>, in commonly used tab navigation that often appears across the top of a Web site. While on the Home page, the Home tab would be highlighted. While in the Resource section of the Web site, the highlight is removed from the Home tab, and instead appears with the Resources tab, and so on.</p>
+
+<p>Another common method for helping people identify their location is to present "<em>breadcrumbs</em>."  These are often located across the top of a Web page, and represent a hierarchy of sections and subsection. For example, if a person is in the Resource Section of a site, in the Tools Sub-section, viewing Accessibility Tools, a set of breadcrumb links might appear as "Resources>Tools>Accessibility Tools", showing Tools and Resources as links. These links enable a person to identify their location within a hierarchy of topics. They can follow a path to the top of a hierarchical arrangement of pages.</p>
+
+<p><em>Content menus</em> are also a common method used to help visitors identify where they are within a collection of related topics and subtopics, as well as their location within a collection of unrelated topics. While viewing a particular page within a collection of related topics, the page being viewed, its parent topic, and its parent topic might all be highlighted to display one's location within a hierarchy of related topics. </p>
+
+<p><em>Sitemaps</em> can also be useful for identifying one's location within a Web site, or within a collection of Web pages. Sitemaps can also act as a central navigation point for some people using assistive technology, not only to help them know where they are within a Web site, but also to help them develop a mental picture of the site's structure, and find their way to locations in the site they want to visit.</p>
+
+
+</li>
+</ol>
+<p>A more detailed list, including less common failures, can be found in <a href="http://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0</a></p>
+
+<h2>Sufficient Techniques</h2>
+<h3>Sufficient Techniques for Guideline 2.1 (Keyboard Access)</h3>
+<p>These techniques can be used to add keyboard access to Web content, and to conform with WCAG 2.0 Guideline 2.1</p>
+
+<h4>1. Keyboard Operable Links</h4>
+<p>It is critical that all functionality in Web content be operable by keyboard. Most people will take the availability of a mouse for granted, and will, for the most part, use a mouse pointer to navigate the Web. Though there are a some screen reader users who can use a mouse through a feature in their screen reader that allows them to move a mouse pointer around by selecting quadrants then sub quadrants of the screen until they have narrowed it down to a clickable size over a feature they want to click, the majority of blind users will not be able to use a mouse. To make Web content accessible to these individuals, there should be no content that relies on a mouse alone to operate.  </p>
+  
+<p>In the following examples two visually identical hide/show boxes have been created using different methods. The first relies on the ability to click with a mouse pointer, while the second will operate with either a mouse or a keyboard.</p>
+
+<h4>Example 1: Keyboard Operable Links</h4>
+<p>In this first case, the javascript toggle is applied to the <em>div</em> element, which is not keyboard operable.  </p>
+<!-- code>
+// The div has been made clickable in this case, but will
+// not operate using a keyboard.
+<form method="post" name="form1">
+<div class="input-form" style="width:23em;">
+  <div class="row" onclick="javascript:toggleform('togglebox1'); return false;">
+     <span>Toggle box.</span>
+  
+  <div id="togglebox1">
+<p><strong>Click the title of this box. Notice it can only be opened or closed using a mouse.</strong></p>
+  </div>
+  </div>
+</div>  
+
+</form>
+</code>
+<p> The above markup produces for following toggle box. You will find it can not be accessed with a keyboard, but can be operated using a mouse. Position your cursor some place before the box, then use the Tab key to move the cursor. You will find the cursor skips over the box.</p>
+<form method="post" name="form1">
+<div class="input-form" style="width:23em;">
+  <div class="row" onclick="javascript:toggleform('togglebox1'); return false;">
+     <span>Toggle box. (click this link)</span>
+  
+  <div id="togglebox1">
+<p><strong>Click the title of this box. Notice it can only be opened or closed using a mouse.</strong></p>
+  </div>
+  </div>
+</div>
+</form>
+
+<p>In this case case, the javascript toggle is applied to the link element, which is keyboard operable.  </p>
+<code>
+// The link has been made clickable in this case, and
+// will operate using a keyboard, or a mouse.
+<form method="post" name="form">
+<div class="input-form" style="width:23em;">
+  <div class="row"> 
+    <span><a href="" onclick="javascript:toggleform('togglebox'); return false;" style="text-decoration:none;color:black;">
+    Toggle box.</a></span>
+  
+  <div id="togglebox">
+     <p><strong>Click the title to close this box. Notice it can be opened or closed with a mouse or keyboard.</strong></p>
+    </div>  
+    </div>
+    </div>    
+</form>
+</code>
+
+<p> The above markup produces for following toggle box. You will find this box can be accessed with a keyboard or a mouse. Position your cursor some place before the box, then use the Tab key to move the cursor. The cursor stops on the toggle, which can then be operated by pressing the enter key.</p>
+<div style="background-color:#CFE8EF; border:thin black dashed;padding:1em;height:auto;">
+<form method="post" name="form">
+<div class="input-form" style="width:23em;">
+  <div class="row" 
+    <span><a href="" onclick="javascript:toggleform('togglebox'); return false;" style="text-decoration:none;color:black;">
+    Toggle box. (click this link)</a></span>
+  
+  <div id="togglebox">
+     <p><strong>Click the title to close this box. Notice it can be opened or closed with a mouse or keyboard.</strong></p>
+    </div>
+</form>
+
+
+<p><strong>Note 1:</strong> In this example we have used the onclick event handler to operate the toggleform javascript (which is embedded in the HTML of this page). Despite the suggestion that one needs to click, the onclick event handler will operate using a mouse or a keyboard.</p>
+<br /><br />
+<ul>
+<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html">Additional Techniques for Guideline 2.1.1</a></li>
+</ul -->
+
+<p>EDIT</p>
+
+<h4>2. Keyboard Traps.</h4>
+<p>Keyboard traps occur when a user attempts to access content or objects embedded in a Web page, and either can not get to the content without using a mouse, or perhaps can get into an object, but can't get out.  In the Flash calculator below, depending on the Web browser being used, a keyboard trap is demonstrated.</p>
+
+<p>Browsers are getting smarter, and will sometimes provide a means to navigate past keyboard traps. You will notice that using a current version of Firefox (v 3.0), it is not possible to access the calculator using the keyboard's Tab key. Likewise, if you click inside the calculator, which itself is accessible to screen readers once inside, it is not possible to exit the calculator and get back to the surrounding content without the aid of a mouse click outside the calculator.</p>
+ 
+<p>On the other hand, in a current version of Internet Explorer (v 7.0) it is possible to both enter the calculator using the Tab key, and just as easily exit the calculator to return to the surrounding content.<p>
+
+<h4>Example 2: Keyboard traps</h4>
+<p><strong>This example requires a Flash plugin be installed with your browser.</strong></p>
+<p>Using two or more different browsers to view this page, use the keyboard's Tab key to navigate to the Flash calculator below.  Notice whether you are able to use the calculator without the aid of a mouse.</p>
+
+[media|300|300]calculator.swf[/media]
+
+<h3>Additional Resources</h3>
+<p>For additional techniques see:
+<ul>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-keyboard-operation-keyboard-operable">How to Meet 2.1.1:Keyboard</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-keyboard-operation-trapping">How to Meet 2.1.2:No Keyboard Trap</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-keyboard-operation-all-funcs">How to Meet 2.1.3:Keyboard (No Exception)</a></li>
+</ul>
+</p>
+
+<script type="text/javascript">
+function toggleform(id) {
+	if (document.getElementById(id).style.display == "none") {
+		//show
+		document.getElementById(id).style.display='';	
+
+	} else {
+		//hide
+		document.getElementById(id).style.display='none';
+	}
+}
+</script>
+
+<h3>Sufficient Techniques for Guideline 2.2 (Enough Time)</h3>
+<p>These techniques can be used to manage time in Web content, and to conform with WCAG 2.0 Guideline 2.2</p>
+
+<h4>1. Allow enough time to read.</h4>
+<p>The average person reads between 200 and 300 words per minute. There are however, many reasons why a person might read at a slower rate than that. A person with a print disability might read at 100 words per minute, or less. While it is typical for blind users to have their screen reader set to read faster than the average user, it often takes additional time to find one's way to the readable content. In the example below for instance, it might take the better part of a minute to find one's way to the text using a screen reader. </p>
+
+<p>It is common for Web developers to create an introduction, or "splash" screen that after a few seconds redirects the person to another page on the site. This is often done using something like <em> &lt;meta http-equiv="refresh" content="3";url="http://someplace.com"&gt;</em>. This can be a problem for some people if the refresh rate (content="3") is not long enough. In this case either leave a very long time, or do not use this method at all. It is important to leave enough time for slower readers to read the content before redirecting them to another location, or to provide a means to stop or extend the time before redirecting.</p>
+
+<p>Note that there are some exceptions to allowing enough time. For example, allowing a person to complete a task, such as a test or quiz, a psychological assessment, or other timed activities,  might invalidated the results if more time were allowed. </p>
+
+<p>The example below simulates for readers of average speed, what might be experienced by a slow reader when they encounter timed content that does not provide them with enough time to read it. In the second example, users can disable the timer, and thus take as long as they need to read the content. </p> 
+  
+
+<h4>Example 1: Allowing enough time to read.</h4>
+<p>EDIT Most people will not be able to read the content in this example in the short amount of time provided. </p>
+
+<!-- code>
+// In this case the Javascript hides the content after 3 second,
+// but provides no way to stop the time if a person needs more time.
+
+<script type="text/javascript">
+function setToBlack ( )
+{
+  document.getElementById("hide1").style.color = "#000000";
+  setTimeout ( "setToWhite()", 3000 );
+}
+function setToWhite ( )
+{
+  document.getElementById("hide1").style.color = "#CFE8EF";
+  clearTimeout ( setToWhite );
+}
+</script>
+</code>
+
+<code>
+<form method="post" name="form">
+<div class="input-form" style="width:50em;float:left;">
+  <div class="row">
+    <a onclick="setToBlack(); return false;" style="text-decoration:none;"><span>Click and Read Fast.</span></a>
+  
+  <div id="hide1" style="color:#CFE8EF">
+     <p><strong>You will need to read very fast to finish reading the content of this box before 
+it disappears. Imagine a blind person using a screen reader, or perhaps a person with a print
+ disability, having to read this content before being redirected to another page. </strong></p>
+  </div>
+  </div>
+</div>
+
+</form>
+</code>
+
+<p>The above javascript code produces the following functionality. Note that it is difficult (or impossible) to read the content before it disappears.</p>
+
+<script type="text/javascript">
+
+function setToBlack ( )
+{
+  document.getElementById("hide1").style.color = "#000000";
+  setTimeout ( "setToWhite()", 3000 );
+}
+function setToWhite ( )
+{
+  document.getElementById("hide1").style.color = "#CFE8EF";
+  clearTimeout ( setToWhite );
+}
+</script>
+
+<form method="post" name="form">
+<div class="input-form" style="width:50em;float:left;">
+  <div class="row">
+    <a onclick="setToBlack(); return false;" style="text-decoration:none;"><span>Click and Read Fast.</span></a>
+  
+  <div id="hide1" style="color:#CFE8EF">
+     <p><strong>You will need to read very fast to finish reading the content of this box before it disappears. Imagine a blind person using a screen reader, or perhaps a person with a print disability, having to read this content before being redirected to another page. </strong></p>
+  </div>
+  </div>
+</div>  
+
+</form>
+
+
+<code>
+// In this case the Javascript hides the content after 3 second,
+// but there is a way to stop the timer if a person needs more time.
+// by checking the checkbox, which disables the timer
+<script type="text/javascript">
+
+function setToBlack1()
+{
+  document.getElementById("hide2").style.color = "#000000";
+  setTimeout ( "setToWhite1()", 3000 );
+}
+function setToWhite1 ( )
+{
+  if(!document.getElementById("stoptimer").checked){
+  document.getElementById("hide2").style.color = "#CFE8EF";
+  clearTimeout ( setToWhite1 );
+  }
+}
+</script>
+</code>
+<code>
+<form method="post" name="form">
+<div class="input-form" style="width:50em;float:left;">
+  <div class="row">
+    <a onclick="setToBlack1(); return false;" style="text-decoration:none;"><span>Click and Read Fast.</span></a>
+    <input type="checkbox" id="stoptimer" name="stoptimer"> <label for="stoptimer">Check to disable timer.</label>
+  
+  <div id="hide2" style="color:#CFE8EF">
+     <p><strong>You will not need to read so fast to finish reading the content this time if 
+check the checkbox before reading. This would allow a blind person using a screen reader, or 
+perhaps a person with a print disability, enough time to read the content of the box. </strong></p>
+  
+
+</form>
+</code>
+
+<p>The above code produce the following functionality. Note the possibility of disabling the timer.</p>
+
+
+<script type="text/javascript">
+
+function setToBlack1()
+{
+  document.getElementById("hide2").style.color = "#000000";
+  setTimeout ( "setToWhite1()", 3000 );
+}
+function setToWhite1 ( )
+{
+  if(!document.getElementById("stoptimer").checked){
+  document.getElementById("hide2").style.color = "#CFE8EF";
+  clearTimeout ( setToWhite1 );
+  }
+}
+</script>
+
+<form method="post" name="form">
+<div class="input-form" style="width:50em;float:left;">
+  <div class="row">
+    <a onclick="setToBlack1(); return false;" style="text-decoration:none;"><span>Click and Read Fast.</span></a>
+    <input type="checkbox" id="stoptimer" name="stoptimer"> <label for="stoptimer">or, Check to disable timer and read slower.</label>
+  
+  <div id="hide2" style="color:#CFE8EF">
+     <p><strong>You will not need to read so fast to finish reading the content this time if you
+check the checkbox before reading. This would allow a blind person using a screen reader, or 
+perhaps a person with a print disability, enough time to read the content of the box. </strong></p>
+  
+  </div>
+  </div>
+</div> 
+</form>
+
+<br /><br />
+<ul>
+<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html#time-limits-required-behaviors-techniques-head">Additional Techniques for Guideline 2.2.1</a></li>
+</ul -->
+
+
+<h4>2. Extending a session timeout.</h4>
+
+<p>Another example where timing is used is when a period of inactivity occurs, and a person gets logged out of a system for security reasons. This is done so others can't access an inactive session, and perhaps act maliciously. For a blind person or a person with a print disability, it may take a very long time to get through the content of a Web page, and as a result when they go to save their data, it is lost because the session has timed out. In such a case, timeout should be set to several times longer than it might take the average users to finish with the page. WCAG 2.0 suggests 20 hours as a timeout period, though from a security perspective, this is too long to allow an inactive session to run. Instead, provide users with the means to extend the session.<p>
+
+<p>In this example, when time is about to run out, a warning pops up asking the person if they want to continue or to let time run out. While this functions effectively here as a demonstration, and allows the person to continue reading, where security is a concern, a popup browser window would be used instead of a javascript dialog box. The popup window itself should time out after a short period and thus allows the user session to expire. A javascript dialog will remain on the screen until someone clicks a button in the dialog box, thus if someone walks away from their computer, another person could potentially take over the session, with the possibility of malicious activity. </p>
+
+</p>
+
+<h4>Example 2: Extending a Session Timeout.</h4>
+<!-- code>
+// In this example the "answer" confirm box lets the user
+// decide whether to continue or not.
+<script type="text/javascript">
+function setToBlack2()
+{
+  document.getElementById("hide3").style.color = "#000000";
+  setTimeout ( "setToWhite2()", 3000 );
+}
+function setToWhite2 ( )
+{
+  var answer = confirm("You are about to be timed out? Click Cancel to continue reading, or OK to exit."); 
+if(answer){
+    document.getElementById("hide3").style.color = "#F8F8F8";
+    clearTimeout ( setToWhite2 );
+  }else{
+    clearTimeout ( setToWhite2 );
+    document.getElementById("hide3").style.color = "#000000";
+    setTimeout ( "setToWhite2 ( )", 3000 );
+  }
+}
+</script>
+</code>
+<code>
+<form method="post" name="form">
+<div class="input-form" style="width:50em;float:left;">
+  <div class="row">
+    <a onclick="setToBlack2(); return false;" style="text-decoration:none;"><span>Click and Read Below.</span></a>
+  
+  <div id="hide3" style="color:#F8F8F8">
+     <p><strong>In this case the timeout occurs faster than a person can read this 
+content, but it is possible to extend the session to make it possible to finish 
+reading. This may be a preferred method over a long timeout period, or disabling 
+the timeout, where security is a concern. </strong></p>
+  
+  </div>
+  </div>
+</div> 
+</form>
+
+</code>
+
+<p>The above markup and javascript produces the following effect. Click to following text.</p>
+
+<script type="text/javascript">
+function setToBlack2()
+{
+  document.getElementById("hide3").style.color = "#000000";
+  setTimeout ( "setToWhite2()", 3000 );
+}
+function setToWhite2 ( )
+{
+  var answer = confirm("You are about to be timed out? Click Cancel to continue reading, or OK to exit."); 
+if(answer){
+    document.getElementById("hide3").style.color = "#CFE8EF";
+    clearTimeout ( setToWhite2 );
+  }else{
+    clearTimeout ( setToWhite2 );
+    document.getElementById("hide3").style.color = "#000000";
+    setTimeout ( "setToWhite2 ( )", 3000 );
+  }
+}
+</script>
+<form method="post" name="form">
+<div class="input-form" style="width:50em;float:left;">
+  <div class="row">
+    <a onclick="setToBlack2(); return false;" style="text-decoration:none;"><span>Click and Read Below.</span></a>
+  
+  <div id="hide3" style="color:#CFE8EF">
+     <p><strong>In this case the timeout occurs faster than a person can read this content, but it is possible to extend the session to make it possible to finish reading. This may be a preferred method over a long timeout period, or disabling the timeout, where security is a concern. </strong></p>
+    </div>
+  </div>
+</div> 
+
+</form -->
+<p>EDIT</p>
+
+<h3>Additional Resources</h3>
+<p>For additional techniques see:</p>
+<ul>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-required-behaviors">How to Meet 2.2.1:Timing Adjustable</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-pause">How to Meet 2.2.2:Pause, Stop, Hide</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-no-exceptions">How to Meet 2.2.3:No Timing</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-postponed">How to Meet 2.2.4: Interruptions</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-server-timeout">How to Meet 2.2.5:Re-authenticating</a></li>
+
+</ul>
+
+<h3>Sufficient Techniques for Guideline 2.3 (Flashing and Seizures)</h3>
+<p>These techniques demonstrate flashing in Web content that is associated with WCAG 2.0 Guideline 2.1</p>
+
+<h4>1. Technique 1: Flash Rate</h4>
+
+<p> This technique is more of a "what not to do" than it is a technique for creating content that does not have a flash rate faster than the 3 flash per second threshold. Ideally, you should not create flashing content, period.  In the example below, you can select the flash rate for the square above the radio buttons, to experience how fast a flash rate appears to the eye. Depending on your computer monitor's capability, rates over 25 flashes per second may not appear any different. Physiologically, humans can not detect flashing over about 55 milliseconds per flash (a little more than 20 flashes per second), though this rate will vary depending on the contrast between flashes, with faster detection rates with higher contrast. This rate is called Critical Flicker Frequency (CFF). Flashing faster than CFF will appear as a solid colour.  For more about flash detection, read about <a href="http://webvision.med.utah.edu/temporal.html">Temporal Resolution</a> </p>
+
+<p><strong>WARNING: though the flash area has been kept small to reduce the possibility of causing a seizure, those who know they are photosensitive should not attempt to view flash rates greater that three per second.  </strong>
+
+<h4>Example 1: How fast is three flashes per second.</h4>
+<script type="text/javascript">
+var timer; 
+
+function toggleBgColor(rate)
+{
+  divTemp = document.getElementById('strobe');
+  divTemp.style.backgroundColor = divTemp.style.backgroundColor == 'white' ? 'black' : 'white';
+  timer = setTimeout(function(){toggleBgColor(rate)}, rate); //in milliseconds
+}
+
+function resetTimer(){
+ if (timer!=null){
+   clearTimeout(timer);
+ }
+}
+</script>
+
+<form>
+<input onclick="resetTimer();toggleBgColor(1000/2)" name="rate" type="radio" value="1000" id="rate1" /><label for="rate1">1</label>
+<input onclick="resetTimer();toggleBgColor(500/2)" name="rate" type="radio" value="500"  id="rate2"/><label for="rate2">2</label>
+<input onclick="resetTimer();toggleBgColor(333/2)" name="rate" type="radio" value="333"  id="rate3"/><label for="rate3">3</label>
+<input onclick="resetTimer();toggleBgColor(200/2)" name="rate" type="radio" value="200"  id="rate5"/><label for="rate5">5</label>
+<input onclick="resetTimer();toggleBgColor(100/2)" name="rate" type="radio" value="40"  id="rate10"/><label for="rate10">10</label>
+<input onclick="resetTimer();toggleBgColor(50/2)" name="rate" type="radio" value="20"  id="rate20"/><label for="rate20">20</label>
+<input onclick="resetTimer()" name="rate" type="radio" value="20"  id="ratestop"/><label for="ratestop">stop</label>
+</form>
+
+
+<h3>Additional Resources</h3>
+<p>For additional techniques see:</p>
+<ul>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-seizure-does-not-violate">How to Meet 2.3.1:Three Flashes or Below Threshold</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-seizure-three-times">How to Meet 2.3.2:Three Flashes</a></li>
+</ul>
+
+<h3>Sufficient Techniques for Guideline 2.4 (Different Ways to Navigate)</h3>
+<p>These techniques can be used to add navigation to Web content, and to conform with WCAG 2.0 Guideline 2.4</p>
+
+<h4>1. Create a logical tab order.</h4>
+<p>The order in which content or features appear on a Web page can have an effect on a person's ability to comprehend, and ultimately use a Web page. For someone who is blind, it is particularly important that content be laid out in a way that makes sense when moving through it in sequential order. In Example 1 below, two visually identical forms are presented. In the first form however, the tab order does not follow a logical path, while in the second it does. </p>
+
+<p>Logical order for a simple form, like a login form, is often first: register, then enter a login name, then a password, then select auto login, then submit to login. This is the order in the second form below. In the first form however, without any control over tab order, the cursor starts with the login, then goes to submit, then password, then register, then auto login. This latter path through the form make little sense with respect to the steps one might take to login to a site, and will take considerable time for screen reader users to figure out. The former login form will be understood the first time a screen reader user moves through it.</p>
+  
+<h5>Example 1: Tabindex to control focus order</h5>
+<p>In this first example, position your mouse cursor some place before the form, then press the Tab key and watch the path the cursor takes through the form.</p>
+
+<code>
+// In this markup a form is laid out with an illogical tab order
+// that will be difficult to comprehend for a blind person.
+<form>
+  <table style="background-color: transparent;" cellpadding="1">
+    <tbody>
+     <tr>
+      <td align="right"><label for="username2">
+        <small>Username:</small></label></td>
+      <td><input name="username" class="input" size="5" id="username2" type="text"></td>
+      <td><input name="submit" class="submit" value="Sign-in" type="submit"><br></td>
+    </tr>
+    <tr>
+     <td align="right"><label for="password2">
+        <small>Password:</small></label></td>
+      <td><input name="password" class="input" size="5" id="password2" type="password"></td>
+      <td rowspan="2" valign="top">
+        <small>[<a href="/my/register.php">Register</a>]</small></td>
+    </tr>	
+    <tr>
+      <td colspan="3" style="white-space: nowrap;" align="center">
+        <input name="auto_login" value="1" id="auto2top" type="checkbox"> 
+        <small><label for="auto2top">Enable auto-login</label></small>
+    </tr>
+   </tbody>
+  </table>
+</form>	
+</code>
+<p> The above markup produces for following appearance.</p>
+<form>
+  <table style="background-color: transparent;" cellpadding="1">
+    <tbody>
+     <tr>
+      <td align="right"><label for="username2">
+        <small>Username:</small></label></td>
+      <td><input name="username" class="input" size="5" id="username2" type="text"></td>
+      <td><input name="submit" class="submit" value="Sign-in" type="submit"><br></td>
+    </tr>
+    <tr>
+     <td align="right"><label for="password2">
+        <small>Password:</small></label></td>
+      <td><input name="password" class="input" size="5" id="password2" type="password"></td>
+      <td rowspan="2" valign="top">
+        <small>[<a href="/my/register.php">Register</a>]</small></td>
+    </tr>	
+    <tr>
+      <td colspan="3" style="white-space: nowrap;" align="center">
+        <input name="auto_login" value="1" id="auto2top" type="checkbox"> 
+        <small><label for="auto2top">Enable auto-login</label></small>
+    </tr>
+   </tbody>
+  </table>
+</form>	
+
+
+<p>In this second example, position your cursor before the form, then press the Tab key, and notice the cursor moves through the form in the logical order one might take to login to a Web site. In this case, you will notice in the code example, that the <em>tabindex</em> attribute has been used to control the path the cursor takes through the form. </p>
+<code>
+// In this markup a form is laid out with an illogical tab order,
+// but "tabindex" has been used to create a logical order
+// that will be easy to comprehend for a blind person.
+<form>
+  <table style="background-color: transparent;" cellpadding="1">
+    <tbody>
+     <tr>
+      <td align="right"><label for="username2">
+        <small>Username:</small></label></td>
+      <td><input name="username" class="input" size="5" id="username2" tabindex="2" type="text"></td>
+      <td><input name="submit" class="submit" value="Sign-in" tabindex="5" type="submit"><br></td>
+    </tr>
+    <tr>
+     <td align="right"><label for="password2">
+        <small>Password:</small></label></td>
+      <td><input name="password" class="input" size="5" id="password2" tabindex="3" type="password"></td>
+      <td rowspan="2" valign="top">
+        <small>[<a href="/my/register.php" tabindex="1">Register</a>]</small></td>
+    </tr>	
+    <tr>
+      <td colspan="3" style="white-space: nowrap;" align="center">
+        <input name="auto_login" value="1" id="auto2top" tabindex="4" type="checkbox"> 
+        <small><label for="auto2top">Enable auto-login</label></small>
+    </tr>
+   </tbody>
+  </table>
+</form>	
+</code>
+
+<p>The above markup produces the same appearance as the example above, and does provide structure.</p>
+
+<form>
+  <table style="background-color: transparent;" cellpadding="1">
+    <tbody>
+
+     <tr>
+      <td align="right"><label for="username2">
+        <small>Username:</small></label></td>
+      <td><input name="username" class="input" size="5" id="username2" tabindex="3" type="text"></td>
+      <td><input name="submit" class="submit" value="Sign-in" tabindex="6" type="submit"><br></td>
+    </tr>
+    <tr>
+     <td align="right"><label for="password2">
+        <small>Password:</small></label></td>
+      <td><input name="password" class="input" size="5" id="password2" tabindex="4" type="password"></td>
+      <td rowspan="2" valign="top">
+        <small>[<a href="/my/register.php" tabindex="2">Register</a>]</small></td>
+    </tr>	
+    <tr>
+      <td colspan="3" style="white-space: nowrap;" align="center">
+        <input name="auto_login" value="1" id="auto2top" tabindex="5" type="checkbox"> 
+        <small><label for="auto2top">Enable auto-login</label></small>
+    </tr>
+   </tbody>
+  </table>
+</form>	
+
+<ul>
+<li><a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-focus-order">Additional Techniques for Guideline 2.4.3</a></li>
+</ul>
+
+<p>Of course, it is possible to create a form such as the one above, by physically positioning the components of the form in a logical order, in which case <em>tabindex</em> is not required, and should not be used. The <em>tabindex</em> attribute should only be used when the layout of particular features on a Web page do not by default produce a logical tab order. And, without saying, <em>tabindex</em> should not be used to produce an illogical tab order. </p>
+
+<p>Also keep in mind that <em>tabindex</em> can affect accessibility in a negative way if not used carefully. For example, if the example login form above is located in the content area of a page (usually the lower right of a Web page), and <em>tabindex</em> is set to "1" for the first component in the form, if a screen reader user uses the Tab key to begin navigating through a page, the cursor will jump to the form and skip over the content above it. This may be fine, if the login form is the primary content on the page. But if the form is not the primary content, it can make the content before the form inaccessible, or at least make it difficult to navigate or to imagine the layout of a Web page.</p>
+
+<p><strong>Note:</strong> While in theory <em>tabindex</em> can make Web content easier to navigate, in reality not all browsers support it, and some that do support it, don't support it very well. Regardless, if you are creating a form that does not produce a logical tab order by default, use <em>tabindex</em> as it was intended to be used. If you are unsure, lay out the form so it produces a logical tab order without having to use <em>tabindex</em>. 
+
+
+<h4>2. Bypass Links</h4>
+
+<h5>Example 2: Jump to Content and Jump to Menu Bypass Links</h5>
+<p>In the top left corner of ATutor there are two hidden bypass links that when clicked (or more likely keypressed), the cursor is repositioned to either the top of the content area to the lower right, or to the content menu to the left. You can access these links by positioning your mouse cursor outside the content window, perhaps in the browser's location/address field, then press the Tab key until the cursor enters the content window. When it does, watch the status bar at the bottom of the browser window and note the URL (i.e. http://accessibility.atutor.ca/content.php?cid=194#content) the "#content" part of the URL is a reference to an anchor positioned at the top of the content area (i.e. &lt;a name="content">&lt;/a>).</p>
+
+<p>Without this bypass link a blind person may be forced to listen to everything at the top and left of the page, everytime a page loads. You can imagine how much time would be wasted navigating to the content area if the bypass link was not there. There can be 100 links or more to move through before reaching the content.</p>
+
+<code>
+// These two links are located at the very
+// start of the HTML. Notice these links include an
+// accesskey, making it possible to jump 
+// the top of the content or to the menu from
+// anywhere within the page by pressing Alt+c and Alt+m.
+
+<div id="header">
+  <a href="#content" accesskey="c">
+    <img src="/images/clr.gif" height="0" width="1" border="0" alt="Go to content ALT+c"
+    align="top" style="float:left;"/></a>		
+  <a href="#menu"  accesskey="m">
+    <img src="/images/clr.gif" height="0" width="1" border="0" alt="Go to Menu ALT+m" 
+    align="top" style="float:left;"/></a>
+
+
+// The above links when followed lead to one of the
+// following two anchors, one located at the start
+// of the content area, and the other at the start
+// of the side menu 
+
+// content anchor
+<a name="content"></a>
+
+// menu anchor
+<a name="menu"></a>
+
+</code>
+
+
+<h5>Example 3: Ways to Navigate and Knowing Where you are.</h5>
+
+
+<p>People will find a site more usable if they are able to identify where they are within the Web site as a whole. There are many ways of accomplishing this. A common method is to <strong>highlight a Tab</strong>, in commonly used tab navigation that often appears across the top of a Web site.  In the screen shot below, notice the Home tab is highlighted, indicating that the person is in the home area of the site, while the Sitemap, and other tabs, are not highlighted, indicating that the person is not in those areas of the site. Should the person click on the Sitemap tab, it would become highlighted and the Home tab would loose its highlighting.</p>
+
+<p>Another common method for helping people identify their location is to present â€œ<strong>breadcrumbs</strong>.â€  These are often located across the top of a Web page, and represent a hierarchy of topics and subtopics.  In the screen shot below, the breadcrumb links represent the location of this particular page, also linking to its parent, and the parent's  parent,  and so on, making it possible to move back up through the hierarchy of topics or sections of the site.</p>
+
+<p><strong>Content menus</strong> are also a common method used to help visitors identify where they are within a collection of related topics and subtopics, as well as their location within a collection of unrelated topics.  In the screen shot below, the content menu appears on the left, and one's location in the content is represented by the bold titles of the current page, its parent topic, and that parent's  parent topic.</p>
+
+<p><strong>Sitemaps</strong> can also be useful for identifying one's location within a Web site, or within a collection of Web pages. Sitemaps can also act as a central navigation point for some people using assistive technology, not only to help them know where they are within a Web site, but also to help them develop a mental picture of the site's structure, and find their way to locations in the site they want to visit. In the screen shot below, the Sitemap tab is displayed. People can click on the tab to open a listing of all the pages and tools on the site in a hierarchical display that depicts the relationships between various pages on the site. Try it yourself, using the Sitemap link at the top of the screen (if you are learning in ATutor)</p>
+
+<p><strong>Sequence Links</strong> are also a good way of helping visitors keep track of where they are on a site.  In the screen shot below sequence links appear at the upper right as two arrows. When listening with a screen reader, the Alt text with the arrow images are read. The Alt text is generated for each button, listing the title of the next page for the right arrow, and the title of the previous page for the left arrow.  For sighted people, positioning a mouse pointer over the arrows reveals the title of the next and previous pages. When a person is outside the content, perhaps in the forums having a discussion, these links are replaced with a â€œResumeâ€ arrow, so when finished in the forums, people can follow the link to return to where they left off in the content.</p>
+
+
+<h3>Additional Resources</h3>
+<p>For additional techniques see:
+<ul>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-skip">How to Meet 2.4.1:Bypass Blocks</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-title">How to Meet 2.4.2:Page Titled</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-focus-order">How to Meet 2.4.3:Focus Order</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs">How to Meet 2.4.4:Link Purpose (In Context)</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-mult-loc">How to Meet 2.4.5:Multiple Ways</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-descriptive">How to Meet 2.4.6:Headings and Labels</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-focus-visible">How to Meet 2.4.7:Focus Visible</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-location">How to Meet 2.4.8:Location</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-link">How to Meet 2.4.9:Link Purpose (Link Only)</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-headings">How to Meet 2.4.10:Section Headings</a></li>
+</ul>
+</p>
+
+<h2>Other Considerations</h2>
+<h3>Direct Keyboard Access</h3>
+<p>HTML includes the <em>accesskey</em> attribute as a way to add direct keyboard access to various Web page components. Unfortunately the implementation of Accesskeys in various browsers has left a lot to be desired. Part of the trouble with implementing accesskeys is they are often already used by browsers or assistive technologies to provide direct keyboard access to menus or menu items in those applications. For example, most browsers use "F" as the key to open the File menu, so you would not have been able to use the "F" key to provide keyboard access to a component of a Web page. In fact  most, if not all letter keys are used in one application or another, so using letters as accesskeys has been a problem because most will conflict with keys used to control feature in other applications.</p>
+
+<p>You might be wondering why so many letter keys are used having just read they are going to conflict with keys used to operate browsers and assistive technologies. Yes, some are going to conflict with appliciation keys. But, the problem is not that keys conflict, it is how accesskeys are implemented in host applications, and the way browser developers have interpreted how HTML specifications should be implemented. It is not wrong for Web developers to use particular accesskeys to create direct keyboard access to features in Web content, so they should use them where they can. What needs to happen is browsers and assistive technologies need to be able to distinguish between keys used to control the application interface or to control the Web content.  If more Web content authors use accesskeys, it will create more incentive to deal with the conflicts.</p>
+<h3>There's Hope for Accesskeys</h3>
+<p>In fact, the latest Opera Web browser (v9.63) does deal with the problem with a relatively simple solution, pressing <em>Shift-Esc</em>. to bring up a list of accesskey and put the browser in Accesskey mode. Thus when accesskeys are on, application keys are off. The latest FireFox (v3.0) also deals with the problem by changing the key combination from Alt+something in previous version of the browser to <em>Alt+Shift+something</em>. So, despite much arguement in the past that acceskeys should be eliminated because they conflict with browser and assistive technologies, at least a couple of the browser developers have now recognized the problem, and fixed it in their latest releases. Conflicts will still be present if you are using Internet Explorer, or the recently release Google Chrome, both of which still use <em>Alt+something</em>. But, in the spirit of competition, it will not be long before all the major browsers and assistive technologies have implemented a strategy to separate keyboard control over the application from keyboard control over the content.</p>
+
+
+<h2>Unit Exercise</h2>
+
+<p<strong>Understand what accessibility checkers can't do</strong></p>
+
+<p>There are many ways to test websites for accessibility. Many reviewers use a
+combination of:</p>
+<ul>
+<li>Automated testing using one or more accessibility checkers.</li>
+<li>Examining the HTML.</li>
+<li>Manual testing e.g., using the keyboard only, testing with specific
+assistive technologies.</li>
+</ul>
+
+<p>In this exercise, you will identify the limitations of automatic
+accessibility checking. In other words, which barriers require a human
+decision when testing Web accessibility?<p>
+<ol>
+<li>Write down two or three things that are not checkable by automated checkers.
+Together with the limitations others have posted on the forum, build a list
+of limitations of automated tools.
+</li>
+<li>For each limitation, describe how you would check for accessibility.</li>
+</ol>
+
+<p>We suggest using AChecker for this exercise, because it is relatively easy
+to identify what it does and does not check. If you prefer, feel free to
+examine another automatic accessibility checker.</p>
+
+<p>Create an account on AChecker at the link below (or download and install
+your own version), login to the system, and conduct an accessibility
+evaluation on a site you are familiar with. You can either identify
+Potential or Likely problems outlined in an accessibility review as your
+examples of AChecker's limitations, or better, look under the Guidelines
+tab then WCAG 2.0 Level AA, and identify which guidelines are not being
+checked in AChecker. The information gathered here will be compiled for the
+next AChecker development cycle, so if your ideas get implemented, you can
+potentially be listed as an AChecker contributor.<p>
+
+<p><a href="http://www.achecker.ca/register.php">AChecker</a></p>
+
+
+<p>For more about AChecker visit the <a href="http://www.atutor.ca/achecker/">development site</a></p>
+    </main>
+    
+    </div>
+</body>
+</html>

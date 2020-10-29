@@ -1,0 +1,1367 @@
+<html>
+<head>
+    <title>Principle 3: Understandable | Understanding Web Accessibility Course</title>
+    <meta name="generator" content="DocPad v6.78.4" />
+    <link  rel="stylesheet" href="styles/style.css" /><link  rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" />
+    <script defer="defer"  src="../vendor/jquery-2.1.1.min.js"></script><script defer="defer"  src="../vendor/bootstrap/js/bootstrap.min.js"></script><script defer="defer"  src="scripts/myscript.js"></script>
+</head>
+<body>
+    <div class="container-fluid" id="course">    
+    <header class="affix">
+        <div class="container-fluid">
+        <a href="#content" class="sr-only sr-only-focusable pull-left">Skip to main content</a>
+        <a class="pull-right" href="http://courses.idrc.ocadu.ca">IDRC Resources</a>
+        <h1>Understanding Web Accessibility</h1>
+        </div>
+    </header>        
+    
+    <div class="row">    
+        <div id="side" class="col-xs-3 col-md-3"> 
+            <nav id="main-nav">
+                <ul class="nav nav-pills nav-stacked affix">
+                    <li><a href="index.html">Introduction</a></li>
+                    <li><a href="1_perceivable.html">Principle 1: Perceivable</a>
+                        <ul>
+                            <li><a href="1_perceivable.html#reasons">Principle 1: Reasons</a></li>
+                            <li><a href="1_perceivable.html#guidelines">Principle 1: Guidelines</a></li>
+                            <li><a href="1_perceivable.html#barriers">Principle 1: Barriers</a></li>
+                            <li><a href="1_perceivable.html#criteria">Principle 1: Success Criteria</a></li>
+                            <li><a href="1_perceivable.html#techniques">Principle 1: Sufficient Techniques</a></li>                                                                                                
+                            <li><a href="1_perceivable.html#considerations">Principle 1: Other Considerations</a></li>
+                            <li><a href="1_perceivable.html#exercise">Principle 1: Exercise</a></li>
+                        </ul>                                        
+                    </li>
+                    <li><a href="2_operable.html">Principle 2: Operable</a>
+                        <ul>
+                            <li><a href="2_operable.html#reasons">Principle 2: Reasons</a></li>
+                            <li><a href="2_operable.html#guidelines">Principle 2: Guidelines</a></li>
+                            <li><a href="2_operable.html#barriers">Principle 2: Barriers</a></li>
+                            <li><a href="2_operable.html#criteria">Principle 2: Success Criteria</a></li>
+                            <li><a href="2_operable.html#techniques">Principle 2: Sufficient Techniques</a></li>                                                                                                
+                            <li><a href="2_operable.html#considerations">Principle 2: Other Considerations</a></li>
+                            <li><a href="2_operable.html#exercise">Principle 2: Exercise</a></li>
+                        </ul>                                        
+                    </li>                    
+                    <li><a href="3_understandable.html">Principle 3: Understandable</a>
+                        <ul>
+                            <li><a href="3_understandable.html#reasons">Principle 3: Reasons</a></li>
+                            <li><a href="3_understandable.html#guidelines">Principle 3: Guidelines</a></li>
+                            <li><a href="3_understandable.html#barriers">Principle 3: Barriers</a></li>
+                            <li><a href="3_understandable.html#criteria">Principle 3: Success Criteria</a></li>
+                            <li><a href="3_understandable.html#techniques">Principle 3: Sufficient Techniques</a></li>                                                                                                
+                            <li><a href="3_understandable.html#considerations">Principle 3: Other Considerations</a></li>
+                            <li><a href="3_understandable.html#exercise">Principle 3: Exercise</a></li>
+                        </ul>                                        
+                    </li>
+                    <li><a href="4_robust.html">Principle 4: Robust</a>
+                        <ul>
+                            <li><a href="4_robust.html#reasons">Principle 4: Reasons</a></li>
+                            <li><a href="4_robust.html#guidelines">Principle 4: Guidelines</a></li>
+                            <li><a href="4_robust.html#barriers">Principle 4: Barriers</a></li>
+                            <li><a href="4_robust.html#criteria">Principle 4: Success Criteria</a></li>
+                            <li><a href="4_robust.html#techniques">Principle 4: Sufficient Techniques</a></li>                                                                                                
+                            <li><a href="4_robust.html#considerations">Principle 4: Other Considerations</a></li>
+                            <li><a href="4_robust.html#exercise">Principle 4: Exercise</a></li>
+                        </ul>                                        
+                    </li>            
+                </ul>
+            </nav>
+                      
+        </div>
+        <main id="content" class="col-xs-9 col-md-9">            
+            <h2>Principle 3: Understandable</h2>
+            <p>If you have ever poked around an attractive-looking Web site written in a language you do not recognize, you know that it is possible to explore a site &mdash; without understanding a single word.</p>
+
+<p>Principle 3 builds on Principles 1 and 2. Conforming to Principle 1 ensures that users can perceive a site. Conforming to Principle 2 ensures that users can act upon a site. But even if visitors can see and interact with content, a site is not fully accessible if they cannot make sense of it. Principle 3 is about increasing the odds that visitors actually understand the content.</p>
+
+<p>Just because content is written in your own language does not make the content understandable. For example, a page may contain:</p>
+
+<ul>
+<li>Unfamiliar words or abbreviations.</li>
+<li>Overly complex instructions.</li>
+<li>Messages that tell you that you made a mistake, but fail to explain how to fix it.</li>
+<li>Interactive components that look familiar, but behave in unpredictable ways.</li>
+</ul>
+
+<p>Barriers to understanding content are felt acutely by users with disabilities. For example:</p>
+
+<ul>
+<li>A student with low-vision uses magnification software. She needs to enlarge text so much that only a few words fit on the screen at one time. The lack of context makes it harder for her to understand abbreviations. Does "PC" mean "personal computer," "police constable," "politically correct," or "privy counsel?" </li>
+
+<li>A professor with a learning disability is an expert in his field. He is very familiar with the jargon of the field, but has trouble making sense of long &mdash; and from his perspective, unnecessarily complex &mdash; sentences.</li>
+<li>An on-line job application form indicates required fields in colour. Because screen readers only read text, an applicant who is blind is not able to determine which fields are required, and which are optional.</li>
+</ul>
+
+<p>By following Principle 3 guidelines, visitors will be better able to understand the content. Principle 3 is organized around three ideas. For Web content to be understandable...</p>
+<ol>
+<li>People must be able to read it: The content is "<strong>readable</strong>."</li>
+
+<li>The site must behave in ways that people can predict: The content is "<strong>predictable</strong>."</li>
+
+<li>The site must be designed to help people avoid mistakes; and when they do make mistakes, be "forgiving" of errors. In the language of WCAG 2.0., the site provides "<strong>input assistance</strong>."</li>
+</ol>
+
+<h2>Reasons for Principle 3</h2>
+<h3>Guideline 3.1 Readable</h3>
+
+<p><strong>What makes content "readable?"</strong></p>
+
+<p>"Readable" means that content can be understood by an educated person, with or without assistive technologies; and that additional information necessary to understand the content is also available. </p>
+
+<p>Perhaps the easiest "readability" provision to implement is to specify the language (or languages) that appear on a Web page. Language is specified in the page markup, so is "invisible" to readers. Nevertheless, encoding the language &mdash; or changes in language &mdash; is important. Some browsers and assistive technologies cannot present content correctly unless the Web author identifies the language or languages.</p>
+
+<h3>Guideline 3.2 Predictable</h3>
+
+<p><strong>What does "predictability" have to do with being understandable?</strong></p>
+
+<p>When reading Web pages, people are not only seeing words. They are also "reading" patterns, such as the layout and organization of the page, the position and order of links, and the colour and shape of headers. These patterns orient readers to what information is where, and help them zero in on the desired content.</p>
+
+<p>Consistent patterns help readers understand content. Unpredictable patterns increase the cognitive effort that readers need to make sense of information.</p>
+
+<p>Presenting information in a predictable order across a site is good design. It simplifies access for all users; but may make a crucial difference for people with visual, learning, and cognitive disabilities, who may become disoriented when information or controls appear in different places on different pages.</p>
+
+<h3>Guideline 3.3 Input Assistance</h3>
+
+<p><strong>What is "input assistance?" How does it support understandability?</strong></p>
+
+<p>"Input assistance" is WCAG 2.0 jargon for techniques that help people avoid mistakes, especially when filling out forms. And when they do make mistakes, it refers to the techniques that help people recover from errors. </p>
+
+<p>More generally, "input assistance" are techniques that encourage users to understand the <em>process</em> of entering information. These techniques include providing clear instructions, a chance to check work before submitting it, and context-sensitive help.</p>
+
+<p>Everyone makes mistakes, but some people with disabilities may be more prone to input errors than people without disabilities. For example, someone with a tremor may press keys by accident. An individual who is blind may have trouble determining which fields are mandatory and which are optional. A person who relies on speech recognition software may produce words that are different than the dictated words.</p>
+
+<p>This guideline seeks to reduce the number of serious errors that users make; increase the likelihood that users will notice their errors; and help users understand what they must do to correct errors.</p>
+
+<h2>Guidelines</h2>
+<h3>Guideline 3.1 Readable</h3>
+<p> Make text content readable and understandable.</p>
+<h4>3.1 Level A</h4>
+<ul>
+<li><strong>3.1.1 Language of Page</strong>: The default human language of each Web page can be programmatically determined.
+<p>Different languages use different alphabets. For example, English, French, and German use the Latin alphabet, whileÂ  Russian and Ukrainian use the Cyrillic alphabet, and Greek uses a Greek alphabet Even when two languages share an alphabet, they may not use the same letters. Both English and Slovak are based on the Latin alphabet, but English has 26 letters while Slovak has 46. </p>
+<p>Although <strong>3.1.1</strong> mostly affects individuals who are involved with the technical side of Web production, anybody who creates on-line content should be aware of the rule: For every Web page, specify the written language (e.g., English, French, Hebrew, Japanese, and so on). When this rule is followed, browsers, media players, and assistive technologies automatically render text properly. </p>
+<p>Specifying the language ensures that</p>
+<ul>
+<li>The correct alphabet is displayed.</li>
+<li>All letters, characters, and symbols for the specified language are displayed. </li>
+<li>Screen readers load the appropriate pronunciation rules.</li>
+<li>Media players show the right captions.</li>
+</ul>
+<p>When a Web page uses several languages, specify the language that is used most. If several languages share the spotlight, choose the first language that appears on the page.</p>
+</li>
+</ul>
+<h4>3.1 Level AA</h4>
+<ul>
+<li><strong>3.1.2 Language of Parts:</strong> The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.
+<p><strong>3.1.1</strong> (above) requires you to specify the language of each page. But some pages that are mostly in one language contain words or phrases in another language. <strong>3.1.2</strong> requires you to specify the language of these words and phrases. For example:</p>
+<ul>
+<li>In an English language novel, a character always speaks French:<br /><br />
+<strong>"Where were you Tuesday evening?" he asked.<br /><br />
+<span>[blue]"Je ne comprends pas,"[/blue]</span> she responded.</strong><br /><br /></li>
+<li>A Web page includes links to translations of the same page:<br /><br />
+<strong>This recipe is also available in <span>[blue]franÃ§ais[/blue]</span>, <span>[blue]Deutsch[/blue]</span>, and <span>[blue]?????????[/blue]</span></strong>.<br /><br /></li>
+</ul>
+<p>By following <strong>3.1.2</strong>, browsers display the appropriate alphabet for these passages, and screen readers pronounce them correctly.</p>
+<p>There are four exceptions. There is no need to specify language changes for:</p>
+<ol>
+<li>Proper names such as <strong>[blue]Sophia Loren[/blue]</strong>, <strong>[blue]Olof Palme[/blue]</strong>, and <strong>[blue]Yma Sumac[/blue]</strong>.</li>
+<li>Technical terms such as <strong>[blue]Homo sapien[/blue]</strong>, <strong>[blue]Alpha Centauri[/blue]</strong>, and <strong>[blue]habeas corpus[/blue]</strong>.</li>
+<li>Words or phrases that have become part of another language, such as words that English has borrowed from French: <strong>[blue]rendezvous[/blue]</strong>, <strong>[blue]RSVP[/blue]</strong>, <strong>[blue]laisser-faire[/blue]</strong>, and so on.</li>
+<li>Words or phrases where the language cannot be determined.</li>
+</ol>
+
+</li>
+</ul>
+<h4>3.1 Level AAA</h4>
+<ul>
+<li><strong>3.1.3 Unusual Words:</strong> A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.
+<p>"Unusual words" are words or phrases that readers are unlikely to understand from context alone. This includes:</p>
+<ol>
+<li><strong>Idioms</strong>: Phrases whose meaning cannot be inferred from the meaning of the individual words that make up the phrase, such as <strong>[blue]spill the beans[/blue]</strong>, <strong>[blue]turn the tables[/blue]</strong>, and <strong>[blue]eat crow[/blue]</strong>.</li>
+<li><strong>Jargon</strong>: Specialized terms used by people in particular fields, such as <strong>[blue]charm[/blue]</strong> (physics), <strong>[blue]bug[/blue]</strong> (computer programming), and <strong>[blue]ideological hegemony[/blue]</strong> (cultural studies).</li>
+</ol>
+<p>There are many ways to meet <strong>3.1.3</strong>. For example:</p>
+<ul>
+<li>Follow the first occurrence of each unusual word with its definition.</li>
+<li>Use definition lists.</li>
+<li>Make a glossary that includes unusual words.</li>
+<li>Link unusual words to definitions at the bottom of the page.</li>
+</ul>
+<p>Content that meets <strong>3.1.3</strong> benefits:</p>
+<ul>
+<li>Non-specialists who need to understand specialized information.</li>
+<li>Students who are learning about a new or unfamiliar subject.</li>
+<li>Second language learners.</li>
+<li>People whose disabilities make it difficult to understand idioms and jargon.</li>
+<li>People who use screen magnification software. Enlarging the text can cause a loss of context.</li>
+<li>People who use handheld Web devices with small screens. A small screen may cause loss of context.</li>
+</ul>
+</li>
+<li><strong>3.1.4 Abbreviations:</strong> A mechanism for identifying the expanded form or meaning of abbreviations is available.
+<p>Abbreviations and acronyms are convenient for people who know them, but confusing for people who don't.</p>
+<ul>
+<li>Abbreviations may have no obvious connection to the words they represent. "Switzerland" is abbreviated as "CH" â€” Latin for "Confoederatio Helvetica."</li>
+<li>Some abbreviations cannot be pronounced according to the rules of the language. "DK" (for "Denmark") and "rm" (for "room") are not English words or phonemes. Readers must know â€” or be able to guess â€” the abbreviations to pronounce them correctly.</li>
+<li>One abbreviation can mean different things. "PC" may mean "personal computer," "Progressive Conservative," "politically correct," "police constable," or "Privy Council." Readers must understand the context to know what the abbreviations mean.</li>
+<li>An acronym and a word may have the same spelling but different meanings. For example, "RIP" is an acronym for "Rest in Peace" and a word for "slash." </li>
+<li>Some acronyms sound like common words but are spelled differently. The acronym for Synchronized Multimedia Integration Language, "SMIL," is pronounced "smile." </li>
+<li>Some acronyms are pronounced differently than they appear. The acronym for American Automobile Association, "AAA," is sometimes pronounced "Triple A."</li>
+</ul>
+<p>Examples of ways to reduce the confusion that abbreviations may cause:</p>
+<ul>
+<li>Provide the expansion or explanation after the first occurrence of the abbreviation. </li>
+<li>Link to its definition.</li>
+<li>Provide definitions using the html <strong>[blue]abbr[/blue]<strong> and </strong>[blue]acronym[/blue]</strong> elements.</li>
+<li>Include a glossary.</li>
+<li>Link to a glossary.</li>
+<li>Provide a function to search an online dictionary.</li>
+</ul>
+<p>Content that meets <strong>3.1.4</strong> benefits:</p>
+<ul>
+<li>Non-specialists who are not familiar with abbreviations and acronyms that specialists use.</li>
+<li>People who are encountering abbreviations and acronyms for the first time.</li>
+<li>Second language learners.</li>
+<li>People who have difficulties remembering.</li>
+<li>People who rely on screen magnification software. Enlarging the text can cause a loss of context.</li>
+</ul>
+</li>
+<li><strong>3.1.5 Reading Level:</strong> When text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available.
+<p>Clear and simple writing benefits everybody. There are people with reading disabilities (such as dyslexia) who are highly educated and possess specialized knowledge. It may be possible to accommodate some of these individuals by making text more readable.</p>
+<p>Ways to make text more readable include:</p>
+<ul>
+<li>Simplify the writing. For example, express one idea in each paragraph; replace long or unfamiliar words with more common ones; and use the active voice.</li>
+<li>Provide a text summary that requires less advanced reading ability.</li>
+<li>Illustrate complex ideas with drawings, photographs, maps, symbols, and other resources.</li>
+</ul>
+<p><strong>3.1.5</strong> acknowledges that difficult and complex writing is appropriate for certain audiences. The comprehensibility of these texts can be improved by adding content that aids understanding, such as a summary or a chart.</p>
+
+</li>
+<li><strong>3.1.6 Pronunciation:</strong> A mechanism is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation.
+<p>If the pronunciation of a word is crucial to understanding a passage, indicate how the word should be pronounced.</p>
+<p><strong>3.1.6</strong> rarely applies to documents in English and French; the meaning of words can usually be determined from context. Pronunciation issues are more likely to arise in documents written in other languages, such as Japanese.</p>
+
+</li>
+</ul>
+<h3>Additional Resources</h3>
+<p>For additional information see:
+</p>
+<ul>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning.html">Understanding Guideline 3.1: Readable</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html">Understanding Guideline 3.1.1:  Language of Page </a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html">Understanding Guideline 3.1.2: Language of Parts</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-idioms.html">Understanding Guideline 3.1.3:  Unusual Words </a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-located.html">Understanding Guideline 3.1.4: Abbreviations</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-supplements.html">Understanding Guideline 3.1.5:  Reading Level </a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-pronunciation.html">Understanding Guideline 3.1.6: Pronunciation</a></li>
+</ul>
+
+<h3>Guideline 3.2 Predictable</h3> 
+<p>Make Web pages appear and operate in predictable ways.</p>
+<h4>3.2 Level A</h4>
+<ul>
+<li><strong>3.2.1 On Focus:</strong> When any component receives focus, it does not initiate a change of context. 
+
+<p>When designing a Web page, do not confuse users by unexpectedly changing the context when they navigate or explore. Examples of context changes include:</p>
+
+<ul>
+<li>Opening a new window</li>
+<li>Moving focus to another component</li>
+<li>Going to a new page</li>
+<li>Significantly re-arranging the content of a page</li>
+</ul>
+
+<p>Conforming to <strong>3.2.1</strong> minimizes the chance that users will become confused or disoriented when interacting with a Web page:</p>
+
+<ul>
+<li>Pressing the <kbd>Tab</kbd> key, which is normally used to jump from one control to another, should <em>not</em> initiate a search.</li>
+
+<li>Pressing the <kbd>Down arrow</kbd> key while scrolling through a drop-down menu should <em>not</em> open a new window.</li>
+
+<li>Clicking into an edit field should <em>not</em> open a pop-up.</li>
+</ul>
+
+</li>
+
+<li><strong>3.2.2 On Input: </strong>Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.
+
+<p>When designing on-line forms, ensure that (a) entering data in a text field, (b) checking or unchecking a checkbox, or (c) selecting or deselecting a radio button do not change the context. Examples of context changes include:</p>
+
+<ul>
+<li>Opening a new window</li>
+<li>Moving focus to another component</li>
+<li>Going to a new page</li>
+<li>Significantly re-arranging the content of a page </li>
+</ul>
+
+<p><strong>3.2.2</strong> helps ensure that users can predict what will happen when interacting with form controls. Context changes may confuse users who cannot easily perceive the page, or who are distracted by the changes. A context change is appropriate only when the user is notified that the change will happen in response to an action.</p>
+
+<p><strong>Example</strong>: A form contains three fields for entering telephone numbers. The first field contains the three-digit area code. The second field contains the first three digits. The third field contains the last four digits. When a user completes entry of the first field, focus automatically moves to the second field. This is a context change. If this behaviour is described at the beginning of the form, the page conforms to <strong>3.2.2</strong>. If the behaviour is not described, it does not conform.</p>
+
+</li>
+</ul>
+
+<h4>3.2 Level AA</h4>
+<ul>
+<li><strong>3.2.3 Consistent Navigation:</strong> Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user. 
+
+<p>When designing a Web site, keep information that is repeated on every page in the same order.</p>
+
+<p>Content is easier to find when the location of repeated information is predictable. The phrase "same order" does <em>not</em> imply that expanding and contracting navigation menus must be avoided. By adding or removing links between existing navigation links, navigation within a subsection is enabled, and the relative order is maintained.</p> 
+
+<p>Conforming to <strong>3.2.3</strong> helps users predict the location of the content they are looking for, and find content more quickly when they encounter it again. Consistencies in site layout are especially helpful to individuals who rely on visual cues or their spatial memory. People with low vision who use screen magnification software, and see only a small portion of the screen at one time, can take advantage of page boundaries and other cues to quickly locate repeated content.</p>
+
+<p>Using templates to ensure consistency across a site helps Web authors meet <strong>3.2.3</strong>.</p>
+
+</li>
+
+<li><strong>3.2.4 Consistent Identification:</strong> Components that have the same functionality within a set of Web pages are identified consistently. 
+
+<p>When designing a Web site, be consistent when identifying elements that have the same function. For example:</p>
+
+<ul>
+<li>A newspaper publishes an on-line edition. Each article spans several Web pages. There are four links at the bottom of every page of every article: "First Page," "Previous Page," "Next Page," and "Last Page."</li>
+<li>On a company Web site, an envelope icon indicates that visitors can send a message to an employee. The text alternative always begins with the phrase, "Send a message to," followed by the employee's name.</li>
+<li>On an e-commerce site, there are captions under photographs of products. The caption gives the type of product followed by a short description, e.g., "CD - John Denver's Greatest Hits," "Book - Emily Martin - Woman in the Body: A Cultural Analysis of Reproduction."
+<li>A Web site has a "Search" feature on some pages and a "Find" feature on others. Both do the same thing. To conform to <strong>3.2.4</strong>, the Web author replaces "Find" with "Search" on every page.  </li>
+</ul>
+
+</li>
+</ul>
+
+<h4>3.2 Level AAA</h4>
+<ul>
+<li><strong>3.2.5 Change on Request:</strong> Changes of context are initiated only by user request or a mechanism is available to turn off such changes. 
+
+<p>When designing a Web site, give users control over context changes, including:</p>
+
+<ul>
+<li>Automatically advancing slideshows</li>
+<li>Launching new windows</li>
+<li>Spawning pop-up windows</li>
+<li>Changing keyboard focus</li>
+<li>Automatically submitting forms after selecting a list item</li>
+</ul>
+
+<p>In giving users this control, provide an option to disable context changes.</p>
+
+<p><strong>3.2.5</strong> aims to eliminate confusion caused by unexpected context changes. Unexpected context changes may complicate access for people with motor impairments, people with low vision, people who are blind, and people with certain cognitive disabilities.</p>
+
+<p>Some context changes are not disruptive to everybody, or benefit certain people. For example, context changes are an integral part of slide shows that automatically advance. Content that automatically change context conforms to <strong>3.2.5</strong> if users have the option to turn the feature on or off.</p>
+
+<p>Other examples of conformance to <strong>3.2.5</strong>:</p>
+
+<ul><li>Instead of automatically updating the order form on an e-commerce site, users activate an "Update Now" button to refresh the content.</li>
+<li>A user is automatically redirected from an old page to a new page in a way that he or she never realizes the redirect has occurred.</li>
+</ul>
+
+</li>
+</ul>
+
+<h3>Additional Resources</h3>
+<p>For additional information see:</p>
+<ul>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior.html">Understanding Guideline 3.2: Predictable</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html">Understanding Guideline 3.2.1:   On Focus </a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html">Understanding Guideline 3.2.2: On Input</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html">Understanding Guideline 3.2.3:  Consistent Navigation </a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html">Understanding Guideline 3.2.4: Consistent Identification</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context.html">Understanding Guideline 3.2.5: Change on Request </a></li>
+</ul>
+
+
+<h3>Guideline 3.3 Input Assistance</h3>
+
+<p>Help users avoid and correct mistakes.</p>
+<h4>3.3 Level A</h4>
+<ul>
+<li><strong>3.3.1 Error Identification:</strong> If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text. 
+
+<p>When designing a Web site or on-line form, use text to indicate and describe errors.</p>
+
+<p>It is OK to signal errors with images and colour changes provided there are also text descriptions.</p>
+
+<p><strong>Example:</strong> A bank encourages customers to apply for loans on-line. A customer submits a form with his or her name, address, phone number, e-mail address, and account number. If the customer does not complete the form correctly, the form is re-displayed with an alert &mdash; three question marks <strong>[blue]???[/blue]</strong> displayed after the prompt &mdash; for all missing or incorrect fields.</p>
+
+<p>In addition, the fields in error are highlighted yellow to make them easier to spot.</p>
+
+<p><strong>3.3.1</strong> is a special benefit to screen reader users. Because screen readers only read text, screen reader users may have trouble understanding non-text error messages.</p>
+
+</li>
+
+<li><strong>3.3.2 Labels or Instructions:</strong> Labels or instructions are provided when content requires user input. 
+
+<p>When designing on-line forms, help users enter information by providing clear instructions and examples. Conformance to <strong>3.3.2</strong> helps users avoid mistakes when their input is required.</p>
+
+<p>When filling out forms, people who use certain assistive technologies are more likely to make mistakes than users without disabilities. Similarly, when recovering from mistakes, these users may have trouble zeroing in on and fixing problems.</p>
+
+<p>Instructions and cues that are visually and programmatically connected to form controls help users complete forms successfully the first time. If they do make mistakes, instructions and cues make it easier to find and fix them.</p>
+
+<p><strong>Examples of providing clear cues and instructions</strong></p>
+
+<ul>
+<li>Use <strong>Given Name</strong> instead of <strong>Name 1</strong> as the prompt for entering a first name, and <strong>Family Name</strong> instead of <strong>Name 2</strong> for entering a surname.</li>
+
+<li>Show the required date format for a field: <strong>Date (dd-mm-yyyy)</strong>.</li>
+
+<li>Place prompts for text fields and combo boxes above or to the left of controls, and prompts for checkboxes and radio buttons to the right of controls. Doing this "automatically" produces fairly accessible form controls.</li>
+</ul>
+
+</li>
+</ul>
+<h4>3.3 Level AA</h4>
+<ul>
+<li><strong>3.3.3 Error Suggestion:</strong> If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content. 
+
+<p>When designing on-line forms, provide suggestions for fixing problems when input errors are detected.</p>
+
+<p>This is a more stringent version of <strong>3.3.1</strong>, which requires that errors be identified. To conform to <strong>3.3.3</strong>, the errors must not only be identified, but suggestions on how to correct them must be provided.</p>
+
+<p>Explaining how to correct input errors may help people who, due to disability, have difficulties completing and submitting on-line forms. This includes people with learning disabilities, cognitive disabilities, visual impairments, and motor impairments.</p>
+
+<p>For example, an input field asks users to type a month name. If a user enters "12," suggestions for correction may include:</p>
+
+<ul>
+<li>A list of the acceptable values: <strong>Choose one of: January, February, March, April, May, June, July, August, September, October, November, December</strong>.</li>
+<li>A reworded prompt: <strong>Type the month name:</strong></li>
+<li>A conversion of the input data in an interactive pop-up window: <strong>Do you mean "December?"</strong></li>
+</ul>
+
+</li>
+
+<li><strong>3.3.4 Error Prevention (Legal, Financial, Data):</strong> For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true: 
+<ol>
+
+   <li>Reversible: Submissions are reversible.</li>
+   <li>Checked: Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.</li>
+   <li>Confirmed: A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.</li>
+</ol>
+
+<p>When designing Web sites that allow people to make financial transactions, establish legal commitments, update data, or take tests, help users avoid serious consequences of their mistakes.</p>
+
+<p>The aim of <strong>3.3.4</strong> is to give users a second chance if they accidentally input the wrong information or activate the wrong control. In the following examples, the mistakes involve transactions that occur immediately and without the ability to alter them:</p>
+
+<ul>
+<li>Purchasing non-refundable and non-exchangeable airline tickets on-line can have serious financial consequences. If a user specifies the wrong travel date, they may wind up with a ticket they cannot use. </li>
+
+<li>Accidentally deleting or modifying information stored in a travel service database may have dire consequences if the person later needs to access information about a flight.</li>
+
+<li>While taking an on-line examination, accidentally clicking the "Submit" button before answering all questions could result in a poor score.</li>
+</ul>
+
+<p>Some people with disabilities are more likely to make mistakes than people without disabilities. People with certain reading disabilities may transpose numbers and letters. People with motor disabilities may hit keys by accident.</p>
+
+<p>To conform to <strong>3.3.4</strong>, allow users to correct mistakes that could result in serious consequences before they happen. Provide one of the following:</p>
+<ol>
+<li>A mechanism to reverse actions.</li>
+<li>A way to review and correct information before it is submitted.</li>
+<li>A way to check data for input errors.</li>
+</ol>
+
+</li>
+</ul>
+<h4>3.3 Level AAA</h4>
+<ul>
+<li><strong>3.3.5 Help:</strong> Context-sensitive help is available.
+
+<p>When designing on-line forms, provide context-sensitive help when prompts cannot be made sufficiently descriptive.</p>
+
+<p>By providing context-sensitive help, users can learn what to do without losing track of where they are. Context-sensitive help is only required when it is impractical to include full details in the prompts and labels.</p> 
+
+<p>It might be appropriate to offer context-sensitive help on an application for an employment program for newcomers to Canada. Applicants are asked to list their college and university degrees. Context-sensitive help reminds applicants that they are not obliged to include the years that degrees were granted.</p>
+
+<p>One way to provide context sensitive help is to place "Help" links next to questions.</p>
+
+<p>Conforming to <strong>3.3.5</strong> helps</p>
+
+<ul>
+<li>People with reading, writing and intellectual disabilities</li>
+<li>Seniors</li>
+<li>Second language learners</li>
+<li>Anybody who has trouble completing forms</li>
+<li>Anybody who does not know what information to include or exclude when filling out a form</li>
+</ul>
+
+</li>
+
+<li><strong>3.3.6 Error Prevention (All):</strong> For Web pages that require the user to submit information, at least one of the following is true:
+<ol>
+
+   <li>Reversible: Submissions are reversible.</li>
+   <li>Checked: Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.</li>
+   <li>Confirmed: A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.</li>
+</ol>
+
+<p><strong>3.3.6</strong> amplifies on <strong>3.3.4</strong> (above), which applies only to certain kinds of Web sites. <strong>3.3.6</strong> applies to all Web sites that require users to submit information.</p>
+
+<p>Give users a second chance if they accidentally input the wrong information or activate the wrong control. To conform to <strong>3.3.6</strong>, make it possible for users to correct submission errors. Provide one of the following:</p>
+
+<ol>
+<li>A mechanism to reverse an action.</li>
+<li>A way to review and correct information before it is submitted.</li>
+<li>A way to check data for input errors.</li>
+</ol>
+
+<p><strong>Example:</strong> Reginald is a grade 8 student. Due to an accident, he has little use of his hands. He operates a computer via speech recognition software instead of a keyboard and mouse. Recognition is excellent, but not perfect.</p> 
+
+<p>While signing up for an on-line science forum, Reginald dictates his first name into the "Name" field. The speech recognition software thinks he said "Register," which causes the mouse to click the "Register" button. Because the forum conforms to <strong>3.3.6</strong>, the system gives him a chance to add his name before it commits the information to the database.</p>
+
+</li>
+</ul>
+<h3>Additional Resources</h3>
+<p>For additional information see:</p>
+<ul>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error.html">Understanding Guideline 3.3: Input Assistance</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html">Understanding Guideline 3.3.1:   Error Identification </a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html">Understanding Guideline 3.3.2: Labels or Instructions</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html">Understanding Guideline 3.3.3:  Error Suggestion</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.htmll">Understanding Guideline 3.3.4: Error Prevention (Legal, Financial, Data)</a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-context-help.html">Understanding Guideline 3.3.5: Help </a></li>
+
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible-all.html">Understanding Guideline 3.3.5: Error Prevention (All) </a></li>
+
+</ul>
+
+
+<p>The Flash simulation below is intended to demonstrate accessibility problems for people who do not normally experience barriers. For those using assistive technologies, you may find the simulation somewhat inaccessible. This is unavoidable for purposes of demonstrating barriers. </p>
+
+<script type="text/javascript"><!--
+function changeFocus() {
+    var txt = document.getElementById('LINK1');
+    txt.focus();
+    //txt.select();
+  }
+
+  var isInternetExplorer = navigator.appName.indexOf("Microsoft") != -1;
+  // Handle all the FSCommand messages in a Flash movie.
+  function test_DoFSCommand(command, args) {
+	var testObj = isInternetExplorer ? document.all.test : document.test;
+	//
+	DoFSCommand(command, args);
+	//
+  }
+  // Hook for Internet Explorer.
+  if (navigator.appName && navigator.appName.indexOf("Microsoft") != -1 && navigator.userAgent.indexOf("Windows") != -1 && navigator.userAgent.indexOf("Windows 3.1") == -1) {
+	document.write('<script language=\"VBScript\"\>\n');
+	document.write('On Error Resume Next\n');
+	document.write('Sub test_FSCommand(ByVal command, ByVal args)\n');
+	document.write('	Call test_DoFSCommand(command, args)\n');
+	document.write('End Sub\n');
+	document.write('</script\>\n');
+  }
+
+  function DoFSCommand(command, args) {
+        if(command == 'alert'){
+          alert(args);
+        }else if(command == 'changeFocus'){
+          changeFocus();
+	}
+  }
+
+
+ var toc = document.getElementById('side-menu');
+ var showlink=document.getElementById('side-menushowlink');
+ var hidelink=document.getElementById('side-menuhidelink');
+ 
+ if (hidelink.style.display == '')
+ {
+  document.getElementById('contentcolumn_shiftright').id="contentcolumn";
+  toc.style.display = 'none';
+  hidelink.style.display='none';
+  showlink.style.display='';
+ }
+// --></script>
+
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+        codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"
+        id="test" width="860" height="640" align="middle">
+<param name="allowScriptAccess" value="always" />
+<param name="movie" value="sims/Sim_3_v1.swf" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#ffffff" />
+<param name="SeamlessTabbing" value="false" />
+<embed src="sims/Sim_3_v1.swf" quality="high"
+       bgcolor="#ffffff" width="860"
+       height="640" swLiveConnect=true
+       id="test" name="test" align="middle"
+       allowScriptAccess="always"
+       SeamlessTabbing="false"
+       type="application/x-shockwave-flash"
+       pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+
+<h2>Ways to Avoid Creating Barriers</h2>
+
+<p><strong>This section is intended primarily for a technical audience, or the people who will be implementing accessibility strategies. Less technical readers might choose to skim this section, or skip over it. </strong></p>
+
+<h3>Understanding Comprehension Barriers</h3>
+
+<p>There are many reasons why someone may not understand Web content, but the majority revolve around the ability to read text and understand language. For the average person, barriers of understanding are primarily associated with comprehending meaning. These barriers can often be avoided by including definitions for complex terms (e.g. a glossary), by presenting information in multiple perceptual forms (e.g. audio while reading), describing things in concrete terms (e.g. step-by-step), or perhaps structuring information to represent relationships between different parts of the  information being presented.</p>
+
+
+<p>For people with disabilities, understanding Web content can go beyond  just understanding of meaning. They often have assistive technologies that present text to them as speech output. When assistive technology has difficulty outputting information in a form a person can understand, a second layer of barriers can emerge. For example, a screen reader might encounter an acronym such as â€œ<acronym title="Newfoundland">NFLD</acronym>â€.  While a (Canadian) person listening may understand the acronym if another person reads it to them, if a screen reader tried to pronounce the letters as a word, it may not be possible to understand what is being read.  A similar problem occurs when assistive technologies encounter text in a second language that has not been identified as such. The pronunciation of foreign words with inappropriate  phonology can make such words difficult to understand.
+</p>
+
+<p>Another challenge of understanding for people with disabilities revolves around the ability to predict information, to understand patterns in the presentation of information,  and automate the use of information so mental resources can be devoted to comprehension.  For some people with disabilities, learning how to use information can take time. For blind people for instance, they will often learn the layout of a site, learn where features are in relation to other features, and learn how particular types of  features function, etc.. So, when the consistency of a site's layout changes,  such as rearranging a navigation bar, or inserting or removing features from the standard layout, they go back into learning mode, and understanding and comprehension can wane.
+</p>
+
+<p>Web forms can also be difficult to understand if they are not created properly. Without proper labels to identify form fields, what might appear obvious to a sighted person, may not be understood by someone who cannot see the information on the screen. Likewise, when one cannot see the screen, filling out Web forms can be a challenge, and making errors is very common. Forms need to be designed in a way that prevents such errors. Each field in a form needs to be validated to be sure the information being entered is in the form expected. Even with validated forms, and errors eliminated, a person needs to be able to review the information being submitted on a preview or confirmation screen before it is finally submitted and recorded. And, once the information has been recorded, they need to be told so, so they are not left wondering if their submission was successful.
+</p>
+
+<p>The following is a list of common barriers to understanding. Read through them to develop and understanding of the types of problems people encounter when trying to understand  Web content, then move on the Success Criteria that follow for strategies that can be used to avoid creating these types of barriers.</p>
+
+
+<h3>Common Failures for Guideline 3.1 (Readable)</h3>
+<ol>
+<li>due to omitting a human language identifier in a Web page.</li>
+<li>due to omitting markup to identify changes in human language.</li>
+<li>due to omitting definitions for unusual words.</li>
+<li>due to omitting the expanded form of an abbreviation.</li>
+<li>due to omitting supplemental content where required reading level is greater than lower secondary education level.</li>
+</ol>
+
+<h3>Common Failures for Guideline 3.2 (Predictable) </h3>
+
+<ol>
+<li>due to changing context when a component receives focus</li>
+<li>due to automatically submitting a form and presenting new content without prior warning when the last field in the form is given a value</li>
+<li>due to launching a new window without prior warning when the status of a radio button, check box or select list is changed</li>
+<li>due to providing instruction material about the change of context by change of setting in a user interface element at a location that users may bypass</li>
+<li>due to presenting navigation links in a different relative order on different pages</li>
+<li>due to using two different labels for the same function on different Web pages within a set of Web pages </li>
+<li>due to complete change of main content through an automatic update that the user cannot disable from within the content</li>
+<li>due to changing the context when the user removes focus from a form element</li>
+<li>due to opening windows that are not requested by the user</li>
+</ol>
+
+<h3>Common Failures for Guideline 3.3 (Input Assistance)</h3>
+
+<ol>
+<li>due to omitting easily accessible feedback after an errors occurs. </li>
+<li>due to omitting form validation to ensure data entered is valid, and present if identified as required.</li>
+<li>due to omitting a way to reverse a submission</li>
+<li>due to omitting context sensitive help. </li>
+</ol>
+
+<p>A more detailed list, including less common failures, can be found in <a href="http://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0</a></p>
+
+<h3>Success Criteria for Guideline 3.1 (Readable)</h3>
+<p><strong>Guideline 3.1</strong> Readable: Make text content readable and understandable.</p>
+<ol>
+<li>due to omitting a human language identifier in a Web page.
+<p> Assistive technologies will often adjust their output based on the language of the content, so the content is pronounced with the sounds associated with the language. When the language is not defined, assistive technologies will often guess the language, which may produce odd sounding speech. The language of a Web page is normally defined in its opening HTML element using the "lang" attribute:</p>
+<p>If the language of the content changes, the value of the "lang" attribute should also change.</p>
+</li>
+<li>due to omitting markup to identify changes in human language.
+<p>When different languages are present on the same Web page, the second  (or third etc.) language should be identified. For instance, if the primary language is set to English (en) in the opening HTML element, embedded  Spanish is identified as such so the letters are pronounced using Spanish sounds instead of English sounds. Language changes are identified with the "lang" attribute in a "span" element like the following.
+</p>
+<code>
+<span>No hablo Espaï¿½ol muy bien.</span>
+</code>
+</li>
+<li>due to omitting definitions for unusual words.
+
+<p>Definitions can be helpful for many people, including those with disabilities who may have less advanced language in their vocabulary, for people who are reading in a second language, or for those who are simply not familiar with the subject matter. </p>
+<p>For learning content in particular, new words or perhaps very low frequency words or phrases should include an explanation of their meaning. This can be done in a variety of ways, perhaps using the title attribute in a "span" element, perhaps using scripting to create a small popup definition box, or perhaps making the unusual word a link to its definition in a separate glossary of terms for the site.</p>
+
+</li>
+<li>due to omitting the expanded form of an abbreviation.
+
+<p>All short forms need to be presented in their long form the first time they appear on a Web page. Though some assistive technologies include a basic dictionary of abbreviation and acronyms, and thus read those short forms correctly, for less common short forms they will often attempt to pronounce the letters, rather than reading the letter names, which can produce speech output that is difficult or even impossible to comprehend. </p>
+<p>The <strong>standard practice</strong> for presenting short forms in most texts is to present the long form the first time the phrase appears, followed by the letters of the short form in parentheses. In this case a person listening with a screen reader for instance, will hear the long form, then the potentially odd sounding short form, and thus be able to make the association between the two. When the short form is encountered again later in the page, those listening to the content are able to reassociate the odd pronunciation with the original long form.</p>
+<p>Other ways of presenting short forms, but not to the exclusion of the standard practice, include using the "<strong><abbr title="Abbreviation">abbr</abbr></strong>" and "<strong>acronym</strong>" elements in HTML with the short forms each time they appear. When assistive technologies encounter these elements, they will read the value associated with the element instead of the short form. For fully able people, they can position a mouse pointer over the short form to display the long form in a tool tip like popup. The following are examples of how these <acronym title="Hypertext Markup Language">HTML</acronym> elements might be used to make short forms understandable.</p>
+<code>
+<abbr title="Government">Gov't</abbr>
+<acronym title="World Health Organization">WHO</acronym>
+
+</code>
+<p>Sites that have many short forms might choose to create a separate page listing the short and long forms together in a <strong>glossary of abbreviations and acronyms</strong>, then link the short forms in the text of Web content to the entries in the short form glossary.</p>
+
+</li>
+<li>due to omitting supplemental content where required reading level is greater than lower secondary education level.
+
+<p>Comprehension ability has a lot to do with one's level of education and the reading level at which content is written. When a Web site has no specific group as an audience (i.e. public Web sites), the language used should be readable, and understandable by someone with a lower secondary education level, excluding proper names and titles. <a href="http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm">Education level has been defined by UNESCO</a></p>
+<p>While this guideline offers no exceptions to the rule if for instance, you are certain your audience will have a high level of education, arguably it would be inappropriate to offer grade 9 level language to a group of highly educated professionals. For the time being, Web sites aimed solely at a professional audience will fail this Level AAA requirement. In the opinion of the author, who believes this particular guideline is flawed, you should not need to write at a lower secondary level if you are addressing a professional audience. However, if Level AAA compliance is your goal, you may need to either forego that classification, or write alternate simplified content that meets the requirement for purposes of complying with legislated accessibility rules.</p>
+<p>For Web sites that are not directed specifically at a professional audience, the Level AAA requirement does mean content must be clearly written at a level that can be understood by a typical 14 or 15 year old whose first language is the primary language of the content.</p>
+
+</li>
+</ol>
+<p>A more detailed list, including less common failures, can be found in <a href="http://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0</a></p>
+
+<h3>Success Criteria  for Guideline 3.2 (Predictable) </h3>
+<p><strong>Guideline 3.2</strong> Predictable: Make Web pages appear and operate in predictable ways.</p>
+<ol>
+<li>due to changing context when a component receives focus
+
+<p>Avoid creating features in Web content that as a result of receiving focus changes the current context. For example, do not cause popup browser windows to open when a page loads. When this occurs while a site is being viewed with a screen reader, the person will usually end up with the popup window active, and may not be aware that the primary parent window is open underneath the popup. Popup windows should only open at the users request.</p>
+
+<p>Also avoid creating select menus that redirect a person to another page when a selection is made. Instead have them make their choice then press the enter key, or press a submit button. For a keyboard user, such as a person who is blind, when such a menu is accessed, the down arrow key is usually used to move down the list of options in the menu. When the first item in the menu receives focus, the person is redirected to the location that item links to, which makes accessing items beyond the first option difficult, or impossible for some users.</p>
+
+</li>
+<li>due to automatically submitting a form and presenting new content without prior warning when the last field in the form is given a value
+
+<p>Similar to avoiding changes in context when content receives focus, do not cause changes in context by selecting a form element. For example, if a series of possible Web pages are associated with a series of radio buttons, do not automatically send people to one of those pages when its associated radio button is selected. Instead, have them select the radio button then either press the enter key, or press a submit button. The same sort of problem occurs with radio button selectors as occurs with select menus; when the first button receives focus when accessed by keyboard, the person is redirected before it is possible to reach the second and subsequent buttons, making it difficult or impossible to reach anywhere other than the first option.</p>
+
+</li>
+<li>due to launching a new window without prior warning when the status of a radio button, check box or select list is changed
+
+<p>Like avoiding redirection to other Web pages when a form element is selected, do not automatically open new windows when form elements are selected. If a window is opened upon selecting a form element, the context may change without the person's knowledge if they can't see that a window has opened. This can  create confusion when that person tries to continue or go back through content thinking they are still in the parent window from which the new window opened.</p>
+
+</li>
+<li>due to presenting navigation links in a different relative order on different pages
+
+<p>When a person with a screen reader views a site for the first time, particularly for sites that are going to be revisited regularly,  effort goes into trying to develop a mental representation of the layout of the site, and where navigation elements and various features are located relative to each other. When the navigation elements  and features change location, or are replaced with other features, the mental representation essentially "breaks" and has to be revised, once again requiring effort to develop a new mental representation. For this reason it is important that navigation elements and other features that appear across pages of a Web site remain in a consistent layout, thus minimizing the effort required to learn how to use a site, and leaving the effort instead to comprehending the content of the site.</p>
+
+<p>Many Web sites these days are created with a series of dynamically assembled templates, typically a template that contains the features in the header area of a site, perhaps a template for a navigation menu that might appears to the side, and another template for the footer area that appears across the bottom of the site. These templates will wrap around the content the site presents. Templating has made it relatively easy to conform with this guideline, since in most cases they will remain the same for every page on a site. Where web sites are created as a series of static HTML documents, this guideline becomes more important, since it is relative easy to upset the consistency of the features in the layout of a Web site by leaving out a navigation link, adding a specific tool for a specific purpose on particular page, or perhaps making an error in the HTML markup on some page that ends up breaking the consistency. </p>
+
+<p>To make your Web content as usable as possible for those who can not see how things are laid out, be sure the navigation elements of the site remain the same throughout the site, and only change the layout when it needs to be made clear that a person has entered a different area of a site, that perhaps serves a different purpose. For example a primary product site may have a particular consistent layout, and the community development Web site that accompanies the product support area, perhaps take on a consistent layout of its own, making it clear the two areas of the site serve different purposes. </p>
+
+</li>
+<li>due to using two different labels for the same function on different Web pages within a set of Web pages 
+
+<p>It is important to use language consistently when referring to identical content or functionality. If for instance, you have a link on your home page that reads "Current News," be sure the heading and/or title on the page that opens also reads "Current News." If the title or heading on the  page were instead "Current Activities,"  a person listening with a screen reader, or a person with a cognitive disability, might be left wondering if they are in the right place, since they thought they were going to "News" and ended up at "Activities." </p>
+
+<p>On occasion this rule does not  hold true. If for instance a Web page has an arrow link that links to the next page, the Alt text for the arrow might read "Next Page," while the page title and heading would not be "Next Page." You could in such a case, extend the Alt text with the arrow to include the title of the next page, to make the next link more consistent with the page it leads to. </p>
+
+<p>Where possible, be consistent in the language you use. Don't use "Login" as link text, then title the login screen "Sign in."  Call them both "Login", or call them both "Sign-in," but don't mix the two. </p>
+</li>
+<li>due to complete change of main content through an automatic update that the user cannot disable from within the content
+
+<p>When a screen reader accesses a Web page it gathers the text of the page and begins reading it aloud. If the page refreshes, the new content may go unnoticed by the screen reader, or the original content will stop reading, potentially before the person has finished listening to the page.  </p>
+
+<p>Automatic updates are often encountered on Web sites that display continually updating new feeds. They can also occur in online chat applications that update ever few seconds or when new messages are posted.  In both cases screen reader users can have great difficulty getting through content before it disappears. In both cases the solution is to provide a way to turn off updates, and potentially provide a manual update feature so a person can refresh the content when they're ready.</p>
+
+</li>
+<li>due to changing the context when the user removes focus from a form element
+
+<p>Much like not causing a Web page to change when an element in the page receives focus described above (e.g. redirecting to another page when moving between items in a select menu), don't cause  a change in a Web page when a page element looses focus.  </p>
+
+</li>
+<li>due to opening windows that are not requested by the user
+
+<p>Opening popup windows can be a problem for screen read users if they are not informed before the window opens. They can become lost, being unable to get back to the original site, which is likely sitting in a window behind the popup without them realizing it. </p>
+
+<p>There's little that's more annoying to regular Web users than popup windows opening when you are not expecting them. While it may not present much of a barrier for most users, since they can see the windows open and they can close them,  you may find people will not come back to your site if they have to continually close unwanted popups. </p>
+
+<p>Advertising is a primary culprit. Many advertising services offer different types of advertising plans to Web sites, to help them generate revenues. If you are considering one of these services, be sure they offer ads that embed in a page, and don't popup new windows. </p>
+
+<p>This guideline does not suggest you should not use popup windows. They can be very useful, not only for able users of the Web, but also for people with disabilities. For example, having a Help window open that explains how to use a tool that appears in the parent window below, makes it much easier to learn how to use the tool than might be the case if a person had to move back and forth between pages in the same window. </p>
+
+<p>A few rules can help keep popup windows from becoming a barrier, and an annoyance:</p>
+<ol>
+<li>Minimize the number of new windows opened by assign all windows the same name. This way when a person opens one popup, when a second is opened it opens in the same window as the first. </li>
+
+<li>Don't ever use target ="_blank" for your popup windows. This will open a different window every time, and potentially result in even sighted users become lost in a sea of windows.</li>
+
+<li>Let users request a new window and be sure they know a window will open. Don't force new windows on your visitors, or you may end up loosing them.</li>
+</ol>
+
+</li>
+</ol>
+
+<h3>Success Criteria  for Guideline 3.3 (Input Assistance)</h3>
+<p><strong>Guideline 3.3</strong> Input Assistance: Help users avoid and correct mistakes.</p>
+<ol>
+<li>due to omitting easily accessible feedback after an errors occurs. 
+
+<p>Web forms can be a challenge for assistive technology users if they are not created in such a way that guides people through them, and provides proper feedback when submitting information. Error feedback is essential to creating usable forms. It can be provided in a variety of ways, such as writing a high contrast message to the screen, opening an alert dialog box to catch errors before a form is submitted, or perhaps redirecting the cursor's focus to form fields where errors have occurred, or a combination of these. Even with well designed error handling, it can be difficult for screen reader users to find error messages if they are not strategically, and consistently located so they are easy to discover when one can not see the screen.</p>
+
+<p>One way to make error messages easier to find is to locate them immediately after a bypass anchor (see guideline 2.4.1). This way they will be obvious to sighted user, and easy to find for screen reader users, who when they follow the jump to content bypass link, will begin reading the error message as the first thing in the content area of a Web page. If error messages are consistently placed in the exact same location every time an error occurs, people who can not see the screen will know where to quickly find messages without having search for them.</p>
+
+<p>Error messages at the top of a content area might also include direct links to anchors located before fields in the form where errors have occurred, so while listening to a message blind visitors to your Web site can jump directly to the erroneous fields without having to manually navigate through the form to find them. This can save a lot of time and effort, particularly for forms that might be used more regularly, such as those used for online purchases, bill payments, forum or chat forms, or content creation for example.</p>
+
+<p>Another way of making error messages easy to find is to dynamically add them to the title element of a page. When a screen reader begins reading a page the first thing it reads is the page title. In this case, screen reader users hear the error message as soon as the page loads after an error has occurred.</p>
+
+<p>Not only is error feedback important, success feedback is also needed to inform people that the form they submitted was submitted successfully. Without success feedback, people can be left wondering if the form actually submitted their information. For screen reader users this is particularly important. While a sighted person can often find their way to a record of the data just submitted, to do so can be a very time consuming task for a blind person. With success feedback,  people can be assured their information was submitted successfully without having to put a lot of effort into confirming their data was recorded.</p>
+
+</li>
+<li>due to omitting form validation to ensure data entered is valid, and present if identified as required.
+
+<p>It is important that data entered through a Web form be validated before it gets submitted to ensure the information in form fields is in a form expected. It's easy to make typing errors, especially  when one cannot see what they're typing. Form validation helps prevent people from submitting wrong information. </p>
+
+<p>One of the more common validation strategies is to confirm that an email address follows the convention for email addresses. This type of validation is done with regular expressions, which most, if not all programming languages have built into them. A regular expression to find an email pattern might look  something like this:</p>
+
+<p>
+<strong>
+^[a-z0-9&#92._-]+@+[a-z0-9\._-]+\.+[a-z]{2,6}$ 
+</strong>
+
+</p>
+<p>This rather ominous bit of programmed pattern matching translates to:</p>
+
+<p>At the beginning of the pattern (^) there are any number of letters (a-z), numbers(0-9), periods (.) underscores (_) or dashes (-), followed by the at sign (@), followed by a combination of letters (a-z), numbers(0-9),periods (\.),  underscores (_), or dashes (-),  which must include at least one period (\.), followed by at least two letters to a maximum of 6 letters ([a-z]{2,6}), at the end of the pattern ($). </p>  
+
+<p>If this is all gibberish to you,  don't be concerned. It is to most non-programmers. Programmers and many Webmasters will understand how to create and interpret regular expressions and use them to ensure that data being submitted is what it is supposed to be. The important thing to get out of this, is that information submitted through forms is in the patterns expected, and if not, an error message gets returned.</p>
+
+</li>
+
+<li>due to omitting a way to reverse a submission
+
+<p>It is easy to make errors when entering information into Web forms, both for able users, and particularly for users who can not see what they have entered. It is important to allow people to review the information they are about to submit. This is generally accomplished by presenting the submitted information on a preview screen before data is submitted and permanently  recorded.</p>
+
+<p>Another way to make submissions reversible is giving people the ability to edit their information after it has been submitted. For example, if they have posted a message to a Web discussion forum, let them edit their message after it has been submitted. A forum application might allow the content of a forum post to be edited for 15 minutes after posting, so after the person has discovered spelling errors in their post for instance, they can go back and fix the errors for a particular period. Or, if they have submitted a registration form, then realized there is a typo in their email address for instance, they can go to a profile or account properties screen and edit the email address after the initial registration.</p>
+
+<p>For  legal or financial data, it is critical that people have ample opportunity to make corrections to the data they submit, otherwise they may accidentally find themselves legally obliged, or perhaps submitting incorrect information when making a purchase or other financial transactions.   In such cases error prevention is required to be sure the information being submitted is in the form expected, and the ability to preview the information is required, allowing a person to return and correct errors, or confirm the information is correct before being submitted. </p>
+
+<p>When one is completing a form it is not difficult to accidentally hit the Enter key, which often submits some information, so it must be possible to reverse such accidents. In all cases when critical irreversible actions are  about to occur,  it must be possible to back out of the submission after initially submitting information. Most applications found on the Web provide a confirmation response before submitting critical data,  something like: "Are you sure you want to delete this document", or "You are about to make a payment, do you wish to continue?" along with which they are presented options like "Continue" and "Cancel". Providing a confirmation step will greatly reduce the likelihood of making critical errors when completing Web forms.</p>
+</li>
+<li>due to omitting context sensitive help. 
+
+<p>Documentation to describe how features of a Web site work should be provided for anything beyond basic functionality (and include documentation about its accessibility features).  Help documents can greatly improve usability for both able individuals and people with disabilities. A blind person for instance, can read a description of how a particular features should be used, and avoid the effort of having to navigate through a features to discover how it functions, which can be very time consuming.</p>
+
+<p>For some people with learning or cognitive disabilities, things that may be obvious for average users, may not make sense to a person who has difficulty comprehending  complex relationships,  has difficulty envisioning the outcome of using a particular feature, or perhaps has difficulty understanding abstract terms often used to label components within a particular feature. A concrete description of the feature, and how it should be used, can be documented so such users can develop an understanding before they begin using a feature.</p>
+
+<p>Full documentation of tools on a Web site can be provided in a single place, where a person can read about the entire site or application in a manual type presentation. Manuals can be enhanced by providing direct access from particular features to their respective instructions in the manual. For example,  if a person were learning how to upload files onto the Web through a file manager feature on a site, context sensitive help might be provided by including a link from somewhere in the feature to the section of the site manual that describes how it is used.</p>
+
+<p>Other common forms of context sensitive help include tool tips, which are often created by adding the HTML title attribute to various components within a feature, that provide a few words that describe how that component is used or perhaps what data is expected to be entered in a form field.  Be careful when creating tool tips this way. Screen readers can be set to read by default the text or label of a particular feature, or read its title attribute, whichever is longer. So, it is important to include the text or label in the title attribute along with the extended description it might contain.</p> 
+
+<p>A similar practice to HTML title tool tips is including small help popups with individual components where more than a few words are needed, and it is impractical to use an HTML title attribute. These are often seen as small question mark icons next to input fields in a form, with scripting to open a small window or dialog box.</p>
+
+</li>
+</ol>
+
+<p>A more detailed list, including less common failures, can be found in <a href="http://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0</a></p>
+
+
+<h3>Sufficient Techniques for Guideline 3.1 (Readable)</h3>
+
+<p>These techniques can be used to make acronyms accessible, and to conform with WCAG 2.0 Guideline 3.1.</p>
+
+<h4>1.Understanding Short Forms using Acronym</h4>
+<p>In this age of email, online chats, and text messaging, abbreviations and acronyms are used like they have never been used before. There's good reason to use them. They can help keep an online conversation flowing by reducing typing time. They arguable reduce the bytes being transported around the web, reducing congestion over the Internet (so they say). They are a part of the language of an online culture. And, if you're a kid,  they help keep your parents in the dark.</p> 
+
+<p>To the uninitiated, short forms can make understanding text or speech difficult.  As a cultural form of communication, collections of short forms can make up a significant part of a community of like minded individuals. These can often keep  outsiders from understanding a communication between insiders, much like listening to a conversation in another language.</p> 
+
+<p>For people using assistive technologies, short forms can be particularly challenging to understand. While screen readers are getting smarter, and they can identify many common short forms and read them correctly, many less common cultural short forms are still going to be difficult to understand. Often screen readers  will attempt to pronounce a short form. You can imagine how a screen reader might pronounce BTW (by the way). You'd probably have difficulty trying to pronounce these letter yourself, let alone trying to understand someone who is pronouncing them to you. Short forms with vowels are often easier to pronounce. ASAP is one short form most working adults will understand. Part of the reasons for that is it can be pronounced. It's not much different than a word, and exists in the vocabulary of English speaker as a word itself.</p> 
+
+<p>The following is a list of common short forms used in online communication. You will probably know what some of these acronyms mean. </p> 
+
+
+<h4>Example 1: Short Forms without using Acronym</h4>
+<code>
+// The following table lays out 28 acronyms
+// commonly used in online communication. No ACRONYM
+// elements are used in this case.
+
+<table style="height: 110px;" border="0" cellspacing="0" cellpadding="0" width="647" align="center">
+ <tbody>
+  <tr>
+   <td>121</td>
+   <td>BRB</td>
+   <td>K</td>
+   <td>PLZ</td>
+  </tr>
+  <tr>
+   <td>AFK</td>
+   <td>BTW</td>
+   <td>L8R</td>
+   <td>PM</td>
+  </tr>
+  <tr>
+   <td>AKA</td>
+   <td>CUZ</td>
+   <td>LOL</td>
+   <td>ROFL</td>
+  </tr>
+  <tr>
+   <td>ASAP</td>
+   <td>FAQ</td>
+   <td>M/F</td>
+   <td>SYL</td>
+  </tr>
+  <tr>
+   <td>A/S/L</td>
+   <td>FYI</td>
+   <td>MSG</td>
+   <td>TGIF</td>
+  </tr>
+  <tr>
+   <td>B4</td>
+   <td>IDK</td>
+   <td>OIC</td>
+   <td>THX</td>
+  </tr>
+  <tr>
+   <td>BBL</td>
+   <td>J/K</td>
+   <td>P2P</td>
+   <td>TTYL</td>
+  </tr>
+ </tbody>
+</table>
+
+</code>
+<p><strong>The above HTML markup produces the following list of acronyms.</strong></p>
+<p>1. Scan through the list of acronyms below and note which ones you are not familiar with. Also note which ones might be difficult to pronounce. </p>
+
+<p>2. After scanning through the list, <a href="jaws/jaws_noacronym.mp3">listen to JAWS screen reader read when the ACRONYM element is not being used (mp3)</a>.  Notice when listening, which acronyms JAWS is able to translate into actual words.  </p>
+
+<table style="height: 110px;" border="0" cellspacing="0" cellpadding="0" width="647" align="center">
+ <tbody>
+  <tr>
+   <td>121</td>
+   <td>BRB</td>
+   <td>K</td>
+   <td>PLZ</td>
+  </tr>
+  <tr>
+   <td>AFK</td>
+   <td>BTW</td>
+   <td>L8R</td>
+   <td>PM</td>
+  </tr>
+  <tr>
+   <td>AKA</td>
+   <td>CUZ</td>
+   <td>LOL</td>
+   <td>ROFL</td>
+  </tr>
+  <tr>
+   <td>ASAP</td>
+   <td>FAQ</td>
+   <td>M/F</td>
+   <td>SYL</td>
+  </tr>
+  <tr>
+   <td>A/S/L</td>
+   <td>FYI</td>
+   <td>MSG</td>
+   <td>TGIF</td>
+  </tr>
+  <tr>
+   <td>B4</td>
+   <td>IDK</td>
+   <td>OIC</td>
+   <td>THX</td>
+  </tr>
+  <tr>
+   <td>BBL</td>
+   <td>J/K</td>
+   <td>P2P</td>
+   <td>TTYL</td>
+  </tr>
+ </tbody>
+</table>
+
+<h4>Example 2: Short Forms using Acronym</h4>
+<code>
+// The following table again lays out 28 acronyms
+// commonly used in online communication. In this case
+// however, the ACRONYM elements are used.
+
+<table style="height: 110px;" border="0" cellspacing="0" cellpadding="0" width="647" align="center">
+ <tbody>
+  <tr>
+   <td><acronym title="One-to-one">121</acronym></td>
+   <td><acronym title="Be right back ">BRB</acronym></td>
+   <td><acronym title="OK ">K</acronym></td>
+   <td><acronym title="Please ">PLZ</acronym></td>
+  </tr>
+  <tr>
+   <td><acronym title="Away from keyboard ">AFK</acronym></td>
+   <td><acronym title="By the way ">BTW</acronym></td>
+   <td><acronym title="Later ">L8R</acronym></td>
+   <td><acronym title="Private message ">PM</acronym></td>
+  </tr>
+  <tr>
+   <td><acronym title="Also known as ">AKA</acronym></td>
+   <td><acronym title="Because ">CUZ</acronym></td>
+   <td><acronym title="Laugh out loud ">LOL</acronym></td>
+   <td><acronym title="Rolling on the floor laughing ">ROFL</acronym></td>
+  </tr>
+  <tr>
+   <td><acronym title="As soon as possible ">ASAP</acronym></td>
+   <td><acronym title="Frequently asked questions ">FAQ</acronym></td>
+   <td><acronym title="Male or female ">M/F</acronym></td>
+   <td><acronym title="See you later ">SYL</acronym></td>
+  </tr>
+  <tr>
+   <td><acronym title="Age/sex/location ">A/S/L</acronym></td>
+   <td><acronym title="For your information ">FYI</acronym></td>
+   <td><acronym title="Message ">MSG</acronym></td>
+   <td><acronym title="Thank goodness it's Friday ">TGIF</acronym></td>
+  </tr>
+  <tr>
+   <td><acronym title="Before ">B4</acronym></td>
+   <td><acronym title="I don't know ">IDK</acronym></td>
+   <td><acronym title="Oh, I see ">OIC</acronym></td>
+   <td><acronym title="Thanks ">THX</acronym></td>
+  </tr>
+  <tr>
+   <td><acronym title="Be back later ">BBL</acronym></td>
+   <td><acronym title="Just kidding ">J/K</acronym></td>
+   <td><acronym title="Person-to-person ">P2P</acronym></td>
+   <td><acronym title="Talk to you later ">TTYL</acronym></td>
+  </tr>
+ </tbody>
+</table>
+
+</code>
+<p><strong>The above HTML markup produces the following list of acronyms.</strong></p>
+<p>1. <a href="jaws/jaws_yesacronym.mp3">Listen to JAWS read when ACRONYM is used (mp3)</a>. Notice that all the acronyms are read in their long form. Also notice that as an able person, you can now understand all the acronyms, including the ones you are not familiar with. Using the ACRONYM element not only helps assistive technologies read more effectively, it also help people who are not familiar with all the short forms. They can hold a mouse pointer over each item to see its long form.</p>
+
+<table style="height: 110px;" border="0" cellspacing="0" cellpadding="0" width="647" align="center">
+ <tbody>
+  <tr>
+   <td><acronym title="One-to-one">121</acronym></td>
+   <td><acronym title="Be right back ">BRB</acronym></td>
+   <td><acronym title="OK ">K</acronym></td>
+   <td><acronym title="Please ">PLZ</acronym></td>
+  </tr>
+  <tr>
+   <td><acronym title="Away from keyboard ">AFK</acronym></td>
+   <td><acronym title="By the way ">BTW</acronym></td>
+   <td><acronym title="Later ">L8R</acronym></td>
+   <td><acronym title="Private message ">PM</acronym></td>
+  </tr>
+  <tr>
+   <td><acronym title="Also known as ">AKA</acronym></td>
+   <td><acronym title="Because ">CUZ</acronym></td>
+   <td><acronym title="Laugh out loud ">LOL</acronym></td>
+   <td><acronym title="Rolling on the floor laughing ">ROFL</acronym></td>
+  </tr>
+  <tr>
+   <td><acronym title="As soon as possible ">ASAP</acronym></td>
+   <td><acronym title="Frequently asked questions ">FAQ</acronym></td>
+   <td><acronym title="Male or female ">M/F</acronym></td>
+   <td><acronym title="See you later ">SYL</acronym></td>
+  </tr>
+  <tr>
+   <td><acronym title="Age/sex/location ">A/S/L</acronym></td>
+   <td><acronym title="For your informatio ">FYI</acronym></td>
+   <td><acronym title="Message ">MSG</acronym></td>
+   <td><acronym title="Thank goodness it's Friday ">TGIF</acronym></td>
+  </tr>
+  <tr>
+   <td><acronym title="Before ">B4</acronym></td>
+   <td><acronym title="I don't know ">IDK</acronym></td>
+   <td><acronym title="Oh, I see ">OIC</acronym></td>
+   <td><acronym title="Thanks ">THX</acronym></td>
+  </tr>
+  <tr>
+   <td><acronym title="Be back later ">BBL</acronym></td>
+   <td><acronym title="Just kidding ">J/K</acronym></td>
+   <td><acronym title="Person-to-person ">P2P</acronym></td>
+   <td><acronym title="Talk to you later ">TTYL</acronym></td>
+  </tr>
+ </tbody>
+</table>
+
+<h3>Additional Resources</h3>
+<p>For additional techniques see:</p>
+<ul>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-doc-lang-id">How to Meet 3.1.1:Language of Page</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-other-lang-id">How to Meet 3.1.2:Language of Parts</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-idioms">How to Meet 3.1.3:Unusual Words</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-located">How to Meet 3.1.4:Abbreviations</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-supplements">How to Meet 3.1.5:Reading Level</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-pronunciation">How to Meet 3.1.6:Pronunciation</a></li>
+</ul>
+
+<h3>Sufficient Techniques for Guideline 3.2 (Predictable)</h3>
+
+<p>These techniques will help ensure that navigation menus are accessible, and to conform with WCAG 2.0 Guideline 3.2</p>
+
+<h4>1. Have users request a change in context. Don't change it automatically.</h4>
+<p>A very common practice found on Web sites is the auto-redirect  select menu that sends a user to some location on the site when a selection is made from the menu. These are often created using the HTML Select menu markup and the Javascript onChange event handler (or other keyboard event handlers:onkeypress, onkeydown, onkeyup). While these navigation menus can be handy for many able visitors to a Web site,  they can be a problem for some people with disabilities, particularly for those who do not use a mouse. (e.g. a person who is blind). 
+</p>
+
+<p>Typically a non-mouse user will navigate to such a menu using the Tab key to jump from item to item on a Web page. When they encounter the menu, they will use the down arrow key to move through the items in the menu. When the down arrow moves the focus to the first item in the menu, the change (i.e onChange) automatically sends the person to the location associated with the item before being able to reach the second item in the menu. As a result, locations accessed through items 2 and beyond in the menu, become inaccessible.</p>
+
+<p>The solution is to have users either press a submit button next to the menu, or have them press the Enter key before changing locations. The first example below demonstrates what "NOT" to do, and the second example provides 2 strategies that should be used instead.</p>
+
+<p><strong>Browser Notes</strong>: In FireFox 3.0+, onChange has no affect when navigating through Select menus with a keyboard, so you won't be able to demonstrate the barrier using it. Most people who require accessibility features will be using Internet Explorer (IE) currently, which does work with onChange. So, use IE to demonstrate the problem.</p>
+
+<h4>Example 1: Do not use onChange in Select menus</h4>
+
+<code>
+// **Do NOT use a redirect strategy like this**
+// The select menu in the HTML below uses the onChange
+// event handler to redirect users when a selection is made.
+
+<html lang="en">
+<head>
+<title>Auto Redirect</title>
+<script language="JavaScript" 
+   type="text/JavaScript">
+function changePage(newLoc){
+   nextPage = newLoc.options[newLoc.selectedIndex].value;
+		
+   if (nextPage != ""){
+   document.location.href = nextPage;
+   }
+ }
+</script>
+</code>
+<code>
+</head>
+<body>
+<div>
+<form method="POST" name="menu">
+  <select name="selectedPage" onChange="changePage(this.form.selectedPage)">
+  <option value = "" selected> -choose- </option>
+  <option value = "page1.html"> Page 1 </option>
+  <option value = "page2.html">  Page 2 </option>
+  <option value = "page3.html">  Page 3 </option>
+  <option value = "page4.html">  Page 4 </option>
+  <option value = "page5.html">  Page 5 </option>
+  </select>
+</form>
+</div>
+</body>
+</html>
+
+
+</code>
+<p>The above HTML markup and Javascript produces the following select menu, 
+ presented in a small iframe.</p>
+<ol> 
+<li>First try using a mouse to get to each of the simple pages the menu redirects to, and use your browser's Back button to get back to the menu.</li>
+<li>Then see if you can do the same using only your keyboard. Press the tab key until the menu receives focus, then use the down arrow to open each of the pages listed in the menu.</li>
+</ol>
+
+<iframe src ="autogo_html.html" width="25%" height="75" name="something" title="demo frame">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
+
+<h4>Example 2. Detect the Enter key, or use a submit button.</h4>
+<code>
+// **Do this instead of using onChange**
+// In this case the onChange event handler has been replaced 
+// with the event.keyCode statement that identifies
+// when the Enter key is pressed. A person can either
+// press Enter, or click the "Go" submit button.
+
+<html>
+<head>
+<title>autogo_html2</title>
+</head>
+<body>
+
+<div style="align:center">
+<form method="POST" name="menu" onsubmit="
+    javascript: window.location=document.getElementById('selectedPage').value; 
+    return false;">
+  <select id="selectedPage" onkeydown="
+    javascript: if (event.keyCode == 13) {
+    window.location=document.getElementById('selectedPage').value; 
+    return false;}">
+  <option value = "" selected> -choose- </option>
+  <option value = "page1.html"> Page 1 </option>
+  <option value = "page2.html">  Page 2 </option>
+  <option value = "page3.html">  Page 3 </option>
+  <option value = "page4.html">  Page 4 </option>
+  <option value = "page5.html">  Page 5 </option>
+  </select>
+ <input type="submit" value="Go" />
+</form>
+</div>
+</body>
+</html>
+</code>
+<p>The above HTML markup and Javascript produces the following select menu, 
+ presented in a small iframe.</p>
+<ol> 
+<li>First try using a mouse to get to each of the simple pages the menu redirects to, and use your browser's Back button to get back to the menu.</li>
+<li>Then see if you can do the same using only your keyboard. Press the tab key until the menu receives focus, then use the down arrow to open each of the pages listed in the menu. Press Enter, or click the Go button to access each page listed in the menu.</li>
+<li><strong>Notice the better keyboard accessibility in Example 2</strong></li>
+</ol>
+
+<iframe src ="autogo_html2.html" width="25%" height="75" name="something"  title="demo frame2">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+<p><strong>NOTES</strong>: There is a way to access pages 2 and beyond in the first example, by pressing <strong>Ctrl + Down Arrow</strong> when the menu receives focus. Then use the down arrow to move to the other pages and press Enter. You cannot however, rely on keyboard users knowing about this undocumented key combination. </p>
+
+<p>Also note that pressing the Enter key to submit the form can also be a problem for some users, particularly those who might have a motor disability, and perhaps a shaky hand. There is the possibility that a person might accidentally hit the Enter key. Though pressing the Enter key makes these forms accessible to people who are blind, using just a standard submit button that requires a person to press it before being redirect, will be the most accessible way of implementing a redirect form of this type (i.e. plain HTML without any scripting).  </p>
+
+<h3>Additional Resources</h3>
+<p>For additional techniques see:</p>
+<ul>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-receive-focus">How to Meet 3.2.1:On Focus</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-unpredictable-change">How to Meet 3.2.2:On Input</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-consistent-locations">How to Meet 3.2.3:Consistent Navigation</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-consistent-functionality">How to Meet 3.2.4:Consistent Identification</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-no-extreme-changes-context">How to Meet 3.2.5:Change on Request</a></li>
+
+</ul>
+
+<h3>Sufficient Techniques for Guideline 3.3 (Input Assistance)</h3>
+
+<p>These techniques can be used to prevent errors when submitting inforamtion through Web based forms, to conform with WCAG 2.0 Guideline 3.3.</p>
+
+<h4>1.Preventing errors and assisting input.</h4>
+<p>Any well designed input form will have a variety of error checking routines built into it to prevent incorrect data from being entered, and to ensure security, so would-be hackers are not able to enter malicious code that might be used to break into a Web site.</p> 
+
+<p>Error prevention is also important for people with disabilities, who may have difficulty identifying errors in the information they are about to submit, perhaps being unable to see typing errors, or perhaps misunderstanding what information is supposed to be entered. Error checking can help ensure the information they enter is correct. </p>
+
+<p>In addition to preventing errors, input assistance can also be added to error checking routines to help  people find the location of errors when they can not see them on the screen. In the simple registration form in the example below, a person must enter a first name, last name, and an email address. All fields are required, otherwise error messages are generated using JavaScript alert dialog boxes. The email address must also be in the standard email format. If an error occurs, the dialog box identifies where it occurred, and when the dialog is closed, the mouse cursor is placed in the field where the first error occurred.</p>
+
+<p>Once input errors have been handled, the form submits and a confirmation screen is displayed. A person can then review all the information to be submitted  before pressing the Confirm button to send the information to be recorded.</p>
+
+<p><strong>NOTE</strong>: Error prevention and input assistance provided by a script like the one in this example, should also be supplemented with additional error checking on the server. This is necessary because it is relatively easy to spoof such scripts. A script such as this should not be used as a security strategy, but rather as a way of helping people complete the form correctly.</p>
+
+
+<h4>Example 1: Form Field Validation and Submission Confirmation</h4>
+<code>
+// The script in the head area checks to see if information is
+// present in the required fields, and confirms that the email
+// address entered, conforms with the standard pattern for email addresses
+// If any of these checks fail, an alert dialog box is displayed.
+// After the form is validated, a confirmation screen is displayed
+// before the final output confirms the form was successfully submitted.
+ 
+<html>
+<head>
+<title>Form Validation Example</title>
+<script type="text/javascript">
+function validate_required(field,alerttxt){
+  with (field){
+    if (value==null||value==""){
+      alert(alerttxt);
+      return false;
+    }else {
+      return true;
+    }
+  }
+}
+function validate_form(thisform){
+  with (thisform){
+   if (validate_required(first,"First name must be filled out!")==false){
+       first.focus();
+       return false;
+   }
+   if (validate_required(last,"Last name must be filled out!")==false){
+       last.focus();
+       return false;
+   }
+   if (validate_required(email,"Email must be filled out!")==false){
+      email.focus();
+      return false;
+   }
+    if (validate_email(email,"Not a valid e-mail address!")==false){
+      email.focus();
+      return false;
+    }
+  }
+}
+function validate_email(field,alerttxt){
+  with (field){
+    apos=value.indexOf("@");
+    dotpos=value.lastIndexOf(".");
+  if (apos<1||dotpos-apos<2){
+    alert(alerttxt);
+    return false;
+   }else {
+    return true;
+   }
+  }
+}
+</script>
+</code>
+<code>
+</head>
+<body>
+<form action="form_valid.html"
+onsubmit="return validate_form(this);"
+method="post">
+ <span title="required">*</span>
+  <label for="first">First Name</label>:
+   <input type="text" id="first" name="first" size="30"><br />
+ <span title="required">*</span>
+  <label for="last">Last Name</label>:
+   <input type="text" id="last" name="last" size="30"><br />
+ <span title="required">*</span>
+  <label for="email">Email</label>: 
+   <input type="text" id="email" name="email" size="30"><br />
+ <input type="submit" value="Submit"> 
+</form>
+</body>
+</html>
+
+</code>
+<p>The above script and HTML produces the following form.</p>
+<ol>
+<li>Try submitting the form without any information entered. Notice where the cursor is positioned when the error dialog box is closed. </li>
+<li>Try entering a first and last name and leaving the email field empty.</li>
+<li>Try entering a first and last name and typing something other than an email address in the email field.</li>
+<li>Try completing the form correctly.</li>
+</ol>
+
+
+<iframe src ="validate_form.html" width="65%" height="190" name="something"  title="demo frame">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
+<p>Three files make up this example:</p>
+<ul>
+<li><a href="validate_form.html">validate_form.html</a> (the script and HTML above)</li>
+<li><a href="form_confirm.html">form_confirm.html</a> (the confirmation screen)</li>
+<li><a href="form_valid.html">form_valid.html</a> (the followup after submission)</li>
+</ul>
+
+
+<p> Also see the W3C technique for a more elegant way of writing error messages and input assistance dynamically into a page Document Object Model (DOM).</p>
+
+<ol>
+<li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/SCR21">Using functions of the Document Object Model (DOM) to add content to a page</a></li>
+<li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/SCR21/ex1.html">Dynamic Form Validation Example</a></li>
+</ol>
+
+
+<h3>Additional Resources</h3>
+<p>For additional techniques see:</p>
+<ul>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-identified">How to Meet 3.3.1:Error Identification</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues">How to Meet 3.3.2:Labels or Instructions</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-suggestions">How to Meet 3.3.3:Error Suggestion</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-reversible">How to Meet 3.3.4:Error Prevention (Legal, Financial, Data)</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-context-help">How to Meet 3.3.5:Help</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-reversible-all">How to Meet 3.3.6:Error Prevention (All)</a></li>
+</ul>
+
+
+<h2>Other Considerations</h2>
+<h3>Accessibility and Learning Content</h3>
+
+<p>Understanding takes on a  little different meaning when you're talking about learning content. While WCAG 2 focuses more on accessibility of Web content to people with disabilities, and to assistive technologies that present content to these people, there is less of a focus on helping people learn through accessible learning content. </p>
+
+<p>What does it mean to have accessible learning content?  Accessible learning content is adaptable to the  learning needs and abilities of each learner. Everyone has their own way of learning. How a person learns is part hereditary and part environmental. If you come from a smart family, you'll likely be smart yourself.  But,  if you've had good teachers that  teach learning skills, even if you don't consider yourself a smart person, understanding where your strengths and weaknesses lie can go a long way to helping you adapt (and appear smart), focusing your efforts on things you do well, and working around the things you don't do so well.</p>
+
+<p>If you are taking this course in the ATutor LMS, you might want to take a little detour from this page after you've read through it, login and visit your ATutor Preference settings, in particular, your content settings. Go to My Start Page, then select the Preferences Tab, then choose Content Settings. If you're not using ATutor, you can visit the demo site at http://www.atutor.ca/atutor/demo.php). In your content settings  you will notice three sections in which you can choose to display adapted versions of content. If for instance you were a person with a learning disability, who might have difficulty with text based learning content, you can choose to have Audio content replace the text so you can listen instead of having to read, or perhaps append the audio, so you can listen as you read along. (Content needs to have been created with adaptations for content setting to have an affect)</p>
+
+<p>If you are a person who has trouble understanding audio content, perhaps you have a hearing impairment, or have difficulty comprehending speech, you can choose to replace that audio content with text, or visual adaptations. If you are blind or have a vision impairment, you might choose in the last section in content settings, to use adaptations for visual content, perhaps replacing images with text or with audio versions of content.</p>
+
+<p>These settings, as well as display settings that change the overall appearance of the system (perhaps you need high contrast or content in different colours ), and the Control Setting for enabling and disabling navigation elements (perhaps you prefer content presented in a sequence, or maybe a hierarchy of topics and sub topics), are an experimental implementation of the ISO FDIS 24751 and the IMS AccessForAll standards. Both of these standards were recently introduced to define standard ways for developing adaptable content, and developing systems to present content that adapts to individual learning needs. </p>
+
+<p>For more information about ISO FDIS 24751, and IMS AccessforAll,  visit the follow sites. These standards are relatively new, thus few systems yet support them. Look for these standards to emerge over the coming years.</p>
+
+<h4>Learning Content Accessibility References</h4>
+<ul>
+<li><a href="http://wiki.atutor.ca/display/atutorwiki/ATutor+Adaptability+with+AccessForAll">ATutor Adaptability with AccessForAll</a></li>
+<li><a href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=41521">ISO FDIS 24751-1 Standard</a></li>
+<li><a href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=43603">ISO FDIS 24751-2 Standard</a></li>
+<li><a href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=43604">ISO FDIS 24751-3 Standard</a></li>
+<li><a href="http://www.imsproject.org/accessibility/">IMS AccessForAll Standard</a> </li>
+</ul>
+
+<h2>Unit Exercise</h2>
+<p>When you are doing lots of accessibility testing, there comes a point when it makes sense to use a protocol: a standard procedure that all testers methodically follow. For example, first run an automated tool (like AChecker), then use the accessibility toolbar in Firefox, then test with Browser A, then with Browser B, and so on. <br />
+
+<p>The reasons to have a protocol include making the process go faster, and making sure nothing is missed.</p>
+
+<p>Have you (or your organization) developed a testing protocol for testing for compliance to, say WCAG 1.0 or 2.0? If so, please share the protocol with the other participants in the Exercise 3 thread.</p>
+
+<p>If you do not use an accessibility testing protocol, what do you think the minimum set of tests should include?</p>
+
+<p>We hope the discussion that follows will help deepen your understanding of Web accessibility in general, and WCAG 2.0 in particular.<br /><br />Feel free to contribute to this discussion all this week.</p>
+        </main>
+    
+        </div>
+    </div>
+</body>
+</html>

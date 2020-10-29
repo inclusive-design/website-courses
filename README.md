@@ -1,1 +1,1 @@
-# website-courses
+# courses.idrc.ocadu.ca

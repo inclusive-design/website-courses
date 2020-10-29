@@ -1,0 +1,471 @@
+<html>
+<head>
+    <title>Principle 4: Robust | Understanding Web Accessibility Course</title>
+    <meta name="generator" content="DocPad v6.78.4" />
+    <link  rel="stylesheet" href="styles/style.css" /><link  rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <script defer="defer"  src="vendor/jquery-2.1.1.min.js"></script><script defer="defer"  src="vendor/bootstrap/js/bootstrap.min.js"></script><script defer="defer"  src="scripts/myscript.js"></script>
+</head>
+<body>
+    <div class="container-fluid" id="course">    
+
+    <header>
+        <a href="#content" class="sr-only sr-only-focusable pull-left">Skip to main content</a>
+        <h1>Understanding Web Accessibility</h1>
+    </header>
+    
+    <div id="side"> 
+        <nav id="main-nav">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="index.html">Introduction</a></li>
+                <li><a href="1_perceivable.html">Principle 1: Perceivable</a>
+                    <ul>
+                        <li><a href="#reasons">Reasons</a></li>
+                        <li><a href="#guidelines">Guidelines</a></li>
+                        <li><a href="#barriers">Barriers</a></li>
+                        <li><a href="#criteria">Success Criteria</a></li>
+                        <li><a href="#techniques">Sufficient Techniques</a></li>                                                                                                
+                        <li><a href="#considerations">Other Considerations</a></li>
+                        <li><a href="#exercise">Exercise</a></li>
+                    </ul>
+                </li>
+                <li><a href="2_operable.html">Principle 2: Operable</a></li>
+                <li><a href="3_understandable.html">Principle 3: Understandable</a></li>
+                <li><a href="4_robust.html">Principle 4: Robust</a></li>            
+            </ul>
+        </nav>     
+        <!-- div class="ref">
+        </div -->        
+                  
+    </div>
+    <main id="content">            
+        <h2>Principle 4: Robust</h2>
+        <p>Peek "under the hood" of a Web page, and you will find a document that consists of all the words that appear on the page &mdash; the "content" &mdash; thickly interspersed with words, non-words, numbers, and symbols &mdash; the "code." The code describes how the content should be formatted, and what purpose it serves.</p>
+
+<p>During the process of creating a Web page, errors tend to creep into the code. In fact, mistakes are almost inevitable. These errors almost always affect the appearance and functionality of the page. The effects may be minor &mdash; for instance, the formatting is slightly off kilter &mdash; or major &mdash; the page does not display at all.</p>
+
+<p>Guideline 4 is about making Web sites <em>robust</em>. A robust Web page...</p>
+
+<ul>
+<li>Displays content as the author intends</li>
+<li>Functions as the author intends</li>
+<li>Is compatible with current and future browsers, Web-enabled devices, and assistive technologies</li>
+</ul>
+
+<p>Browsers, Web-enabled devices, and assistive technologies do their best to compensate for coding errors. But there are limits to what can be repaired. To conform to Guideline 4, Web authors are required to avoid specific kinds of coding errors</p>
+
+
+<h3>Guideline 4.1 Compatible</h3>
+
+<p><strong>Why is compatibility important?</strong></p>
+
+<p>The goal of Guideline 4 is to ensure that Web pages display correctly, and work as the author intends, in...</p>
+
+<ul>
+<li>All current and future browsers, web-enabled devices, and assistive technologies</li>
+<li>All current and future assistive technologies</li>
+</ul>
+
+<p>Not all users have up-to-date technologies. Compatible Web pages also work reasonably well in older and obsolete browsers, Web-enabled devices, and assistive technologies. Obviously, not all features available on modern Web sites are compatible with older technologies.</p>
+
+<p>Guideline 4 requires Web authors to</p>
+
+<ol>
+<li>Ensure that code does not "break" or otherwise impede assistive technologies. </li>
+
+<li>Expose information in standard ways so that assistive technologies can recognize and interact with content.</li>
+</ol>
+
+<p>Web technologies change quickly, and assistive technology developers are constantly playing "catch-up." When Web authors code according to specification, they maximize the chances that assistive technologies will work seamlessly with present and future technologies.</p>
+
+<h2>Guidelines</h2>
+<h3>Guideline 4.1 Compatible</h3></li>
+<p>Maximize compatibility with current and future user agents, including assistive technologies.</p>
+</ul>
+<h4>4.1 Level A</h4>
+
+<ul>
+<li><strong>4.1.1 Parsing:</strong> In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features. <br /><br />
+
+<p>Note: Start and end tags that are missing a critical character in their formation, such as a closing angle bracket or a mismatched attribute value quotation mark are not complete.</p>
+
+<p>Ensure Web pages conform to all markup language specifications.</p>
+
+<p>Conforming to <strong>4.1.1</strong> ensures that browsers, Web enabled devices, and assistive technologies interpret, parse and display content accurately. Improper markup may cause content to display differently in different browsers or devices, display incorrectly, not display at all, or be inaccessible to assistive technologies.</p>
+
+<p>An easy way to test <strong>4.1.1</strong> is to use a validation tool, such as the <a href="http://validator.w3.org/">W3C Markup Validation Service</a>. A good validator will detect incomplete start and end tags, missing quotation marks, problems with attributes, duplicate IDs, and more.</p>
+
+</li>
+
+<li><strong>4.1.2 Name, Role, Value:</strong> For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. <br /><br />
+
+<p>Note: This success criterion is primarily for Web authors who develop or script their own user interface components. For example, standard HTML controls already meet this success criterion when used according to specification.</p>
+
+<p>Ensure that assistive technologies can gather information about, activate, set, and update user interface controls.</p>
+
+<p><strong>4.1.2</strong> does not apply when Web authors use standard controls according to specification. When Web authors create custom controls or code (or script) interface elements, measures must be taken to ensure that the controls and assistive technologies are able to communicate.</p>
+
+<p>Use a programmatically determinable name for all user interface components. Providing the role, state, and value of all user interface components enables compatibility with assistive technologies.</p>
+
+</li>
+</ul>
+
+<h3>Additional Resources</h3>
+<p>For additional techniques see:</p>
+<ul>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat.html">Understanding Guideline 4.1: Compatible</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html">Understanding Guideline  4.1.1: Parsing</a></li>
+<li> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html">Understanding Guideline  4.1.2: Name, Role, Value</a></li>
+
+</ul>
+
+
+<h2>Experiencing Barriers</h2>
+EDIT
+<!--div style="background-color:#FFFFCE; border: thin dashed black; padding:1em;width:80%;">The Flash simulation below is intended to demonstrate accessibility problems for people who do not normally experience barriers. For those using assistive technologies, you may find the simulation somewhat inaccessible. This is unavoidable for purposes of demonstrating barriers. </div -->
+<p>
+<script type="text/javascript"><!--
+ var toc = document.getElementById('side-menu');
+ var showlink=document.getElementById('side-menushowlink');
+ var hidelink=document.getElementById('side-menuhidelink');
+ 
+ if (hidelink.style.display == '')
+ {
+  document.getElementById('contentcolumn_shiftright').id="contentcolumn";
+  toc.style.display = 'none';
+  hidelink.style.display='none';
+  showlink.style.display='';
+ }
+
+function changeFocus() {
+    var txt = document.getElementById('LINK1');
+    txt.focus();
+    //txt.select();
+  }
+
+  var isInternetExplorer = navigator.appName.indexOf("Microsoft") != -1;
+  // Handle all the FSCommand messages in a Flash movie.
+  function test_DoFSCommand(command, args) {
+	var testObj = isInternetExplorer ? document.all.test : document.test;
+	//
+	DoFSCommand(command, args);
+	//
+  }
+  // Hook for Internet Explorer.
+  if (navigator.appName && navigator.appName.indexOf("Microsoft") != -1 && navigator.userAgent.indexOf("Windows") != -1 && navigator.userAgent.indexOf("Windows 3.1") == -1) {
+	document.write('<script language=\"VBScript\"\>\n');
+	document.write('On Error Resume Next\n');
+	document.write('Sub test_FSCommand(ByVal command, ByVal args)\n');
+	document.write('	Call test_DoFSCommand(command, args)\n');
+	document.write('End Sub\n');
+	document.write('</script\>\n');
+  }
+
+  function DoFSCommand(command, args) {
+        if(command == 'alert'){
+          alert(args);
+        }else if(command == 'changeFocus'){
+          changeFocus();
+	}
+  }
+
+
+// --></script>
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+        codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"
+        id="test" width="860" height="640" align="middle">
+<param name="allowScriptAccess" value="always" />
+<param name="movie" value="sims/Sim_4_v1.swf" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#ffffff" />
+<param name="SeamlessTabbing" value="false" />
+<embed src="sims/Sim_4_v1.swf" quality="high"
+       bgcolor="#ffffff" width="860"
+       height="640" swLiveConnect=true
+       id="test" name="test" align="middle"
+       allowScriptAccess="always"
+       SeamlessTabbing="false"
+       type="application/x-shockwave-flash"
+       pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+
+<h2>Ways to Avoid Creating Barriers</h2>
+<h3>Understanding Compatibility Barriers</h3>
+<p>The issues covered in this section are primarily directed at those developing custom interface controls. If you are using standard, valid  HTML or XHTML,  issues described here are already dealt with. The thing to take away from this section is to use HTML or XHTML as it is intended to be used. Use an HTML validator to ensure your HTML does not contain errors, and you will conform with the guidelines in this section.</p>
+
+<ul>
+<li><a href=â€http://validator.w3.orgâ€>W3C HTML Validator </a></li>
+</ul>
+
+
+<p><strong>If you are not a programmer or interface designer, you can skim over the rest of information in this Unit.</strong></p>
+
+<p>If you are designing custom features in programming languages such as Java or Javascript, or perhaps developing interactive  Flash content, you need to be sure the features or components you create expose themselves to assistive technologies by including sufficient information about each component, such as a name, a role, its state, and a value. You will want to go beyond the basic descriptions of the issues here, and refer to the documentation for  the technology you are working with.</p>
+
+<p>Below is a list of common failures associated the principle of authoring Robust Web content, and would fail an accessibility test. Read through the failures to understand the types of accessibility issues associated with the robustness of Web content, then move on to the Success Criteria for Principle 4, for strategies that can be used to avoid these problems, and then on to Sufficient Techniques that put these success criteria into practice.</p>
+
+<h4>Common Failures for Guideline 4.1 (Compatibility)</h4>
+
+<ol>
+<li>due to incorrect use of start and end tags or attribute markup</li>
+<li>due to duplicate values of type ID</li>
+<li>due to insufficient information in <abbr title="Document Object Model">DOM</abbr> to determine one-to-one relationships (e.g., between labels with same id) in HTML</li>
+<li>due to using script to make div or span a user interface control in HTML</li>
+<li>due to not updating text alternatives when changes to non-text content occur</li>
+<li>due to the association of label and user interface controls not being programmatically determinable</li>
+<li>due to the focus state of a user interface component not being programmatically determinable or no notification of change of focus state available</li>
+<li>due to not providing names for each part of a multi-part form field, such as a US telephone number</li>
+<li>due to using null alt on an image where the image is the only content in a link</li>
+</ol>
+
+
+<h3>Understanding Compatibility Barriers</h3>
+
+<h4>Success Criteria for Guideline 4.1 (Compatibility)</h4>
+<p><strong>Guideline 4.1</strong> Maximize compatibility with current and future user agents, including assistive technologies.</p>
+<ol>
+<li>due to incorrect use of start and end tags or attribute markup
+<p>Validation Errors: Ensure that all  XHTML elements are closed. While some technologies can recover from markup errors such as missing closing tags,  unpredictable results can occur across technologies that have different levels of error recovery.  These are some common markup practices that are allowed in HTML 4.01, but are not allowed in XHTML. Always us the XHTML markup described in the table below, with closing tags for all elements, for the best interoperability across technologies.</p>
+<table style="text-align: center;" border="1" width="100%">
+<caption>Using Closing Tags in HTML and XHTML</caption>
+<tbody>
+<tr>
+<th width="25%"><strong>HTML</strong></th>
+<th width="40%"><strong>XHTML</strong></th>
+<th width="35%">Validity</th>
+</tr>
+<tr>
+<td align="center">
+<code>
+<p>
+</code>
+</td>
+<td align="center">
+<code>
+<p></p>
+</code>
+</td>
+<td>XHTML requires the closing <code></p></code>, HTML does not.</td>
+</tr>
+<tr>
+<td align="center"><code><li></code></td>
+<td><code><li></li></code></td>
+<td>XHTML requires the closing <code></li></code> HTML does not.</td>
+</tr>
+<tr>
+<td>
+<p style="margin-bottom: 0in;"><code><img src ="myimage.jpg"></code></p>
+</td>
+<td>
+<p style="margin-bottom: 0in;"><code><img src="myimage.jpg" alt="My Image."/></code></p>
+</td>
+<td>XHTML requires an Alt attribute, and the image element close with /&gt;, HTML does not</td>
+</tr>
+<tr>
+<td><code><br></code></td>
+<td><code><br /></code></td>
+<td>XHTML requires the trailing slash <code>/></code> to close the line break, HTML does not. </td>
+</tr>
+</tbody>
+</table>
+
+<p>As part of the Web content development process, validate content regularly to ensure broken markup is not accidentally introduced that might render content inaccessible. 
+
+<ul>
+<li><a href="http://validator.w3.org">W3C HTML Validator</a></li>
+</ul>
+
+</li>
+<li>due to duplicate values of type ID
+<p>Validation Errors: Ensure that all ID attributes on any single page are unique. Some technologies rely on the ID attribute to convey relationships between different parts of the content, and when equivalent IDs appear on a page, they can fail to make the association between elements. For example, if a form label has a particular ID, and the header cell for a table column has the same ID, a screen reader may not be able to determine if the form label, or the header, is associated with a form field or table column, respectively.</p>
+</li>
+<li>due to using script to make div or span a user interface control in HTML
+
+<p>Do not use scripting to create interactive or dynamically displayed content such as a DIV or SPAN element that opens when clicked. Most assistive technologies will not be able to access these components since they normally do not include a predefined role like standard HTML controls do. Assistive technologies may not know what action to perform when they encounter customized components.
+</p>
+<p>For more on Roles, see:
+<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html">Name, Role, Value</a></p>
+
+</li>
+<li>due to implementing custom controls that do not use an accessibility API for the technology, or do so incompletely
+
+<p>If you are designing interface controls in Java,  Javascript, or perhaps Flash, be sure to use the accessibility features they have available so your custom  features will be accessible. Generally speaking, be sure the controls will all function using only a keyboard to activate them, and be sure there is readable text with all components so assistive technologies have something to speak when they encounter programmed controls. Also be sure text that is programmed into the interface, such as a short description of a feature, also includes readable text.</p>
+<p>For more on Java accessibility, see:</p>
+<ul>
+<li><a href="http://java.sun.com/developer/earlyAccess/jaccesshelper/">Java Accessibility Helper</a></li>
+<li><a href="http://java.sun.com/docs/books/tutorial/uiswing/">Java Swing Accessibility Tools</a></li>
+</ul>
+<p>For more about Javascript accessibility, learn about emerging WAI-ARIA</p>
+<ul>
+<li><a href="http://www.w3.org/WAI/intro/aria">W3C WAI-ARIA Overview</a></li>
+<li><a href="http://wiki.codetalks.org/wiki/index.php/Web_2.0_Accessibility_with_WAI-ARIA_FAQ">Web 2.0 Accessibility with WAI-ARIA FAQ</a></li>
+</ul>
+
+<p>For more about Flash accessibility, see:</p>
+<ul>
+<li><a href="http://www.adobe.com/accessibility/products/flash/best_practices.html">Flash Accessibility Design Guidelines</a></li>
+</ul>
+
+</li>
+<li>due to not updating text alternatives when changes to non-text content occur
+
+<p>When changes are made to non-text content, such as images, Java applets, or Flash, be sure the associated  text descriptions are also updated, so those who can not see the changes are getting the same information as those who can see the changes</p>
+
+</li>
+<li>due to the association of label and user interface controls not being programmatically determinable
+<p>While current assistive technologies are pretty good at figuring out a label for a form field when one is not explicitly defined,  usually by associating the closest text as the label,  there's no guarantee the right text will be selected if it is not properly defined. If a Web page normally viewed on a computer screen is viewed on a small screen such as a cell phone or <abbr title=â€Personal Digital Assistantâ€>PDA</abbr>,  text that was once close to a field and implicitly associated with their respective  fields, may wrap, and suddenly form fields may loose their labels. By always using the HTML Label element to explicitly associate labels with their respective form field, that risk is removed.</p>
+
+</li>
+<li>due to the focus state of a user interface component not being programmatically determinable or no notification of change of focus state available
+<p>Similar to the success criteria for failure 3 above where the role of an interface component needs to be available to assistive technologies,  the state of an interface component must also be available to assistive technologies. For example, when a screen reader user encounters a standard HTML link or button, the focus state changes, and as a result the readable text, or name of a component, is read. If an assistive technology is not able to determine changes in state (particularly the focus state) it will not know to read the text of the component as the person navigates to the component.</p>
+<p>The resources listed for Success Criteria 4 above, may also provide information on exposing the state of components to assistive technologies when programming custom interface components.
+</p>
+
+</li>
+<li>due to not providing names for each part of a multi-part form field, such as a US telephone number
+
+<p>This accessibility error is common where form fields have multiple parts to them. Perhaps the most common is a date selector in which there is a select menu for the day, one for the month, and another for the year. Often only the first of these parts has a label (e.g. Date:) but the latter two do not.  In cases like this, ensure that each part of the field has its own label. In the case of a date selector, it is often undesirable to display labels for Month and Year, so either include the Labels and hide them using CSS, or add the title attribute to them, and define their labels there.</p>
+</li>
+<li>due to using null alt on an image where the image is the only content in a link
+
+<p>This accessibility problem often occurs with a content developer provides redundant image and text links, and leaves the Alt text for the image empty so it is ignored by assistive technologies, the way decorative images with empty Alt text are ignored. However, image links will not be ignored; they will be recognized as a link but with no "name" or text to describe the link. Thus an assistive technology user is left wondering if they are missing some important information. </p>
+<p>There are a couple solutions to the problem. First, include Alt text with the image, so it is clear where the linked images leads to. This method does then announce the link twice, as assistive technologies pass over the image, then pass over the text link.  So, a second method that eliminates announcing the redundant link, is to include both the image and the text inside the same link markup, and then leave the image Alt text empty. </p>
+
+</li>
+</ol>
+
+<h3>Sufficient Techniques for Guideline 4.1 (Compatible)</h3>
+
+<p>These techniques can be used for developing accessible user interface components, and to conform with WCAG 2.0 Guideline 4.1.</p>
+
+
+<h4>1. Developing Accessible User Interface Components</h4>
+
+<p>Most Web content authors will be able to use standard HTML to create their content. Some will use standard Javascript to add  functionality to their content.. But,  more advanced content authors or code developers will often want to go beyond what is possible  in standard implementations of these technologies. For these developers the  Accessible Rich Internet Application (WAI-ARIA) specification has been developed to ensure that the user interface (UI)  elements they design will be accessible to assistive technologies.</p>
+
+<p>The  example here  is taken from the Fluid project. Fluid is developing a collection of UI components that implement WAI-ARIA (among other emerging technologies) that  developers can integrate into their Web applications to provide rich, Web 2.0 like  user experiences while at the same time ensuring that these technologies are developed with accessibility in mind. The Fluid libraries are available under the open source GPL and MIT  licenses, so they are freely available for anyone to integrate into their developing Web technologies.</p>
+<ul>
+<li><a href="http://fluidproject.org">Fluid Project Web Site</a></li>
+</ul>
+
+
+<p>The following example is based on jQuery,  From the jQuery Web site "jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development." The example uses WAI-ARIA to expose aspects of the UI, in this case a collection of tabs used for navigating between multiple content panels. Before WAI-ARIA, a UI such as this would have been inaccessible to many assistive technologies. </p>
+
+<p>In the first frame below is the actual implementation itself. If you have a screen reader handy (you can install a demo version of JAWS), try navigating through the demo and listen to how JAWS announces components of the UI. </p>
+
+<p>If you do not have a screen reader available, you can run the flash demo in the second frame below to listen to JAWS navigating through the tabs. Notice that JAWS announces each tab as "tab" followed by "Link" for the clickable words. These are roles defined by WAI-ARIA.</p>
+
+<p>You can <a href="jtabs.zip">Download the Code for the Example</a> to take a closer look at how these tabs are generated. You can also <a href="http://fluidproject.org/products/fluid-infusion/download-infusion/">Download the Fluid Library</a> from the fluid Web site, to view, or use the full collection of UI components available through Fluid.</p>  
+
+
+<p><strong>Browser Notes</strong>: The <a href="http://www.w3.org/TR/wai-aria/">WAI-ARIA specification</a> is very new, still only available as a working draft at the W3C when this course was developed. Current versions of Firefox (3.0+) support it well, and Internet Explorer also supports most of the specification. For best results with the example below,  using the current FireFox is recommended.</p>
+
+<ul>
+<li><a href="http://jquery.com/">JQuery Web Site</a></li>
+<li><a href="http://wiki.codetalks.org/wiki/index.php/Main_Page">Code Talks on WAI-ARIA</a></li>
+</ul>
+
+EDIT
+
+<p>The HTML above, along with the Javascript below it, produces the following tabbed user interface. Use the Tab key to move to the first Tab, then the arrow keys (left/right for FF, up/down for IE) to move between tabs, then the Space bar to open the panel associated with a tab.</p>
+
+<iframe src ="jtabs/jtabs/sample-code/keyboard-a11y/jquery-ui-tabs/jquery-ui-accessible-tabs.html" width="70%" height="175" name="demoframe" title="Accessible jQuery UI Tabs demo">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
+<p>The following short Flash movie demonstrates JAWS 10 screen reader interacting with the tabs. Each tab is first clicked with a mouse, then the mouse is set aside and Shift-Tab keys are pressed to move back through the tabs (which you can not see, but can hear), the Space bar is pressed to open the Cats panel, then the Tab key is pressed to move the cursor back to the Alligators tab, where the Space bar is pressed to open the Alligators panel </p>
+
+<iframe src ="jtabs1/jtabs/jtabs.html" width="685" height="300" name="flashdemoframe" title="Flash demo of Accessible jQuery UI Tabs">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
+<h3>Additional Resources</h3>
+<p>For additional techniques see:</p>
+<ul>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-parses">How to Meet 4.1.1:Parsing</a></li>
+<li> <a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv">How to Meet 4.1.2:Name, Role, Value</a></li>
+</ul>
+
+<h2>Other Considerations</h2>
+<h3>Relative or Absolute, that is the question.</h3>
+<p>With the introduction of Internet Explorer 7 and FireFox 3,  content in these browsers resizes regardless of whether it is defined in absolute measures (pt, px, cm), or in relative measures (%, em). It is still good practice to create content using relative measurements to ensure it will fit on screens ranging from Jombotrons  down to tiny <abbr title="Personal Digital Assistant">PDA</abbr> or cell phone screens. While use of relative measures is addressed in Guideline 1.4.1,  their use is also relevant to compatibility issues.  While many technologies now just magnify the display, some still rely on the measures used to manually size the content.</p>
+
+<p>To demonstrate, the two tables below are identical except for the measures used to size them. The first table uses an  absolute measure (650 pixels), while the second uses a relative measure (100%). </p>
+<h4>Example 1: Fitting Content to the Screen Size</h4> 
+<p>To demonstrate the effect of Absolute vs Relative measures, use your mouse pointer to grab the right side of your browser window and drag it to the left, to make the window narrower. Notice that the table using absolute measures falls off the right side of the screen, while the one using relative measures resizes to fit the available space. </p>
+
+<code>
+// A table created with absolute measures (650px)
+// does not resize when the screen size changes
+
+<table width="650" border="1">
+<tr><td>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+officia deserunt mollit anim id est laborum.
+</td></tr>
+</table>
+</code>
+
+<p> The above HTML produces the following table.</p>
+
+<table width="650" border="1">
+<tr><td>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+officia deserunt mollit anim id est laborum.
+</td></tr>
+</table>
+
+<code>
+// A table created with relative measures (100%)
+// does resize when the screen size changes
+
+<table width="100%" border="1">
+<tr><td>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+officia deserunt mollit anim id est laborum.
+</td></tr>
+</table>
+</code>
+
+<table width="100%" border="1">
+<tr><td>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+officia deserunt mollit anim id est laborum.
+</td></tr>
+</table>
+
+<h2>Unit Exercise</h2>
+<p>The goal of this exercise is to deepen your understanding of Conformance Levels A, AA, and AAA, and to develop some experience conducting accessibility reviews.</p>
+<h3>WCAG Conformance</h3>
+<p>For each guideline, WCAG 2.0 specifies testable success criteria. To meet the needs of different groups and different situations, WCAG defines three conformance levels: A (lowest), AA, and AAA (highest). </p>
+<h3>Conduct a WCAG Accessibility Review</h3>
+<ol>
+<li>
+<a href="http://courses.idrc.ocad.ca/go.php/uwa/file_storage/index.php">Download the UWA WCAG 2.0 Review Template</a> from the ATutor File Storage area.</li>
+<li>Select a single Web page on a Web site you are familiar with, perhaps the home page, or another important page on the site. </li>
+<li>Using your new knowledge and whatever tools you have available to you, determine the WCAG conformance level of the Web Page, using the review template to document what you find, including suggestions how any issues found might be resolved. </li>
+</ol>
+    </main>
+    
+    </div>
+</body>
+</html>
